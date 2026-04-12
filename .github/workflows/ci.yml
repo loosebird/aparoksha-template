@@ -1,0 +1,94 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-native:
+    name: Build (${{ matrix.label }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            label: linux-x64
+            backend: ADWAITA
+            install_system_deps: true
+          - os: ubuntu-24.04-arm
+            label: linux-arm64
+            backend: ADWAITA
+            install_system_deps: true
+          - os: windows-latest
+            label: windows-x64
+            backend: WINUI
+            install_system_deps: false
+          - os: windows-11-arm
+            label: windows-arm64
+            backend: WINUI
+            install_system_deps: false
+          - os: macos-latest
+            label: macos-arm64
+            backend: APPKIT
+            install_system_deps: false
+          - os: macos-15-intel
+            label: macos-x64
+            backend: APPKIT
+            install_system_deps: false
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Swift
+        uses: SwiftyLab/setup-swift@v1
+        with:
+          swift-version: '6.2.4'
+
+      - name: Install Linux system dependencies
+        if: runner.os == 'Linux' && matrix.install_system_deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgtk-4-dev libadwaita-1-dev
+
+      - name: Show toolchain
+        run: swift --version
+
+      - name: Build
+        env:
+          APAROKSHA_FRAMEWORK: ${{ matrix.backend }}
+        run: swift build -c release
+
+  build-macos-universal:
+    name: Build (macOS universal)
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Swift
+        uses: SwiftyLab/setup-swift@v1
+        with:
+          swift-version: '6.2.4'
+
+      - name: Show toolchain
+        run: swift --version
+
+      - name: Build universal macOS binary
+        env:
+          APAROKSHA_FRAMEWORK: APPKIT
+        run: ./scripts/build-macos.sh
+
+      - name: Upload universal build
+        uses: actions/upload-artifact@v4
+        with:
+          name: aparoksha-starter-macos-universal
+          path: dist/macos/universal/AparokshaStarter
+          if-no-files-found: error
