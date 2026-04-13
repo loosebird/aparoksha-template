@@ -36,6 +36,8 @@ You can always simplify the workflow later if your app becomes platform-specific
 - Helper run scripts for macOS, Linux, and Windows
 - Helper build scripts for macOS, Linux, and Windows
 - GitHub Actions workflow with cross-platform runner matrix
+- SwiftFormat configuration and helper script
+- SwiftLint configuration and helper script
 
 ## Project structure
 
@@ -47,10 +49,14 @@ AparokshaStarter/
 ├── Package.swift
 ├── README.md
 ├── .gitignore
+├── .swiftformat
+├── .swiftlint.yml
 ├── scripts/
 │   ├── build-linux.sh
 │   ├── build-macos.sh
 │   ├── build-windows.ps1
+│   ├── format.sh
+│   ├── lint.sh
 │   ├── run-linux.sh
 │   ├── run-macos.sh
 │   └── run-windows.ps1
@@ -146,7 +152,7 @@ chmod +x scripts/build-macos.sh
 ./scripts/build-macos.sh
 ```
 
-This script uses `xcodebuild` and asks Xcode to build a universal macOS binary for `arm64` and `x86_64`.
+This script builds the macOS binary once for `arm64` and once for `x86_64`, then merges both outputs into a universal binary with `lipo`.
 
 #### Linux release build
 
@@ -165,12 +171,70 @@ The output is copied to `dist/linux/<arch>/AparokshaStarter`.
 
 The output is copied to `dist/windows/<arch>/AparokshaStarter.exe`.
 
+## Formatting and linting
+
+This template includes:
+
+- `.swiftformat` for SwiftFormat
+- `.swiftlint.yml` for SwiftLint
+- `scripts/format.sh` to format the project
+- `scripts/lint.sh` to run formatting checks and lint checks
+
+### Install the tools
+
+#### SwiftFormat
+
+Official project: <https://github.com/nicklockwood/SwiftFormat>
+
+```bash
+brew install swiftformat
+```
+
+or with Mint:
+
+```bash
+mint install nicklockwood/SwiftFormat
+```
+
+#### SwiftLint
+
+Official project: <https://github.com/realm/SwiftLint>
+
+```bash
+brew install swiftlint
+```
+
+or with Mint:
+
+```bash
+mint install realm/SwiftLint
+```
+
+### Run locally
+
+Format the code:
+
+```bash
+chmod +x scripts/format.sh
+./scripts/format.sh
+```
+
+Lint the code:
+
+```bash
+chmod +x scripts/lint.sh
+./scripts/lint.sh
+```
+
+The helper scripts add `/opt/homebrew/bin` and `/usr/local/bin` to `PATH`, which helps on Apple Silicon Macs when the tools were installed with Homebrew.
+
 ## GitHub Actions workflow
 
-The included workflow does two things:
+The included workflow now does three things:
 
-1. native release builds on GitHub-hosted runners for the main architecture and OS combinations
-2. an extra universal macOS build on `macos-latest`
+1. runs SwiftFormat and SwiftLint on macOS
+2. native release builds on GitHub-hosted runners for the main architecture and OS combinations
+3. an extra universal macOS build on `macos-latest`
 
 Current runner matrix in the template:
 
@@ -200,5 +264,5 @@ Start by editing these values in `Sources/AparokshaStarter/main.swift`:
 - The upstream Aparoksha project is still evolving, so APIs may change.
 - This template uses the upstream `main` branch because that is how the current umbrella package is wired.
 - On each platform, prefer the native default backend first.
-- The workflow uses a third-party Swift setup action so the same template can cover Linux, macOS, and Windows runners in one place.
+- The workflow uses Homebrew to install SwiftLint for the quality job and a third-party Swift setup action so the same template can cover Linux, macOS, and Windows runners in one place.
 - If you want stricter control, pin the action to a commit SHA and/or replace GitHub-hosted runners with self-hosted runners later.

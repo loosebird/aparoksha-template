@@ -13,6 +13,29 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
+  quality:
+    name: Quality (SwiftFormat + SwiftLint)
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Install SwiftFormat and SwiftLint
+        run: |
+          brew update
+          brew install swiftformat swiftlint
+
+      - name: Show quality tool versions
+        run: |
+          swiftformat --version
+          swiftlint version
+
+      - name: SwiftFormat
+        run: swiftformat --lint . --reporter github-actions-log
+
+      - name: SwiftLint
+        run: swiftlint lint --strict --config .swiftlint.yml
+
   build:
     name: Build (${{ matrix.label }})
     runs-on: ${{ matrix.os }}
