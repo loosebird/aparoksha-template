@@ -1,0 +1,85 @@
+﻿2026-04-13T01:19:54.6317498Z ##[debug]Evaluating: matrix.backend
+2026-04-13T01:19:54.6317862Z ##[debug]Evaluating Index:
+2026-04-13T01:19:54.6318091Z ##[debug]..Evaluating matrix:
+2026-04-13T01:19:54.6318383Z ##[debug]..=> Object
+2026-04-13T01:19:54.6318616Z ##[debug]..Evaluating String:
+2026-04-13T01:19:54.6318832Z ##[debug]..=> 'backend'
+2026-04-13T01:19:54.6319344Z ##[debug]=> 'ADWAITA'
+2026-04-13T01:19:54.6319551Z ##[debug]Result: 'ADWAITA'
+2026-04-13T01:19:54.6320940Z ##[debug]Evaluating condition for step: 'Build'
+2026-04-13T01:19:54.6322502Z ##[debug]Evaluating: success()
+2026-04-13T01:19:54.6322829Z ##[debug]Evaluating success:
+2026-04-13T01:19:54.6323173Z ##[debug]=> true
+2026-04-13T01:19:54.6323481Z ##[debug]Result: true
+2026-04-13T01:19:54.6324426Z ##[debug]Starting: Build
+2026-04-13T01:19:54.6331935Z ##[debug]Loading inputs
+2026-04-13T01:19:54.6333101Z ##[debug]Loading env
+2026-04-13T01:19:54.6336861Z ##[group]Run swift build -c release
+2026-04-13T01:19:54.6337123Z [36;1mswift build -c release[0m
+2026-04-13T01:19:54.6352898Z shell: /usr/bin/bash -e {0}
+2026-04-13T01:19:54.6353117Z env:
+2026-04-13T01:19:54.6353295Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:19:54.6353609Z   SWIFT_SETUP_TOOL_KEY: swift-6.2.4-RELEASE-ubuntu2404-aarch64
+2026-04-13T01:19:54.6354075Z   APAROKSHA_FRAMEWORK: ADWAITA
+2026-04-13T01:19:54.6354279Z ##[endgroup]
+2026-04-13T01:19:54.6371981Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/67e93b00-2c7e-4429-9363-b825e9f90d7b.sh
+2026-04-13T01:19:55.2993840Z Fetching https://git.aparoksha.dev/aparoksha/aparoksha
+2026-04-13T01:19:55.3003233Z Fetching https://git.aparoksha.dev/aparoksha/meta
+2026-04-13T01:19:55.3004307Z Fetching https://git.aparoksha.dev/aparoksha/macbackend
+2026-04-13T01:19:56.2435603Z [1/512] Fetching aparoksha
+2026-04-13T01:19:56.2663831Z [42/1632] Fetching aparoksha, meta
+2026-04-13T01:19:56.3290556Z [315/1892] Fetching aparoksha, meta, macbackend
+2026-04-13T01:19:56.5070667Z Fetched https://git.aparoksha.dev/aparoksha/aparoksha from cache (1.21s)
+2026-04-13T01:19:56.5098695Z Fetching https://github.com/stephencelis/SQLite.swift
+2026-04-13T01:19:56.5223419Z [1067/1380] Fetching meta, macbackend
+2026-04-13T01:19:56.5461732Z Fetched https://git.aparoksha.dev/aparoksha/macbackend from cache (1.25s)
+2026-04-13T01:19:56.5463023Z Fetched https://git.aparoksha.dev/aparoksha/meta from cache (1.25s)
+2026-04-13T01:19:56.5478816Z Fetching https://git.aparoksha.dev/aparoksha/meta-sqlite
+2026-04-13T01:19:56.5479276Z Fetching https://git.aparoksha.dev/aparoksha/levenshtein-transformations
+2026-04-13T01:19:56.8536844Z [1/11124] Fetching sqlite.swift
+2026-04-13T01:19:57.2284084Z [6676/11275] Fetching sqlite.swift, levenshtein-transformations
+2026-04-13T01:19:57.2524282Z [6747/11336] Fetching sqlite.swift, levenshtein-transformations, meta-sqlite
+2026-04-13T01:19:57.3920750Z Fetched https://git.aparoksha.dev/aparoksha/meta-sqlite from cache (0.84s)
+2026-04-13T01:19:57.3921767Z Fetched https://git.aparoksha.dev/aparoksha/levenshtein-transformations from cache (0.84s)
+2026-04-13T01:19:57.3980542Z [9678/11124] Fetching sqlite.swift
+2026-04-13T01:19:57.5930165Z Fetched https://github.com/stephencelis/SQLite.swift from cache (1.08s)
+2026-04-13T01:19:57.5985188Z Creating working copy for https://git.aparoksha.dev/aparoksha/meta
+2026-04-13T01:19:57.5985881Z Creating working copy for https://github.com/stephencelis/SQLite.swift
+2026-04-13T01:19:57.5986351Z Creating working copy for https://git.aparoksha.dev/aparoksha/aparoksha
+2026-04-13T01:19:57.6162735Z Creating working copy for https://git.aparoksha.dev/aparoksha/levenshtein-transformations
+2026-04-13T01:19:57.6393431Z Creating working copy for https://git.aparoksha.dev/aparoksha/meta-sqlite
+2026-04-13T01:19:57.6404992Z Creating working copy for https://git.aparoksha.dev/aparoksha/macbackend
+2026-04-13T01:19:57.6424642Z Working copy of https://git.aparoksha.dev/aparoksha/aparoksha resolved at main (357f189)
+2026-04-13T01:19:57.6425272Z Working copy of https://git.aparoksha.dev/aparoksha/meta resolved at main (f47727d)
+2026-04-13T01:19:57.6436052Z Working copy of https://github.com/stephencelis/SQLite.swift resolved at 0.16.0
+2026-04-13T01:19:57.6447234Z Working copy of https://git.aparoksha.dev/aparoksha/levenshtein-transformations resolved at main (06577a2)
+2026-04-13T01:19:57.6604684Z Working copy of https://git.aparoksha.dev/aparoksha/meta-sqlite resolved at main (6e7940c)
+2026-04-13T01:19:57.6640235Z Working copy of https://git.aparoksha.dev/aparoksha/macbackend resolved at main (461f907)
+2026-04-13T01:19:59.4677719Z Updating https://git.aparoksha.dev/aparoksha/aparoksha
+2026-04-13T01:20:00.0412343Z Updated https://git.aparoksha.dev/aparoksha/aparoksha (0.57s)
+2026-04-13T01:20:00.2980205Z Fetching https://git.aparoksha.dev/aparoksha/adwaita-swift
+2026-04-13T01:20:01.4959250Z [1/5014] Fetching adwaita-swift
+2026-04-13T01:20:02.6168853Z Fetched https://git.aparoksha.dev/aparoksha/adwaita-swift from cache (2.32s)
+2026-04-13T01:20:02.8079676Z Updating https://git.aparoksha.dev/aparoksha/meta
+2026-04-13T01:20:03.5791561Z Updated https://git.aparoksha.dev/aparoksha/meta (0.77s)
+2026-04-13T01:20:03.7500702Z Updating https://git.aparoksha.dev/aparoksha/meta-sqlite
+2026-04-13T01:20:04.5682706Z Updated https://git.aparoksha.dev/aparoksha/meta-sqlite (0.82s)
+2026-04-13T01:20:04.7582963Z Updating https://git.aparoksha.dev/aparoksha/levenshtein-transformations
+2026-04-13T01:20:05.4020602Z Updated https://git.aparoksha.dev/aparoksha/levenshtein-transformations (0.64s)
+2026-04-13T01:20:05.5738107Z Updating https://github.com/stephencelis/SQLite.swift
+2026-04-13T01:20:05.7769899Z Updated https://github.com/stephencelis/SQLite.swift (0.20s)
+2026-04-13T01:20:05.7796473Z Computing version for https://github.com/stephencelis/SQLite.swift
+2026-04-13T01:20:05.9692911Z Computed https://github.com/stephencelis/SQLite.swift at 0.16.0 (0.40s)
+2026-04-13T01:20:05.9710453Z Fetching https://github.com/stephencelis/CSQLite
+2026-04-13T01:20:06.2032595Z [1/200] Fetching csqlite
+2026-04-13T01:20:06.6005414Z Fetched https://github.com/stephencelis/CSQLite from cache (0.63s)
+2026-04-13T01:20:06.6026778Z Computing version for https://github.com/stephencelis/CSQLite
+2026-04-13T01:20:06.7974065Z Computed https://github.com/stephencelis/CSQLite at 3.50.4 (0.83s)
+2026-04-13T01:20:06.8236375Z Removing https://git.aparoksha.dev/aparoksha/macbackend
+2026-04-13T01:20:06.8442156Z Creating working copy for https://github.com/stephencelis/CSQLite
+2026-04-13T01:20:06.9047243Z Working copy of https://github.com/stephencelis/CSQLite resolved at 3.50.4
+2026-04-13T01:20:06.9080949Z Creating working copy for https://git.aparoksha.dev/aparoksha/adwaita-swift
+2026-04-13T01:20:06.9497433Z Working copy of https://git.aparoksha.dev/aparoksha/adwaita-swift resolved at main (d928b46)
+2026-04-13T01:20:07.7662616Z error: 'aparoksha': product 'Core' required by package 'aparoksha' target 'Aparoksha' not found in package 'adwaita-swift'.
+2026-04-13T01:20:07.7900419Z ##[error]Process completed with exit code 1.
+2026-04-13T01:20:07.7914105Z ##[debug]Finishing: Build

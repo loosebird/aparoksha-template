@@ -1,0 +1,18 @@
+﻿2026-04-13T01:19:03.6172060Z ##[debug]Evaluating condition for step: 'Install Linux dependencies'
+2026-04-13T01:19:03.6183320Z ##[debug]Evaluating: (success() && (runner.os == 'Linux'))
+2026-04-13T01:19:03.6183789Z ##[debug]Evaluating And:
+2026-04-13T01:19:03.6185883Z ##[debug]..Evaluating success:
+2026-04-13T01:19:03.6186363Z ##[debug]..=> true
+2026-04-13T01:19:03.6186698Z ##[debug]..Evaluating Equal:
+2026-04-13T01:19:03.6187805Z ##[debug]....Evaluating Index:
+2026-04-13T01:19:03.6188105Z ##[debug]......Evaluating runner:
+2026-04-13T01:19:03.6188395Z ##[debug]......=> Object
+2026-04-13T01:19:03.6188677Z ##[debug]......Evaluating String:
+2026-04-13T01:19:03.6188951Z ##[debug]......=> 'os'
+2026-04-13T01:19:03.6189296Z ##[debug]....=> 'Windows'
+2026-04-13T01:19:03.6189565Z ##[debug]....Evaluating String:
+2026-04-13T01:19:03.6190298Z ##[debug]....=> 'Linux'
+2026-04-13T01:19:03.6193617Z ##[debug]..=> false
+2026-04-13T01:19:03.6194068Z ##[debug]=> false
+2026-04-13T01:19:03.6197530Z ##[debug]Expanded: (true && ('Windows' == 'Linux'))
+2026-04-13T01:19:03.6198012Z ##[debug]Result: false

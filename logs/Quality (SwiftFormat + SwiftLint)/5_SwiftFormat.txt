@@ -1,0 +1,34 @@
+﻿2026-04-13T01:18:20.7220380Z ##[debug]Evaluating condition for step: 'SwiftFormat'
+2026-04-13T01:18:20.7221990Z ##[debug]Evaluating: success()
+2026-04-13T01:18:20.7222270Z ##[debug]Evaluating success:
+2026-04-13T01:18:20.7222830Z ##[debug]=> true
+2026-04-13T01:18:20.7223210Z ##[debug]Result: true
+2026-04-13T01:18:20.7223750Z ##[debug]Starting: SwiftFormat
+2026-04-13T01:18:20.7232790Z ##[debug]Loading inputs
+2026-04-13T01:18:20.7233770Z ##[debug]Loading env
+2026-04-13T01:18:20.7237680Z ##[group]Run swiftformat --lint . --reporter github-actions-log
+2026-04-13T01:18:20.7238040Z [36;1mswiftformat --lint . --reporter github-actions-log[0m
+2026-04-13T01:18:20.7267260Z shell: /bin/bash -e {0}
+2026-04-13T01:18:20.7267390Z env:
+2026-04-13T01:18:20.7267610Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:18:20.7267890Z ##[endgroup]
+2026-04-13T01:18:20.7293580Z ##[debug]/bin/bash -e /Users/runner/work/_temp/99242356-bb96-478a-80e1-ceb2c27bc4a2.sh
+2026-04-13T01:18:20.7597910Z Running SwiftFormat...
+2026-04-13T01:18:20.7598290Z (lint mode - no files will be changed.)
+2026-04-13T01:18:20.7603640Z Reading config file at /Users/runner/work/aparoksha-template/aparoksha-template/.swiftformat
+2026-04-13T01:18:20.7939710Z SwiftFormat completed in 0.03s.
+2026-04-13T01:18:20.7957830Z ##[warning]Add or remove trailing commas in comma-separated lists. (trailingCommas)
+2026-04-13T01:18:20.7962080Z Source input did not pass lint check.
+2026-04-13T01:18:20.7962410Z 2/2 files require formatting, 1 file skipped.
+2026-04-13T01:18:20.7963440Z ##[warning]Add or remove trailing commas in comma-separated lists. (trailingCommas)
+2026-04-13T01:18:20.7964650Z ##[warning]Add or remove trailing commas in comma-separated lists. (trailingCommas)
+2026-04-13T01:18:20.7965650Z ##[warning]Add or remove trailing commas in comma-separated lists. (trailingCommas)
+2026-04-13T01:18:20.7966790Z ##[warning]Add or remove trailing commas in comma-separated lists. (trailingCommas)
+2026-04-13T01:18:20.7967870Z ##[warning]Remove leading blank line at the start of a scope. (blankLinesAtStartOfScope)
+2026-04-13T01:18:20.7968950Z ##[warning]Remove leading blank line at the start of a scope. (blankLinesAtStartOfScope)
+2026-04-13T01:18:20.7969980Z ##[warning]Remove leading blank line at the start of a scope. (blankLinesAtStartOfScope)
+2026-04-13T01:18:20.7971020Z ##[warning]Wrap single-line property bodies onto multiple lines. (wrapPropertyBodies)
+2026-04-13T01:18:20.7972060Z ##[warning]Wrap single-line property bodies onto multiple lines. (wrapPropertyBodies)
+2026-04-13T01:18:20.7973170Z ##[warning]Remove leading blank line at the start of a scope. (blankLinesAtStartOfScope)
+2026-04-13T01:18:20.7974940Z ##[error]Process completed with exit code 1.
+2026-04-13T01:18:20.7978940Z ##[debug]Finishing: SwiftFormat

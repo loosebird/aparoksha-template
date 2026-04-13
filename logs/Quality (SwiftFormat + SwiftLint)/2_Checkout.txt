@@ -1,0 +1,187 @@
+﻿2026-04-13T01:17:53.3859900Z ##[debug]Evaluating condition for step: 'Checkout'
+2026-04-13T01:17:53.3885200Z ##[debug]Evaluating: success()
+2026-04-13T01:17:53.3889000Z ##[debug]Evaluating success:
+2026-04-13T01:17:53.3899050Z ##[debug]=> true
+2026-04-13T01:17:53.3902950Z ##[debug]Result: true
+2026-04-13T01:17:53.3920320Z ##[debug]Starting: Checkout
+2026-04-13T01:17:53.3976220Z ##[debug]Register post job cleanup for action: actions/checkout@v5
+2026-04-13T01:17:53.4032750Z ##[debug]Loading inputs
+2026-04-13T01:17:53.4041140Z ##[debug]Evaluating: github.repository
+2026-04-13T01:17:53.4041860Z ##[debug]Evaluating Index:
+2026-04-13T01:17:53.4043110Z ##[debug]..Evaluating github:
+2026-04-13T01:17:53.4043810Z ##[debug]..=> Object
+2026-04-13T01:17:53.4047190Z ##[debug]..Evaluating String:
+2026-04-13T01:17:53.4047730Z ##[debug]..=> 'repository'
+2026-04-13T01:17:53.4050520Z ##[debug]=> 'loosebird/aparoksha-template'
+2026-04-13T01:17:53.4051530Z ##[debug]Result: 'loosebird/aparoksha-template'
+2026-04-13T01:17:53.4054310Z ##[debug]Evaluating: github.token
+2026-04-13T01:17:53.4054710Z ##[debug]Evaluating Index:
+2026-04-13T01:17:53.4055050Z ##[debug]..Evaluating github:
+2026-04-13T01:17:53.4055390Z ##[debug]..=> Object
+2026-04-13T01:17:53.4055720Z ##[debug]..Evaluating String:
+2026-04-13T01:17:53.4056070Z ##[debug]..=> 'token'
+2026-04-13T01:17:53.4056600Z ##[debug]=> '***'
+2026-04-13T01:17:53.4056990Z ##[debug]Result: '***'
+2026-04-13T01:17:53.4069410Z ##[debug]Loading env
+2026-04-13T01:17:53.4132360Z ##[group]Run actions/checkout@v5
+2026-04-13T01:17:53.4132910Z with:
+2026-04-13T01:17:53.4133230Z   repository: loosebird/aparoksha-template
+2026-04-13T01:17:53.4133810Z   token: ***
+2026-04-13T01:17:53.4134110Z   ssh-strict: true
+2026-04-13T01:17:53.4134420Z   ssh-user: git
+2026-04-13T01:17:53.4134730Z   persist-credentials: true
+2026-04-13T01:17:53.4135140Z   clean: true
+2026-04-13T01:17:53.4135430Z   sparse-checkout-cone-mode: true
+2026-04-13T01:17:53.4135770Z   fetch-depth: 1
+2026-04-13T01:17:53.4136060Z   fetch-tags: false
+2026-04-13T01:17:53.4136420Z   show-progress: true
+2026-04-13T01:17:53.4136750Z   lfs: false
+2026-04-13T01:17:53.4137030Z   submodules: false
+2026-04-13T01:17:53.4137320Z   set-safe-directory: true
+2026-04-13T01:17:53.4138030Z env:
+2026-04-13T01:17:53.4138370Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:17:53.4138760Z ##[endgroup]
+2026-04-13T01:17:53.7501510Z ##[debug]GITHUB_WORKSPACE = '/Users/runner/work/aparoksha-template/aparoksha-template'
+2026-04-13T01:17:53.7504590Z ##[debug]qualified repository = 'loosebird/aparoksha-template'
+2026-04-13T01:17:53.7505580Z ##[debug]ref = 'refs/heads/main'
+2026-04-13T01:17:53.7506430Z ##[debug]commit = 'd883f23aa7d9f36f74f39943706f603d6f768a79'
+2026-04-13T01:17:53.7509150Z ##[debug]clean = true
+2026-04-13T01:17:53.7510040Z ##[debug]filter = undefined
+2026-04-13T01:17:53.7510990Z ##[debug]fetch depth = 1
+2026-04-13T01:17:53.7512000Z ##[debug]fetch tags = false
+2026-04-13T01:17:53.7513060Z ##[debug]show progress = true
+2026-04-13T01:17:53.7513720Z ##[debug]lfs = false
+2026-04-13T01:17:53.7514320Z ##[debug]submodules = false
+2026-04-13T01:17:53.7514930Z ##[debug]recursive submodules = false
+2026-04-13T01:17:53.7525140Z ##[debug]GitHub Host URL = 
+2026-04-13T01:17:53.7526830Z ::add-matcher::/Users/runner/work/_actions/actions/checkout/v5/dist/problem-matcher.json
+2026-04-13T01:17:53.7576080Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+2026-04-13T01:17:53.7579710Z Syncing repository: loosebird/aparoksha-template
+2026-04-13T01:17:53.7581880Z ::group::Getting Git version info
+2026-04-13T01:17:53.7582800Z ##[group]Getting Git version info
+2026-04-13T01:17:53.7583580Z Working directory is '/Users/runner/work/aparoksha-template/aparoksha-template'
+2026-04-13T01:17:53.7584410Z ##[debug]Getting git version
+2026-04-13T01:17:53.7584850Z [command]/opt/homebrew/bin/git version
+2026-04-13T01:17:53.8261390Z git version 2.53.0
+2026-04-13T01:17:53.8273550Z ##[debug]0
+2026-04-13T01:17:53.8275250Z ##[debug]git version 2.53.0
+2026-04-13T01:17:53.8276400Z ##[debug]
+2026-04-13T01:17:53.8277290Z ##[debug]Set git useragent to: git/2.53.0 (github-actions-checkout)
+2026-04-13T01:17:53.8278170Z ::endgroup::
+2026-04-13T01:17:53.8278570Z ##[endgroup]
+2026-04-13T01:17:53.8342720Z ::add-mask::***
+2026-04-13T01:17:53.8345940Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/66969894-a8c7-48c0-9ba6-d71445f4e8b1/.gitconfig'
+2026-04-13T01:17:53.8484130Z Temporarily overriding HOME='/Users/runner/work/_temp/66969894-a8c7-48c0-9ba6-d71445f4e8b1' before making global git config changes
+2026-04-13T01:17:53.8492370Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-13T01:17:53.8493890Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/aparoksha-template/aparoksha-template
+2026-04-13T01:17:53.8621920Z ##[debug]0
+2026-04-13T01:17:53.8623580Z ##[debug]
+2026-04-13T01:17:53.8626910Z Deleting the contents of '/Users/runner/work/aparoksha-template/aparoksha-template'
+2026-04-13T01:17:53.8630240Z ::group::Initializing the repository
+2026-04-13T01:17:53.8630710Z ##[group]Initializing the repository
+2026-04-13T01:17:53.8633340Z [command]/opt/homebrew/bin/git init /Users/runner/work/aparoksha-template/aparoksha-template
+2026-04-13T01:17:53.8853710Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-13T01:17:53.8854790Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-04-13T01:17:53.8855570Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-04-13T01:17:53.8856230Z hint: call:
+2026-04-13T01:17:53.8856640Z hint:
+2026-04-13T01:17:53.8857450Z hint: 	git config --global init.defaultBranch <name>
+2026-04-13T01:17:53.8858380Z hint:
+2026-04-13T01:17:53.8858960Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-13T01:17:53.8859910Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-13T01:17:53.8861050Z hint:
+2026-04-13T01:17:53.8861510Z hint: 	git branch -m <name>
+2026-04-13T01:17:53.8862210Z hint:
+2026-04-13T01:17:53.8862870Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-04-13T01:17:53.8864810Z Initialized empty Git repository in /Users/runner/work/aparoksha-template/aparoksha-template/.git/
+2026-04-13T01:17:53.8866180Z ##[debug]0
+2026-04-13T01:17:53.8867110Z ##[debug]Initialized empty Git repository in /Users/runner/work/aparoksha-template/aparoksha-template/.git/
+2026-04-13T01:17:53.8867960Z ##[debug]
+2026-04-13T01:17:53.8870240Z [command]/opt/homebrew/bin/git remote add origin https://github.com/loosebird/aparoksha-template
+2026-04-13T01:17:53.8981430Z ##[debug]0
+2026-04-13T01:17:53.8982860Z ##[debug]
+2026-04-13T01:17:53.8983780Z ::endgroup::
+2026-04-13T01:17:53.8984460Z ##[endgroup]
+2026-04-13T01:17:53.8985330Z ::group::Disabling automatic garbage collection
+2026-04-13T01:17:53.8986530Z ##[group]Disabling automatic garbage collection
+2026-04-13T01:17:53.8987410Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+2026-04-13T01:17:53.9052290Z ##[debug]0
+2026-04-13T01:17:53.9053910Z ##[debug]
+2026-04-13T01:17:53.9057320Z ::endgroup::
+2026-04-13T01:17:53.9057690Z ##[endgroup]
+2026-04-13T01:17:53.9060220Z ::group::Setting up auth
+2026-04-13T01:17:53.9060730Z ##[group]Setting up auth
+2026-04-13T01:17:53.9061420Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-13T01:17:53.9139540Z ##[debug]1
+2026-04-13T01:17:53.9141280Z ##[debug]
+2026-04-13T01:17:53.9144060Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-13T01:17:54.0183370Z ##[debug]0
+2026-04-13T01:17:54.0184190Z ##[debug]
+2026-04-13T01:17:54.0187310Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-13T01:17:54.0245080Z ##[debug]1
+2026-04-13T01:17:54.0246180Z ##[debug]
+2026-04-13T01:17:54.0248160Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-13T01:17:54.0864780Z ##[debug]0
+2026-04-13T01:17:54.0865390Z ##[debug]
+2026-04-13T01:17:54.0868400Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-13T01:17:54.0911290Z ##[debug]1
+2026-04-13T01:17:54.0911830Z ##[debug]
+2026-04-13T01:17:54.0913850Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-13T01:17:54.1638940Z ##[debug]0
+2026-04-13T01:17:54.1741020Z ##[debug]
+2026-04-13T01:17:54.1830060Z [command]/opt/homebrew/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-04-13T01:17:54.1831400Z ##[debug]0
+2026-04-13T01:17:54.1832060Z ##[debug]
+2026-04-13T01:17:54.1832640Z ::endgroup::
+2026-04-13T01:17:54.1832930Z ##[endgroup]
+2026-04-13T01:17:54.1833510Z ::group::Fetching the repository
+2026-04-13T01:17:54.1833900Z ##[group]Fetching the repository
+2026-04-13T01:17:54.1834850Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d883f23aa7d9f36f74f39943706f603d6f768a79:refs/remotes/origin/main
+2026-04-13T01:17:54.7811170Z From https://github.com/loosebird/aparoksha-template
+2026-04-13T01:17:54.7812490Z  * [new ref]         d883f23aa7d9f36f74f39943706f603d6f768a79 -> origin/main
+2026-04-13T01:17:54.7887570Z ##[debug]0
+2026-04-13T01:17:54.7888470Z ##[debug]
+2026-04-13T01:17:54.7889280Z ::endgroup::
+2026-04-13T01:17:54.7889600Z ##[endgroup]
+2026-04-13T01:17:54.7890250Z ::group::Determining the checkout info
+2026-04-13T01:17:54.7890670Z ##[group]Determining the checkout info
+2026-04-13T01:17:54.7892070Z ::endgroup::
+2026-04-13T01:17:54.7892420Z ##[endgroup]
+2026-04-13T01:17:54.7893150Z [command]/opt/homebrew/bin/git sparse-checkout disable
+2026-04-13T01:17:54.7957600Z ##[debug]0
+2026-04-13T01:17:54.7961690Z ##[debug]
+2026-04-13T01:17:54.7962730Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+2026-04-13T01:17:54.8011730Z ##[debug]0
+2026-04-13T01:17:54.8012480Z ##[debug]
+2026-04-13T01:17:54.8013100Z ::group::Checking out the ref
+2026-04-13T01:17:54.8013530Z ##[group]Checking out the ref
+2026-04-13T01:17:54.8014690Z [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-04-13T01:17:54.8119820Z Switched to a new branch 'main'
+2026-04-13T01:17:54.8129020Z branch 'main' set up to track 'origin/main'.
+2026-04-13T01:17:54.8132350Z ##[debug]0
+2026-04-13T01:17:54.8133300Z ##[debug]branch 'main' set up to track 'origin/main'.
+2026-04-13T01:17:54.8133850Z ##[debug]
+2026-04-13T01:17:54.8134700Z ::endgroup::
+2026-04-13T01:17:54.8135090Z ##[endgroup]
+2026-04-13T01:17:54.8200900Z ##[debug]0
+2026-04-13T01:17:54.8201910Z ##[debug]commit d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:54.8202860Z ##[debug]Author: viniciusnevescosta <vinicius.nevesco@gmail.com>
+2026-04-13T01:17:54.8203680Z ##[debug]Date:   Sun Apr 12 22:16:02 2026 -0300
+2026-04-13T01:17:54.8204280Z ##[debug]
+2026-04-13T01:17:54.8204680Z ##[debug]    ci(tools)!: Lint and format
+2026-04-13T01:17:54.8205190Z ##[debug]
+2026-04-13T01:17:54.8205740Z [command]/opt/homebrew/bin/git log -1 --format=%H
+2026-04-13T01:17:54.8251130Z d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:54.8252500Z ##[debug]0
+2026-04-13T01:17:54.8257510Z ##[debug]d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:54.8258260Z ##[debug]
+2026-04-13T01:17:54.8259220Z ##[debug]Unsetting HOME override
+2026-04-13T01:17:54.8263310Z ::remove-matcher owner=checkout-git::
+2026-04-13T01:17:54.8271910Z ##[debug]Removed matchers: 'checkout-git'
+2026-04-13T01:17:54.8334240Z ##[debug]Node Action run completed with exit code 0
+2026-04-13T01:17:54.8356210Z ##[debug]Save intra-action state isPost = true
+2026-04-13T01:17:54.8357720Z ##[debug]Save intra-action state setSafeDirectory = true
+2026-04-13T01:17:54.8358990Z ##[debug]Save intra-action state repositoryPath = /Users/runner/work/aparoksha-template/aparoksha-template
+2026-04-13T01:17:54.8362300Z ##[debug]Set output commit = d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:54.8363360Z ##[debug]Set output ref = refs/heads/main
+2026-04-13T01:17:54.8367170Z ##[debug]Finishing: Checkout

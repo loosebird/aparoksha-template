@@ -1,0 +1,55 @@
+﻿2026-04-13T01:17:53.2110830Z ##[debug]Starting: Set up job
+2026-04-13T01:17:53.2111450Z Current runner version: '2.333.1'
+2026-04-13T01:17:53.2126470Z ##[group]Runner Image Provisioner
+2026-04-13T01:17:53.2126980Z Hosted Compute Agent
+2026-04-13T01:17:53.2127310Z Version: 20260213.493
+2026-04-13T01:17:53.2127720Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-04-13T01:17:53.2128150Z Build Date: 2026-02-13T00:28:41Z
+2026-04-13T01:17:53.2128690Z Worker ID: {469c6d91-2324-41d5-9576-da617f6c5071}
+2026-04-13T01:17:53.2129100Z Azure Region: westus
+2026-04-13T01:17:53.2129410Z ##[endgroup]
+2026-04-13T01:17:53.2131020Z ##[group]Operating System
+2026-04-13T01:17:53.2131590Z macOS
+2026-04-13T01:17:53.2131860Z 15.7.4
+2026-04-13T01:17:53.2132120Z 24G517
+2026-04-13T01:17:53.2132390Z ##[endgroup]
+2026-04-13T01:17:53.2132990Z ##[group]Runner Image
+2026-04-13T01:17:53.2133520Z Image: macos-15-arm64
+2026-04-13T01:17:53.2134050Z Version: 20260406.0256.1
+2026-04-13T01:17:53.2135220Z Included Software: https://github.com/actions/runner-images/blob/macos-15-arm64/20260406.0256/images/macos/macos-15-arm64-Readme.md
+2026-04-13T01:17:53.2136600Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-15-arm64%2F20260406.0256
+2026-04-13T01:17:53.2137240Z ##[endgroup]
+2026-04-13T01:17:53.2137860Z ##[group]GITHUB_TOKEN Permissions
+2026-04-13T01:17:53.2139510Z Contents: read
+2026-04-13T01:17:53.2139850Z Metadata: read
+2026-04-13T01:17:53.2140150Z ##[endgroup]
+2026-04-13T01:17:53.2141550Z Secret source: Actions
+2026-04-13T01:17:53.2142080Z ##[debug]Primary repository: loosebird/aparoksha-template
+2026-04-13T01:17:53.2142560Z Prepare workflow directory
+2026-04-13T01:17:53.2185330Z ##[debug]Creating pipeline directory: '/Users/runner/work/aparoksha-template'
+2026-04-13T01:17:53.2187840Z ##[debug]Creating workspace directory: '/Users/runner/work/aparoksha-template/aparoksha-template'
+2026-04-13T01:17:53.2189180Z ##[debug]Update context data
+2026-04-13T01:17:53.2191130Z ##[debug]Evaluating job-level environment variables
+2026-04-13T01:17:53.2362800Z ##[debug]Evaluating job container
+2026-04-13T01:17:53.2364320Z ##[debug]Evaluating job service containers
+2026-04-13T01:17:53.2365550Z ##[debug]Evaluating job defaults
+2026-04-13T01:17:53.2382700Z Prepare all required actions
+2026-04-13T01:17:53.2410960Z Getting action download info
+2026-04-13T01:17:53.4225620Z Download action repository 'actions/checkout@v5' (SHA:93cb6efe18208431cddfb8368fd83d5badbf9bfd)
+2026-04-13T01:17:53.4249490Z ##[debug]Copied action archive '/Users/runner/actionarchivecache/actions_checkout/93cb6efe18208431cddfb8368fd83d5badbf9bfd.tar.gz' to '/Users/runner/work/_actions/_temp_1201d9fc-40b6-4c4f-81b4-4bbe5d609710/0d0b31ea-7edb-4863-8b21-4ab64495698f.tar.gz'
+2026-04-13T01:17:53.7092710Z ##[debug]Unwrap 'actions-checkout-93cb6ef' to '/Users/runner/work/_actions/actions/checkout/v5'
+2026-04-13T01:17:53.7291240Z ##[debug]Archive '/Users/runner/work/_actions/_temp_1201d9fc-40b6-4c4f-81b4-4bbe5d609710/0d0b31ea-7edb-4863-8b21-4ab64495698f.tar.gz' has been unzipped into '/Users/runner/work/_actions/actions/checkout/v5'.
+2026-04-13T01:17:53.7675520Z Download action repository 'SwiftyLab/setup-swift@v1.13.0' (SHA:86a5d3b9cffda409de636eb5f63f3f5696fdbe36)
+2026-04-13T01:17:55.1748320Z ##[debug]Download 'https://api.github.com/repos/SwiftyLab/setup-swift/tarball/86a5d3b9cffda409de636eb5f63f3f5696fdbe36' to '/Users/runner/work/_actions/_temp_c2e37689-75fa-4e50-8855-1c7626438e4c/7b8f0b43-9ec7-45a1-a8eb-8c35a23b37b0.tar.gz'
+2026-04-13T01:17:55.2573600Z ##[debug]Unwrap 'SwiftyLab-setup-swift-86a5d3b' to '/Users/runner/work/_actions/SwiftyLab/setup-swift/v1.13.0'
+2026-04-13T01:17:55.2680700Z ##[debug]Archive '/Users/runner/work/_actions/_temp_c2e37689-75fa-4e50-8855-1c7626438e4c/7b8f0b43-9ec7-45a1-a8eb-8c35a23b37b0.tar.gz' has been unzipped into '/Users/runner/work/_actions/SwiftyLab/setup-swift/v1.13.0'.
+2026-04-13T01:17:55.2871260Z ##[debug]action.yml for action: '/Users/runner/work/_actions/actions/checkout/v5/action.yml'.
+2026-04-13T01:17:55.3600980Z ##[debug]action.yml for action: '/Users/runner/work/_actions/SwiftyLab/setup-swift/v1.13.0/action.yml'.
+2026-04-13T01:17:55.3693070Z ##[debug]Set step '__actions_checkout' display name to: 'Checkout'
+2026-04-13T01:17:55.3696180Z ##[debug]Set step '__SwiftyLab_setup-swift' display name to: 'Setup Swift'
+2026-04-13T01:17:55.3697990Z ##[debug]Set step '__run' display name to: 'Install Linux dependencies'
+2026-04-13T01:17:55.3699730Z ##[debug]Set step '__run_2' display name to: 'Show toolchain'
+2026-04-13T01:17:55.3701360Z ##[debug]Set step '__run_3' display name to: 'Build'
+2026-04-13T01:17:55.3701930Z Complete job name: Build (macos-arm64)
+2026-04-13T01:17:55.3725530Z ##[debug]Collect running processes for tracking orphan processes.
+2026-04-13T01:17:55.3844570Z ##[debug]Finishing: Set up job

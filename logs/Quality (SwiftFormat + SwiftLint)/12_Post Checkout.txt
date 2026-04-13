@@ -1,0 +1,65 @@
+﻿2026-04-13T01:18:20.8000890Z ##[debug]Evaluating condition for step: 'Post Checkout'
+2026-04-13T01:18:20.8002210Z ##[debug]Evaluating: always()
+2026-04-13T01:18:20.8002450Z ##[debug]Evaluating always:
+2026-04-13T01:18:20.8003070Z ##[debug]=> true
+2026-04-13T01:18:20.8003340Z ##[debug]Result: true
+2026-04-13T01:18:20.8003680Z ##[debug]Starting: Post Checkout
+2026-04-13T01:18:20.8043290Z ##[debug]Loading inputs
+2026-04-13T01:18:20.8044640Z ##[debug]Evaluating: github.repository
+2026-04-13T01:18:20.8044990Z ##[debug]Evaluating Index:
+2026-04-13T01:18:20.8045160Z ##[debug]..Evaluating github:
+2026-04-13T01:18:20.8045380Z ##[debug]..=> Object
+2026-04-13T01:18:20.8045560Z ##[debug]..Evaluating String:
+2026-04-13T01:18:20.8045740Z ##[debug]..=> 'repository'
+2026-04-13T01:18:20.8045970Z ##[debug]=> 'loosebird/aparoksha-template'
+2026-04-13T01:18:20.8046230Z ##[debug]Result: 'loosebird/aparoksha-template'
+2026-04-13T01:18:20.8047840Z ##[debug]Evaluating: github.token
+2026-04-13T01:18:20.8048040Z ##[debug]Evaluating Index:
+2026-04-13T01:18:20.8048240Z ##[debug]..Evaluating github:
+2026-04-13T01:18:20.8048410Z ##[debug]..=> Object
+2026-04-13T01:18:20.8048570Z ##[debug]..Evaluating String:
+2026-04-13T01:18:20.8048750Z ##[debug]..=> 'token'
+2026-04-13T01:18:20.8049130Z ##[debug]=> '***'
+2026-04-13T01:18:20.8049390Z ##[debug]Result: '***'
+2026-04-13T01:18:20.8059330Z ##[debug]Loading env
+2026-04-13T01:18:20.8063230Z Post job cleanup.
+2026-04-13T01:18:21.0400840Z ##[debug]Getting git version
+2026-04-13T01:18:21.0407920Z [command]/opt/homebrew/bin/git version
+2026-04-13T01:18:21.0472030Z git version 2.53.0
+2026-04-13T01:18:21.0481010Z ##[debug]0
+2026-04-13T01:18:21.0481440Z ##[debug]git version 2.53.0
+2026-04-13T01:18:21.0481590Z ##[debug]
+2026-04-13T01:18:21.0481920Z ##[debug]Set git useragent to: git/2.53.0 (github-actions-checkout)
+2026-04-13T01:18:21.0483040Z ::add-mask::***
+2026-04-13T01:18:21.0488560Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/e081eec9-1f27-4961-be06-e3a51545c5e1/.gitconfig'
+2026-04-13T01:18:21.0494130Z Temporarily overriding HOME='/Users/runner/work/_temp/e081eec9-1f27-4961-be06-e3a51545c5e1' before making global git config changes
+2026-04-13T01:18:21.0494910Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-13T01:18:21.0497780Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/aparoksha-template/aparoksha-template
+2026-04-13T01:18:21.0545110Z ##[debug]0
+2026-04-13T01:18:21.0545350Z ##[debug]
+2026-04-13T01:18:21.0549100Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-13T01:18:21.0591230Z ##[debug]1
+2026-04-13T01:18:21.0591520Z ##[debug]
+2026-04-13T01:18:21.0594950Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-13T01:18:21.1213850Z ##[debug]0
+2026-04-13T01:18:21.1214160Z ##[debug]
+2026-04-13T01:18:21.1217730Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-13T01:18:21.1258460Z http.https://github.com/.extraheader
+2026-04-13T01:18:21.1260560Z ##[debug]0
+2026-04-13T01:18:21.1261010Z ##[debug]http.https://github.com/.extraheader
+2026-04-13T01:18:21.1261230Z ##[debug]
+2026-04-13T01:18:21.1263980Z [command]/opt/homebrew/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-04-13T01:18:21.1308570Z ##[debug]0
+2026-04-13T01:18:21.1308960Z ##[debug]
+2026-04-13T01:18:21.1312820Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-13T01:18:21.1896050Z ##[debug]0
+2026-04-13T01:18:21.1896330Z ##[debug]
+2026-04-13T01:18:21.1899860Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-13T01:18:21.1941040Z ##[debug]1
+2026-04-13T01:18:21.1941810Z ##[debug]
+2026-04-13T01:18:21.1943850Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-13T01:18:21.3098740Z ##[debug]0
+2026-04-13T01:18:21.3200600Z ##[debug]
+2026-04-13T01:18:21.3202380Z ##[debug]Unsetting HOME override
+2026-04-13T01:18:21.3203620Z ##[debug]Node Action run completed with exit code 0
+2026-04-13T01:18:21.3206430Z ##[debug]Finishing: Post Checkout

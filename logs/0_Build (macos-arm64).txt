@@ -1,0 +1,508 @@
+﻿2026-04-13T01:17:53.1961590Z ##[debug]Starting: Build (macos-arm64)
+2026-04-13T01:17:53.1973740Z ##[debug]Cleaning runner temp folder: /Users/runner/work/_temp
+2026-04-13T01:17:53.2110860Z ##[debug]Starting: Set up job
+2026-04-13T01:17:53.2111460Z Current runner version: '2.333.1'
+2026-04-13T01:17:53.2126500Z ##[group]Runner Image Provisioner
+2026-04-13T01:17:53.2126980Z Hosted Compute Agent
+2026-04-13T01:17:53.2127310Z Version: 20260213.493
+2026-04-13T01:17:53.2127730Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-04-13T01:17:53.2128150Z Build Date: 2026-02-13T00:28:41Z
+2026-04-13T01:17:53.2128700Z Worker ID: {469c6d91-2324-41d5-9576-da617f6c5071}
+2026-04-13T01:17:53.2129110Z Azure Region: westus
+2026-04-13T01:17:53.2129410Z ##[endgroup]
+2026-04-13T01:17:53.2131100Z ##[group]Operating System
+2026-04-13T01:17:53.2131590Z macOS
+2026-04-13T01:17:53.2131860Z 15.7.4
+2026-04-13T01:17:53.2132120Z 24G517
+2026-04-13T01:17:53.2132400Z ##[endgroup]
+2026-04-13T01:17:53.2132990Z ##[group]Runner Image
+2026-04-13T01:17:53.2133530Z Image: macos-15-arm64
+2026-04-13T01:17:53.2134060Z Version: 20260406.0256.1
+2026-04-13T01:17:53.2135310Z Included Software: https://github.com/actions/runner-images/blob/macos-15-arm64/20260406.0256/images/macos/macos-15-arm64-Readme.md
+2026-04-13T01:17:53.2136610Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-15-arm64%2F20260406.0256
+2026-04-13T01:17:53.2137250Z ##[endgroup]
+2026-04-13T01:17:53.2137860Z ##[group]GITHUB_TOKEN Permissions
+2026-04-13T01:17:53.2139530Z Contents: read
+2026-04-13T01:17:53.2139850Z Metadata: read
+2026-04-13T01:17:53.2140160Z ##[endgroup]
+2026-04-13T01:17:53.2141560Z Secret source: Actions
+2026-04-13T01:17:53.2142090Z ##[debug]Primary repository: loosebird/aparoksha-template
+2026-04-13T01:17:53.2142560Z Prepare workflow directory
+2026-04-13T01:17:53.2185350Z ##[debug]Creating pipeline directory: '/Users/runner/work/aparoksha-template'
+2026-04-13T01:17:53.2187840Z ##[debug]Creating workspace directory: '/Users/runner/work/aparoksha-template/aparoksha-template'
+2026-04-13T01:17:53.2189190Z ##[debug]Update context data
+2026-04-13T01:17:53.2191150Z ##[debug]Evaluating job-level environment variables
+2026-04-13T01:17:53.2362840Z ##[debug]Evaluating job container
+2026-04-13T01:17:53.2364320Z ##[debug]Evaluating job service containers
+2026-04-13T01:17:53.2365560Z ##[debug]Evaluating job defaults
+2026-04-13T01:17:53.2382710Z Prepare all required actions
+2026-04-13T01:17:53.2410980Z Getting action download info
+2026-04-13T01:17:53.4225650Z Download action repository 'actions/checkout@v5' (SHA:93cb6efe18208431cddfb8368fd83d5badbf9bfd)
+2026-04-13T01:17:53.4249540Z ##[debug]Copied action archive '/Users/runner/actionarchivecache/actions_checkout/93cb6efe18208431cddfb8368fd83d5badbf9bfd.tar.gz' to '/Users/runner/work/_actions/_temp_1201d9fc-40b6-4c4f-81b4-4bbe5d609710/0d0b31ea-7edb-4863-8b21-4ab64495698f.tar.gz'
+2026-04-13T01:17:53.7092800Z ##[debug]Unwrap 'actions-checkout-93cb6ef' to '/Users/runner/work/_actions/actions/checkout/v5'
+2026-04-13T01:17:53.7291350Z ##[debug]Archive '/Users/runner/work/_actions/_temp_1201d9fc-40b6-4c4f-81b4-4bbe5d609710/0d0b31ea-7edb-4863-8b21-4ab64495698f.tar.gz' has been unzipped into '/Users/runner/work/_actions/actions/checkout/v5'.
+2026-04-13T01:17:53.7675550Z Download action repository 'SwiftyLab/setup-swift@v1.13.0' (SHA:86a5d3b9cffda409de636eb5f63f3f5696fdbe36)
+2026-04-13T01:17:55.1748370Z ##[debug]Download 'https://api.github.com/repos/SwiftyLab/setup-swift/tarball/86a5d3b9cffda409de636eb5f63f3f5696fdbe36' to '/Users/runner/work/_actions/_temp_c2e37689-75fa-4e50-8855-1c7626438e4c/7b8f0b43-9ec7-45a1-a8eb-8c35a23b37b0.tar.gz'
+2026-04-13T01:17:55.2573640Z ##[debug]Unwrap 'SwiftyLab-setup-swift-86a5d3b' to '/Users/runner/work/_actions/SwiftyLab/setup-swift/v1.13.0'
+2026-04-13T01:17:55.2680810Z ##[debug]Archive '/Users/runner/work/_actions/_temp_c2e37689-75fa-4e50-8855-1c7626438e4c/7b8f0b43-9ec7-45a1-a8eb-8c35a23b37b0.tar.gz' has been unzipped into '/Users/runner/work/_actions/SwiftyLab/setup-swift/v1.13.0'.
+2026-04-13T01:17:55.2871290Z ##[debug]action.yml for action: '/Users/runner/work/_actions/actions/checkout/v5/action.yml'.
+2026-04-13T01:17:55.3601790Z ##[debug]action.yml for action: '/Users/runner/work/_actions/SwiftyLab/setup-swift/v1.13.0/action.yml'.
+2026-04-13T01:17:55.3693160Z ##[debug]Set step '__actions_checkout' display name to: 'Checkout'
+2026-04-13T01:17:55.3696190Z ##[debug]Set step '__SwiftyLab_setup-swift' display name to: 'Setup Swift'
+2026-04-13T01:17:55.3698000Z ##[debug]Set step '__run' display name to: 'Install Linux dependencies'
+2026-04-13T01:17:55.3699730Z ##[debug]Set step '__run_2' display name to: 'Show toolchain'
+2026-04-13T01:17:55.3701370Z ##[debug]Set step '__run_3' display name to: 'Build'
+2026-04-13T01:17:55.3701930Z Complete job name: Build (macos-arm64)
+2026-04-13T01:17:55.3725570Z ##[debug]Collect running processes for tracking orphan processes.
+2026-04-13T01:17:55.3844600Z ##[debug]Finishing: Set up job
+2026-04-13T01:17:55.3938850Z ##[debug]Evaluating condition for step: 'Checkout'
+2026-04-13T01:17:55.3963140Z ##[debug]Evaluating: success()
+2026-04-13T01:17:55.3966720Z ##[debug]Evaluating success:
+2026-04-13T01:17:55.3977440Z ##[debug]=> true
+2026-04-13T01:17:55.3982170Z ##[debug]Result: true
+2026-04-13T01:17:55.4000050Z ##[debug]Starting: Checkout
+2026-04-13T01:17:55.4080180Z ##[debug]Register post job cleanup for action: actions/checkout@v5
+2026-04-13T01:17:55.4131960Z ##[debug]Loading inputs
+2026-04-13T01:17:55.4139030Z ##[debug]Evaluating: github.repository
+2026-04-13T01:17:55.4139690Z ##[debug]Evaluating Index:
+2026-04-13T01:17:55.4140950Z ##[debug]..Evaluating github:
+2026-04-13T01:17:55.4141630Z ##[debug]..=> Object
+2026-04-13T01:17:55.4144730Z ##[debug]..Evaluating String:
+2026-04-13T01:17:55.4145240Z ##[debug]..=> 'repository'
+2026-04-13T01:17:55.4147680Z ##[debug]=> 'loosebird/aparoksha-template'
+2026-04-13T01:17:55.4148650Z ##[debug]Result: 'loosebird/aparoksha-template'
+2026-04-13T01:17:55.4151130Z ##[debug]Evaluating: github.token
+2026-04-13T01:17:55.4151530Z ##[debug]Evaluating Index:
+2026-04-13T01:17:55.4151880Z ##[debug]..Evaluating github:
+2026-04-13T01:17:55.4152220Z ##[debug]..=> Object
+2026-04-13T01:17:55.4152540Z ##[debug]..Evaluating String:
+2026-04-13T01:17:55.4152880Z ##[debug]..=> 'token'
+2026-04-13T01:17:55.4153400Z ##[debug]=> '***'
+2026-04-13T01:17:55.4153810Z ##[debug]Result: '***'
+2026-04-13T01:17:55.4166910Z ##[debug]Loading env
+2026-04-13T01:17:55.4204750Z ##[group]Run actions/checkout@v5
+2026-04-13T01:17:55.4205200Z with:
+2026-04-13T01:17:55.4205500Z   repository: loosebird/aparoksha-template
+2026-04-13T01:17:55.4205970Z   token: ***
+2026-04-13T01:17:55.4206250Z   ssh-strict: true
+2026-04-13T01:17:55.4206530Z   ssh-user: git
+2026-04-13T01:17:55.4206820Z   persist-credentials: true
+2026-04-13T01:17:55.4207140Z   clean: true
+2026-04-13T01:17:55.4207430Z   sparse-checkout-cone-mode: true
+2026-04-13T01:17:55.4207770Z   fetch-depth: 1
+2026-04-13T01:17:55.4208050Z   fetch-tags: false
+2026-04-13T01:17:55.4208350Z   show-progress: true
+2026-04-13T01:17:55.4208640Z   lfs: false
+2026-04-13T01:17:55.4208920Z   submodules: false
+2026-04-13T01:17:55.4209220Z   set-safe-directory: true
+2026-04-13T01:17:55.4209630Z env:
+2026-04-13T01:17:55.4209920Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:17:55.4210280Z ##[endgroup]
+2026-04-13T01:17:55.7707260Z ##[debug]GITHUB_WORKSPACE = '/Users/runner/work/aparoksha-template/aparoksha-template'
+2026-04-13T01:17:55.7708820Z ##[debug]qualified repository = 'loosebird/aparoksha-template'
+2026-04-13T01:17:55.7709750Z ##[debug]ref = 'refs/heads/main'
+2026-04-13T01:17:55.7710620Z ##[debug]commit = 'd883f23aa7d9f36f74f39943706f603d6f768a79'
+2026-04-13T01:17:55.7711610Z ##[debug]clean = true
+2026-04-13T01:17:55.7712370Z ##[debug]filter = undefined
+2026-04-13T01:17:55.7713200Z ##[debug]fetch depth = 1
+2026-04-13T01:17:55.7713940Z ##[debug]fetch tags = false
+2026-04-13T01:17:55.7714710Z ##[debug]show progress = true
+2026-04-13T01:17:55.7715670Z ##[debug]lfs = false
+2026-04-13T01:17:55.7716620Z ##[debug]submodules = false
+2026-04-13T01:17:55.7717730Z ##[debug]recursive submodules = false
+2026-04-13T01:17:55.7720790Z ##[debug]GitHub Host URL = 
+2026-04-13T01:17:55.7723030Z ::add-matcher::/Users/runner/work/_actions/actions/checkout/v5/dist/problem-matcher.json
+2026-04-13T01:17:55.7783600Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+2026-04-13T01:17:55.7788660Z Syncing repository: loosebird/aparoksha-template
+2026-04-13T01:17:55.7790710Z ::group::Getting Git version info
+2026-04-13T01:17:55.7792020Z ##[group]Getting Git version info
+2026-04-13T01:17:55.7793270Z Working directory is '/Users/runner/work/aparoksha-template/aparoksha-template'
+2026-04-13T01:17:55.7795230Z ##[debug]Getting git version
+2026-04-13T01:17:55.7796280Z [command]/opt/homebrew/bin/git version
+2026-04-13T01:17:55.8425500Z git version 2.53.0
+2026-04-13T01:17:55.8434660Z ##[debug]0
+2026-04-13T01:17:55.8436390Z ##[debug]git version 2.53.0
+2026-04-13T01:17:55.8437200Z ##[debug]
+2026-04-13T01:17:55.8438570Z ##[debug]Set git useragent to: git/2.53.0 (github-actions-checkout)
+2026-04-13T01:17:55.8440320Z ::endgroup::
+2026-04-13T01:17:55.8441090Z ##[endgroup]
+2026-04-13T01:17:55.8445460Z ::add-mask::***
+2026-04-13T01:17:55.8447730Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/c989eafe-af51-4a3a-9a2a-0107cdeb5989/.gitconfig'
+2026-04-13T01:17:55.8450660Z Temporarily overriding HOME='/Users/runner/work/_temp/c989eafe-af51-4a3a-9a2a-0107cdeb5989' before making global git config changes
+2026-04-13T01:17:55.8453320Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-13T01:17:55.8455960Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/aparoksha-template/aparoksha-template
+2026-04-13T01:17:55.8571620Z ##[debug]0
+2026-04-13T01:17:55.8575460Z ##[debug]
+2026-04-13T01:17:55.8576850Z Deleting the contents of '/Users/runner/work/aparoksha-template/aparoksha-template'
+2026-04-13T01:17:55.8579050Z ::group::Initializing the repository
+2026-04-13T01:17:55.8580170Z ##[group]Initializing the repository
+2026-04-13T01:17:55.8581640Z [command]/opt/homebrew/bin/git init /Users/runner/work/aparoksha-template/aparoksha-template
+2026-04-13T01:17:55.8762050Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-13T01:17:55.8763830Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-04-13T01:17:55.8765390Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-04-13T01:17:55.8766600Z hint: call:
+2026-04-13T01:17:55.8767190Z hint:
+2026-04-13T01:17:55.8767950Z hint: 	git config --global init.defaultBranch <name>
+2026-04-13T01:17:55.8768910Z hint:
+2026-04-13T01:17:55.8769760Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-13T01:17:55.8771300Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-13T01:17:55.8772660Z hint:
+2026-04-13T01:17:55.8773280Z hint: 	git branch -m <name>
+2026-04-13T01:17:55.8773970Z hint:
+2026-04-13T01:17:55.8774950Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-04-13T01:17:55.8776850Z Initialized empty Git repository in /Users/runner/work/aparoksha-template/aparoksha-template/.git/
+2026-04-13T01:17:55.8778920Z ##[debug]0
+2026-04-13T01:17:55.8780570Z ##[debug]Initialized empty Git repository in /Users/runner/work/aparoksha-template/aparoksha-template/.git/
+2026-04-13T01:17:55.8782030Z ##[debug]
+2026-04-13T01:17:55.8783220Z [command]/opt/homebrew/bin/git remote add origin https://github.com/loosebird/aparoksha-template
+2026-04-13T01:17:55.8836750Z ##[debug]0
+2026-04-13T01:17:55.8838280Z ##[debug]
+2026-04-13T01:17:55.8839510Z ::endgroup::
+2026-04-13T01:17:55.8840160Z ##[endgroup]
+2026-04-13T01:17:55.8841310Z ::group::Disabling automatic garbage collection
+2026-04-13T01:17:55.8842320Z ##[group]Disabling automatic garbage collection
+2026-04-13T01:17:55.8843610Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+2026-04-13T01:17:55.8894630Z ##[debug]0
+2026-04-13T01:17:55.8896180Z ##[debug]
+2026-04-13T01:17:55.8897230Z ::endgroup::
+2026-04-13T01:17:55.8897830Z ##[endgroup]
+2026-04-13T01:17:55.8898930Z ::group::Setting up auth
+2026-04-13T01:17:55.8899640Z ##[group]Setting up auth
+2026-04-13T01:17:55.8900870Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-13T01:17:55.8949460Z ##[debug]1
+2026-04-13T01:17:55.8950550Z ##[debug]
+2026-04-13T01:17:55.8953920Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-13T01:17:56.0018890Z ##[debug]0
+2026-04-13T01:17:56.0019980Z ##[debug]
+2026-04-13T01:17:56.0023040Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-13T01:17:56.0068530Z ##[debug]1
+2026-04-13T01:17:56.0069620Z ##[debug]
+2026-04-13T01:17:56.0086550Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-13T01:17:56.0696750Z ##[debug]0
+2026-04-13T01:17:56.0697740Z ##[debug]
+2026-04-13T01:17:56.0700390Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-13T01:17:56.0747060Z ##[debug]1
+2026-04-13T01:17:56.0748000Z ##[debug]
+2026-04-13T01:17:56.0750500Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-13T01:17:56.1595500Z ##[debug]0
+2026-04-13T01:17:56.1697830Z ##[debug]
+2026-04-13T01:17:56.1800260Z [command]/opt/homebrew/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-04-13T01:17:56.1904190Z ##[debug]0
+2026-04-13T01:17:56.1918280Z ##[debug]
+2026-04-13T01:17:56.1953580Z ::endgroup::
+2026-04-13T01:17:56.1954180Z ##[endgroup]
+2026-04-13T01:17:56.1956980Z ::group::Fetching the repository
+2026-04-13T01:17:56.1957850Z ##[group]Fetching the repository
+2026-04-13T01:17:56.1960340Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d883f23aa7d9f36f74f39943706f603d6f768a79:refs/remotes/origin/main
+2026-04-13T01:17:56.8375280Z From https://github.com/loosebird/aparoksha-template
+2026-04-13T01:17:56.8376730Z  * [new ref]         d883f23aa7d9f36f74f39943706f603d6f768a79 -> origin/main
+2026-04-13T01:17:56.8453840Z ##[debug]0
+2026-04-13T01:17:56.8454810Z ##[debug]
+2026-04-13T01:17:56.8455700Z ::endgroup::
+2026-04-13T01:17:56.8456210Z ##[endgroup]
+2026-04-13T01:17:56.8457110Z ::group::Determining the checkout info
+2026-04-13T01:17:56.8457890Z ##[group]Determining the checkout info
+2026-04-13T01:17:56.8459120Z ::endgroup::
+2026-04-13T01:17:56.8459770Z ##[endgroup]
+2026-04-13T01:17:56.8460560Z [command]/opt/homebrew/bin/git sparse-checkout disable
+2026-04-13T01:17:56.8519130Z ##[debug]0
+2026-04-13T01:17:56.8520180Z ##[debug]
+2026-04-13T01:17:56.8522500Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+2026-04-13T01:17:56.8571810Z ##[debug]0
+2026-04-13T01:17:56.8572780Z ##[debug]
+2026-04-13T01:17:56.8573720Z ::group::Checking out the ref
+2026-04-13T01:17:56.8574470Z ##[group]Checking out the ref
+2026-04-13T01:17:56.8575710Z [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-04-13T01:17:56.8685250Z Switched to a new branch 'main'
+2026-04-13T01:17:56.8697110Z branch 'main' set up to track 'origin/main'.
+2026-04-13T01:17:56.8707590Z ##[debug]0
+2026-04-13T01:17:56.8709920Z ##[debug]branch 'main' set up to track 'origin/main'.
+2026-04-13T01:17:56.8710760Z ##[debug]
+2026-04-13T01:17:56.8715500Z ::endgroup::
+2026-04-13T01:17:56.8716040Z ##[endgroup]
+2026-04-13T01:17:56.8781200Z ##[debug]0
+2026-04-13T01:17:56.8782550Z ##[debug]commit d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:56.8783640Z ##[debug]Author: viniciusnevescosta <vinicius.nevesco@gmail.com>
+2026-04-13T01:17:56.8785010Z ##[debug]Date:   Sun Apr 12 22:16:02 2026 -0300
+2026-04-13T01:17:56.8785760Z ##[debug]
+2026-04-13T01:17:56.8787200Z ##[debug]    ci(tools)!: Lint and format
+2026-04-13T01:17:56.8788260Z ##[debug]
+2026-04-13T01:17:56.8789050Z [command]/opt/homebrew/bin/git log -1 --format=%H
+2026-04-13T01:17:56.8852370Z d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:56.8853930Z ##[debug]0
+2026-04-13T01:17:56.8855040Z ##[debug]d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:56.8855810Z ##[debug]
+2026-04-13T01:17:56.8858000Z ##[debug]Unsetting HOME override
+2026-04-13T01:17:56.8861640Z ::remove-matcher owner=checkout-git::
+2026-04-13T01:17:56.8869510Z ##[debug]Removed matchers: 'checkout-git'
+2026-04-13T01:17:56.8913900Z ##[debug]Node Action run completed with exit code 0
+2026-04-13T01:17:56.8937410Z ##[debug]Save intra-action state isPost = true
+2026-04-13T01:17:56.8938330Z ##[debug]Save intra-action state setSafeDirectory = true
+2026-04-13T01:17:56.8939730Z ##[debug]Save intra-action state repositoryPath = /Users/runner/work/aparoksha-template/aparoksha-template
+2026-04-13T01:17:56.8943010Z ##[debug]Set output commit = d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:56.8943960Z ##[debug]Set output ref = refs/heads/main
+2026-04-13T01:17:56.8947490Z ##[debug]Finishing: Checkout
+2026-04-13T01:17:56.8965420Z ##[debug]Evaluating condition for step: 'Setup Swift'
+2026-04-13T01:17:56.8968860Z ##[debug]Evaluating: success()
+2026-04-13T01:17:56.8969800Z ##[debug]Evaluating success:
+2026-04-13T01:17:56.8970680Z ##[debug]=> true
+2026-04-13T01:17:56.8971540Z ##[debug]Result: true
+2026-04-13T01:17:56.8972600Z ##[debug]Starting: Setup Swift
+2026-04-13T01:17:56.9027590Z ##[debug]Loading inputs
+2026-04-13T01:17:56.9049440Z ##[debug]Loading env
+2026-04-13T01:17:56.9065210Z ##[group]Run SwiftyLab/setup-swift@v1.13.0
+2026-04-13T01:17:56.9066020Z with:
+2026-04-13T01:17:56.9066500Z   swift-version: 6.2.4
+2026-04-13T01:17:56.9067050Z   development: false
+2026-04-13T01:17:56.9067600Z   check-latest: false
+2026-04-13T01:17:56.9068130Z   dry-run: false
+2026-04-13T01:17:56.9068640Z   cache-snapshot: true
+2026-04-13T01:17:56.9069210Z   prefer-oss-toolchain: false
+2026-04-13T01:17:56.9069880Z   prefer-visual-studio-linker: false
+2026-04-13T01:17:56.9070570Z   update-sdk-modules: false
+2026-04-13T01:17:56.9071190Z env:
+2026-04-13T01:17:56.9071710Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:17:56.9072410Z ##[endgroup]
+2026-04-13T01:17:57.0715150Z ##[debug]Input "6.2.4" not an URL
+2026-04-13T01:17:57.1237960Z ##[debug]Using latest 6.2.4 toolchain requirement
+2026-04-13T01:17:57.1239210Z ::group::Syncing swift.org data
+2026-04-13T01:17:57.1239860Z ##[group]Syncing swift.org data
+2026-04-13T01:17:57.1254130Z ##[debug]Recieved swift.org metadata: "{"commit":"50f426af8cb83550c16c1bac95fb36ad68f2fa68","release":{"name":"6.3","tag":"swift-6.3-RELEASE","xcode":"Xcode 26.4","xcode_release":true,"date":"2026-03-24T00:00:00.000Z","platforms":[{"name":"Ubuntu 22.04","platform":"Linux","docker":"6.3-jammy","archs":["x86_64","aarch64"]},{"name":"Ubuntu 24.04","platform":"Linux","docker":"6.3-noble","archs":["x86_64","aarch64"]},{"name":"Debian 12","platform":"Linux","docker":"6.3-bookworm","archs":["x86_64","aarch64"]},{"name":"Fedora 39","platform":"Linux","docker":"6.3-fedora39","archs":["x86_64","aarch64"]},{"name":"Fedora 41","platform":"Linux","docker":"6.3-fedora41","archs":["x86_64","aarch64"]},{"name":"Amazon Linux 2","platform":"Linux","docker":"6.3-amazonlinux2","archs":["x86_64","aarch64"]},{"name":"Red Hat Universal Base Image 9","platform":"Linux","docker":"6.3-rhel-ubi9","dir":"ubi9","archs":["x86_64","aarch64"]},{"name":"Windows 10","platform":"Windows","docker":"6.3-windowsservercore-ltsc2022","archs":["x86_64","arm64"]},{"name":"Static SDK","platform":"static-sdk","version":"0.1.0","checksum":"d2078b69bdeb5c31202c10e9d8a11d6f66f82938b51a4b75f032ccb35c4c286c","archs":["x86_64","arm64"]},{"name":"Wasm SDK","platform":"wasm-sdk","checksum":"9fa4016ee632c7e9e906608ec3b55cf13dfc4dff44e47574c5af58064dc33fd9","archs":["x86_64","arm64"]},{"name":"Android SDK","platform":"android-sdk","checksum":"2f2942c4bcea7965a08665206212c66991dabe23725aeec7c4365fc91acad088","archs":["x86_64","arm64"]}]},"dev":{"name":"6.3","date":"2026-03-05T16:10:00.000Z","tag":"swift-6.3-DEVELOPMENT-SNAPSHOT-2026-03-05-a"},"snapshot":{"date":"2026-04-01T16:10:00.000Z","tag":"swift-DEVELOPMENT-SNAPSHOT-2026-04-01-a"}}"
+2026-04-13T01:17:57.1269460Z ##[debug]Adding submodule at "/Users/runner/work/_actions/SwiftyLab/setup-swift/v1.13.0/swiftorg" directory
+2026-04-13T01:17:57.1271180Z [command]/opt/homebrew/bin/git init /Users/runner/work/_actions/SwiftyLab/setup-swift/v1.13.0/swiftorg
+2026-04-13T01:17:57.1372400Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-13T01:17:57.1410030Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-04-13T01:17:57.1425660Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-04-13T01:17:57.1426940Z hint: call:
+2026-04-13T01:17:57.1427550Z hint:
+2026-04-13T01:17:57.1428290Z hint: 	git config --global init.defaultBranch <name>
+2026-04-13T01:17:57.1429160Z hint:
+2026-04-13T01:17:57.1429980Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-13T01:17:57.1431980Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-13T01:17:57.1433150Z hint:
+2026-04-13T01:17:57.1433810Z hint: 	git branch -m <name>
+2026-04-13T01:17:57.1434490Z hint:
+2026-04-13T01:17:57.1435420Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-04-13T01:17:57.1437310Z Initialized empty Git repository in /Users/runner/work/_actions/SwiftyLab/setup-swift/v1.13.0/swiftorg/.git/
+2026-04-13T01:17:57.1439600Z [command]/opt/homebrew/bin/git fetch https://github.com/apple/swift-org-website.git 50f426af8cb83550c16c1bac95fb36ad68f2fa68 --depth=1 --no-tags
+2026-04-13T01:17:59.4465660Z From https://github.com/apple/swift-org-website
+2026-04-13T01:17:59.4466580Z  * branch            50f426af8cb83550c16c1bac95fb36ad68f2fa68 -> FETCH_HEAD
+2026-04-13T01:17:59.4581820Z [command]/opt/homebrew/bin/git checkout FETCH_HEAD --detach
+2026-04-13T01:17:59.9759680Z HEAD is now at 50f426a [cxx-interop] Minor wording improvement in safe wrappers documentation
+2026-04-13T01:17:59.9773270Z ::endgroup::
+2026-04-13T01:17:59.9773490Z ##[endgroup]
+2026-04-13T01:17:59.9773820Z ::group::Detecting current platform
+2026-04-13T01:17:59.9774050Z ##[group]Detecting current platform
+2026-04-13T01:17:59.9775210Z Detected xcode platform with arch "arm64"
+2026-04-13T01:17:59.9775730Z ::endgroup::
+2026-04-13T01:17:59.9775870Z ##[endgroup]
+2026-04-13T01:17:59.9975850Z ::group::Installing Swift toolchain snapshot swift-6.2.4-RELEASE
+2026-04-13T01:17:59.9977030Z ##[group]Installing Swift toolchain snapshot swift-6.2.4-RELEASE
+2026-04-13T01:18:00.0004440Z No SDKs to install
+2026-04-13T01:18:00.0058820Z [command]/usr/bin/sudo xcode-select --switch /Applications/Xcode_26.3.app
+2026-04-13T01:18:00.0545760Z ##[debug]Getting swift version with command "xcrun swift,--version"
+2026-04-13T01:18:00.0580990Z [command]/usr/bin/xcrun swift --version
+2026-04-13T01:18:05.8297400Z swift-driver version: 1.127.15 Apple Swift version 6.2.4 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+2026-04-13T01:18:05.8297990Z Target: arm64-apple-macosx15.0
+2026-04-13T01:18:05.8348280Z ##[debug]Found toolchain "6.2.4" bundled with Xcode 26.3
+2026-04-13T01:18:05.8349470Z ::endgroup::
+2026-04-13T01:18:05.8350010Z ##[endgroup]
+2026-04-13T01:18:05.8350820Z ##[debug]Getting swift version with command "xcrun swift,--version"
+2026-04-13T01:18:05.8365470Z [command]/usr/bin/xcrun swift --version
+2026-04-13T01:18:05.9225040Z swift-driver version: 1.127.15 Apple Swift version 6.2.4 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+2026-04-13T01:18:05.9225680Z Target: arm64-apple-macosx15.0
+2026-04-13T01:18:05.9491260Z ##[debug]Node Action run completed with exit code 0
+2026-04-13T01:18:05.9504980Z ##[debug]DEVELOPER_DIR='/Applications/Xcode_26.3.app'
+2026-04-13T01:18:05.9511900Z ##[debug]Set output swift-version = 6.2.4
+2026-04-13T01:18:05.9513060Z ##[debug]Set output toolchain = {"name":"Xcode Swift 6.2.4","date":"2026-02-26T00:00:00.000Z","download":"swift-6.2.4-RELEASE-osx.pkg","debug_info":"swift-6.2.4-RELEASE-osx-symbols.pkg","dir":"swift-6.2.4-RELEASE","xcode":"26.3","platform":"xcode","branch":"swift-6.2.4-release","preventCaching":false}
+2026-04-13T01:18:05.9514160Z ##[debug]Set output sdks = []
+2026-04-13T01:18:05.9515110Z ##[debug]Finishing: Setup Swift
+2026-04-13T01:18:05.9535260Z ##[debug]Evaluating condition for step: 'Install Linux dependencies'
+2026-04-13T01:18:05.9555230Z ##[debug]Evaluating: (success() && (runner.os == 'Linux'))
+2026-04-13T01:18:05.9555880Z ##[debug]Evaluating And:
+2026-04-13T01:18:05.9557520Z ##[debug]..Evaluating success:
+2026-04-13T01:18:05.9558150Z ##[debug]..=> true
+2026-04-13T01:18:05.9558490Z ##[debug]..Evaluating Equal:
+2026-04-13T01:18:05.9559380Z ##[debug]....Evaluating Index:
+2026-04-13T01:18:05.9559750Z ##[debug]......Evaluating runner:
+2026-04-13T01:18:05.9560100Z ##[debug]......=> Object
+2026-04-13T01:18:05.9560440Z ##[debug]......Evaluating String:
+2026-04-13T01:18:05.9560760Z ##[debug]......=> 'os'
+2026-04-13T01:18:05.9561330Z ##[debug]....=> 'macOS'
+2026-04-13T01:18:05.9561660Z ##[debug]....Evaluating String:
+2026-04-13T01:18:05.9562020Z ##[debug]....=> 'Linux'
+2026-04-13T01:18:05.9565010Z ##[debug]..=> false
+2026-04-13T01:18:05.9565490Z ##[debug]=> false
+2026-04-13T01:18:05.9567860Z ##[debug]Expanded: (true && ('macOS' == 'Linux'))
+2026-04-13T01:18:05.9568350Z ##[debug]Result: false
+2026-04-13T01:18:05.9576820Z ##[debug]Evaluating condition for step: 'Show toolchain'
+2026-04-13T01:18:05.9578270Z ##[debug]Evaluating: success()
+2026-04-13T01:18:05.9578570Z ##[debug]Evaluating success:
+2026-04-13T01:18:05.9578920Z ##[debug]=> true
+2026-04-13T01:18:05.9579310Z ##[debug]Result: true
+2026-04-13T01:18:05.9579800Z ##[debug]Starting: Show toolchain
+2026-04-13T01:18:05.9592200Z ##[debug]Loading inputs
+2026-04-13T01:18:05.9593550Z ##[debug]Loading env
+2026-04-13T01:18:05.9611030Z ##[group]Run swift --version
+2026-04-13T01:18:05.9611320Z [36;1mswift --version[0m
+2026-04-13T01:18:05.9658050Z shell: /bin/bash -e {0}
+2026-04-13T01:18:05.9658300Z env:
+2026-04-13T01:18:05.9658500Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:18:05.9658870Z   DEVELOPER_DIR: /Applications/Xcode_26.3.app
+2026-04-13T01:18:05.9659150Z ##[endgroup]
+2026-04-13T01:18:05.9715580Z ##[debug]/bin/bash -e /Users/runner/work/_temp/449d0a90-5273-4afc-8cd2-afb04ddce2bc.sh
+2026-04-13T01:18:06.1305480Z Apple Swift version 6.2.4 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+2026-04-13T01:18:06.1306090Z Target: arm64-apple-macosx15.0
+2026-04-13T01:18:06.1313310Z swift-driver version: 1.127.15 
+2026-04-13T01:18:06.1321030Z ##[debug]Finishing: Show toolchain
+2026-04-13T01:18:06.1331450Z ##[debug]Evaluating: matrix.backend
+2026-04-13T01:18:06.1331800Z ##[debug]Evaluating Index:
+2026-04-13T01:18:06.1332050Z ##[debug]..Evaluating matrix:
+2026-04-13T01:18:06.1332330Z ##[debug]..=> Object
+2026-04-13T01:18:06.1332600Z ##[debug]..Evaluating String:
+2026-04-13T01:18:06.1332830Z ##[debug]..=> 'backend'
+2026-04-13T01:18:06.1333520Z ##[debug]=> 'APPKIT'
+2026-04-13T01:18:06.1333730Z ##[debug]Result: 'APPKIT'
+2026-04-13T01:18:06.1334420Z ##[debug]Evaluating condition for step: 'Build'
+2026-04-13T01:18:06.1335600Z ##[debug]Evaluating: success()
+2026-04-13T01:18:06.1335890Z ##[debug]Evaluating success:
+2026-04-13T01:18:06.1336260Z ##[debug]=> true
+2026-04-13T01:18:06.1336640Z ##[debug]Result: true
+2026-04-13T01:18:06.1337150Z ##[debug]Starting: Build
+2026-04-13T01:18:06.1345960Z ##[debug]Loading inputs
+2026-04-13T01:18:06.1347370Z ##[debug]Loading env
+2026-04-13T01:18:06.1351670Z ##[group]Run swift build -c release
+2026-04-13T01:18:06.1352020Z [36;1mswift build -c release[0m
+2026-04-13T01:18:06.1381710Z shell: /bin/bash -e {0}
+2026-04-13T01:18:06.1381920Z env:
+2026-04-13T01:18:06.1382190Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:18:06.1382650Z   DEVELOPER_DIR: /Applications/Xcode_26.3.app
+2026-04-13T01:18:06.1382910Z   APAROKSHA_FRAMEWORK: APPKIT
+2026-04-13T01:18:06.1383170Z ##[endgroup]
+2026-04-13T01:18:06.1409230Z ##[debug]/bin/bash -e /Users/runner/work/_temp/fa2129be-f2ee-4748-a526-16a7379a3751.sh
+2026-04-13T01:18:09.6944200Z Fetching https://git.aparoksha.dev/aparoksha/aparoksha
+2026-04-13T01:18:09.6953330Z Fetching https://git.aparoksha.dev/aparoksha/levenshtein-transformations
+2026-04-13T01:18:10.7157230Z [1/151] Fetching levenshtein-transformations
+2026-04-13T01:18:11.2900390Z [152/663] Fetching levenshtein-transformations, aparoksha
+2026-04-13T01:18:11.5132710Z Fetched https://git.aparoksha.dev/aparoksha/aparoksha from cache (1.82s)
+2026-04-13T01:18:11.5134440Z Fetched https://git.aparoksha.dev/aparoksha/levenshtein-transformations from cache (1.82s)
+2026-04-13T01:18:11.5222140Z Fetching https://git.aparoksha.dev/aparoksha/meta-sqlite
+2026-04-13T01:18:11.5224330Z Fetching https://git.aparoksha.dev/aparoksha/meta
+2026-04-13T01:18:12.2754890Z [1/61] Fetching meta-sqlite
+2026-04-13T01:18:12.5980590Z [62/1181] Fetching meta-sqlite, meta
+2026-04-13T01:18:12.8230120Z Fetched https://git.aparoksha.dev/aparoksha/meta from cache (1.30s)
+2026-04-13T01:18:12.8232640Z Fetched https://git.aparoksha.dev/aparoksha/meta-sqlite from cache (1.30s)
+2026-04-13T01:18:12.8299560Z Fetching https://git.aparoksha.dev/aparoksha/macbackend
+2026-04-13T01:18:12.8300500Z Fetching https://github.com/stephencelis/SQLite.swift
+2026-04-13T01:18:13.6997270Z [1/11124] Fetching sqlite.swift
+2026-04-13T01:18:13.9728410Z [1225/11384] Fetching sqlite.swift, macbackend
+2026-04-13T01:18:14.5353520Z Fetched https://git.aparoksha.dev/aparoksha/macbackend from cache (1.70s)
+2026-04-13T01:18:14.5362500Z Fetched https://github.com/stephencelis/SQLite.swift from cache (1.71s)
+2026-04-13T01:18:14.5498770Z Creating working copy for https://git.aparoksha.dev/aparoksha/aparoksha
+2026-04-13T01:18:14.5500360Z Creating working copy for https://git.aparoksha.dev/aparoksha/levenshtein-transformations
+2026-04-13T01:18:14.6285070Z Creating working copy for https://git.aparoksha.dev/aparoksha/meta
+2026-04-13T01:18:14.6432750Z Working copy of https://git.aparoksha.dev/aparoksha/levenshtein-transformations resolved at main (06577a2)
+2026-04-13T01:18:14.6596050Z Working copy of https://git.aparoksha.dev/aparoksha/aparoksha resolved at main (357f189)
+2026-04-13T01:18:14.6729070Z Creating working copy for https://github.com/stephencelis/SQLite.swift
+2026-04-13T01:18:14.7321100Z Creating working copy for https://git.aparoksha.dev/aparoksha/meta-sqlite
+2026-04-13T01:18:14.7373020Z Working copy of https://git.aparoksha.dev/aparoksha/meta resolved at main (f47727d)
+2026-04-13T01:18:14.7604390Z Creating working copy for https://git.aparoksha.dev/aparoksha/macbackend
+2026-04-13T01:18:14.8009250Z Working copy of https://github.com/stephencelis/SQLite.swift resolved at 0.16.0
+2026-04-13T01:18:14.8063830Z Working copy of https://git.aparoksha.dev/aparoksha/meta-sqlite resolved at main (6e7940c)
+2026-04-13T01:18:14.8265670Z Working copy of https://git.aparoksha.dev/aparoksha/macbackend resolved at main (461f907)
+2026-04-13T01:18:18.6065180Z Building for production...
+2026-04-13T01:18:18.6130920Z [0/11] Write sources
+2026-04-13T01:18:18.6131230Z [0/11] Copying PrivacyInfo.xcprivacy
+2026-04-13T01:18:18.6131680Z [0/11] Write sources
+2026-04-13T01:18:18.6905870Z [8/11] Write swift-version-1977FEB4D2752686.txt
+2026-04-13T01:18:19.8988720Z [10/14] Compiling LevenshteinTransformations AsyncFunctions.swift
+2026-04-13T01:18:22.4726510Z [11/14] Compiling Meta Binding.swift
+2026-04-13T01:18:30.4602770Z [12/14] Compiling SQLite Backup.swift
+2026-04-13T01:18:30.9717100Z [13/15] Compiling MetaSQLite State.swift
+2026-04-13T01:18:38.7181860Z [14/16] Compiling Core Divider.swift
+2026-04-13T01:18:40.4449130Z [15/17] Compiling Aparoksha MenuButton.swift
+2026-04-13T01:18:40.9269510Z [16/18] Compiling AparokshaStarter main.swift
+2026-04-13T01:18:40.9287670Z [16/18] Write Objects.LinkFileList
+2026-04-13T01:18:41.7163710Z [17/18] Linking AparokshaStarter
+2026-04-13T01:18:41.7188940Z Build complete! (32.02s)
+2026-04-13T01:18:41.7300090Z ##[debug]Finishing: Build
+2026-04-13T01:18:41.7319290Z ##[debug]Evaluating condition for step: 'Post Checkout'
+2026-04-13T01:18:41.7325120Z ##[debug]Evaluating: always()
+2026-04-13T01:18:41.7325630Z ##[debug]Evaluating always:
+2026-04-13T01:18:41.7326420Z ##[debug]=> true
+2026-04-13T01:18:41.7326750Z ##[debug]Result: true
+2026-04-13T01:18:41.7327850Z ##[debug]Starting: Post Checkout
+2026-04-13T01:18:41.7381710Z ##[debug]Loading inputs
+2026-04-13T01:18:41.7382980Z ##[debug]Evaluating: github.repository
+2026-04-13T01:18:41.7383260Z ##[debug]Evaluating Index:
+2026-04-13T01:18:41.7383520Z ##[debug]..Evaluating github:
+2026-04-13T01:18:41.7383800Z ##[debug]..=> Object
+2026-04-13T01:18:41.7384010Z ##[debug]..Evaluating String:
+2026-04-13T01:18:41.7384360Z ##[debug]..=> 'repository'
+2026-04-13T01:18:41.7384740Z ##[debug]=> 'loosebird/aparoksha-template'
+2026-04-13T01:18:41.7385060Z ##[debug]Result: 'loosebird/aparoksha-template'
+2026-04-13T01:18:41.7387040Z ##[debug]Evaluating: github.token
+2026-04-13T01:18:41.7387340Z ##[debug]Evaluating Index:
+2026-04-13T01:18:41.7387620Z ##[debug]..Evaluating github:
+2026-04-13T01:18:41.7387940Z ##[debug]..=> Object
+2026-04-13T01:18:41.7388210Z ##[debug]..Evaluating String:
+2026-04-13T01:18:41.7388540Z ##[debug]..=> 'token'
+2026-04-13T01:18:41.7389390Z ##[debug]=> '***'
+2026-04-13T01:18:41.7389670Z ##[debug]Result: '***'
+2026-04-13T01:18:41.7399580Z ##[debug]Loading env
+2026-04-13T01:18:41.7404680Z Post job cleanup.
+2026-04-13T01:18:42.0126420Z ##[debug]Getting git version
+2026-04-13T01:18:42.0134510Z [command]/opt/homebrew/bin/git version
+2026-04-13T01:18:42.0291610Z git version 2.53.0
+2026-04-13T01:18:42.0300980Z ##[debug]0
+2026-04-13T01:18:42.0303450Z ##[debug]git version 2.53.0
+2026-04-13T01:18:42.0303660Z ##[debug]
+2026-04-13T01:18:42.0304100Z ##[debug]Set git useragent to: git/2.53.0 (github-actions-checkout)
+2026-04-13T01:18:42.0304830Z ::add-mask::***
+2026-04-13T01:18:42.0309190Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/00d6b286-6cfc-4889-be85-c806cb3c7dbd/.gitconfig'
+2026-04-13T01:18:42.0314940Z Temporarily overriding HOME='/Users/runner/work/_temp/00d6b286-6cfc-4889-be85-c806cb3c7dbd' before making global git config changes
+2026-04-13T01:18:42.0315750Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-13T01:18:42.0318300Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/aparoksha-template/aparoksha-template
+2026-04-13T01:18:42.0429870Z ##[debug]0
+2026-04-13T01:18:42.0431110Z ##[debug]
+2026-04-13T01:18:42.0449280Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-13T01:18:42.0538100Z ##[debug]1
+2026-04-13T01:18:42.0640840Z ##[debug]
+2026-04-13T01:18:42.0757200Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-13T01:18:42.1384430Z ##[debug]0
+2026-04-13T01:18:42.1384810Z ##[debug]
+2026-04-13T01:18:42.1389100Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-13T01:18:42.1430550Z http.https://github.com/.extraheader
+2026-04-13T01:18:42.1432610Z ##[debug]0
+2026-04-13T01:18:42.1433130Z ##[debug]http.https://github.com/.extraheader
+2026-04-13T01:18:42.1433480Z ##[debug]
+2026-04-13T01:18:42.1435710Z [command]/opt/homebrew/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-04-13T01:18:42.1486410Z ##[debug]0
+2026-04-13T01:18:42.1486820Z ##[debug]
+2026-04-13T01:18:42.1489450Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-13T01:18:42.2103470Z ##[debug]0
+2026-04-13T01:18:42.2103840Z ##[debug]
+2026-04-13T01:18:42.2107490Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-13T01:18:42.2149830Z ##[debug]1
+2026-04-13T01:18:42.2150230Z ##[debug]
+2026-04-13T01:18:42.2152470Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-13T01:18:42.2716270Z ##[debug]0
+2026-04-13T01:18:42.2716790Z ##[debug]
+2026-04-13T01:18:42.2717210Z ##[debug]Unsetting HOME override
+2026-04-13T01:18:42.2769820Z ##[debug]Node Action run completed with exit code 0
+2026-04-13T01:18:42.2772450Z ##[debug]Finishing: Post Checkout
+2026-04-13T01:18:42.2822150Z ##[debug]Starting: Complete job
+2026-04-13T01:18:42.2824030Z Uploading runner diagnostic logs
+2026-04-13T01:18:42.2840590Z ##[debug]Starting diagnostic file upload.
+2026-04-13T01:18:42.2840840Z ##[debug]Setting up diagnostic log folders.
+2026-04-13T01:18:42.2842490Z ##[debug]Creating diagnostic log files folder.
+2026-04-13T01:18:42.2851100Z ##[debug]Copying 1 worker diagnostic logs.
+2026-04-13T01:18:42.2857670Z ##[debug]Copying 1 runner diagnostic logs.
+2026-04-13T01:18:42.2858890Z ##[debug]Zipping diagnostic files.
+2026-04-13T01:18:42.2981570Z ##[debug]Uploading diagnostic metadata file.
+2026-04-13T01:18:42.3021360Z ##[debug]Diagnostic file upload complete.
+2026-04-13T01:18:42.3091280Z Completed runner diagnostic log upload
+2026-04-13T01:18:42.3091500Z Cleaning up orphan processes
+2026-04-13T01:18:42.6408490Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: SwiftyLab/setup-swift@v1.13.0. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-04-13T01:18:42.6414250Z ##[debug]Finishing: Complete job
+2026-04-13T01:18:42.6460090Z ##[debug]Finishing: Build (macos-arm64)

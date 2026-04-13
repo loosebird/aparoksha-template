@@ -1,0 +1,20 @@
+﻿2026-04-13T01:18:35.1910610Z ##[debug]Evaluating condition for step: 'Show toolchain'
+2026-04-13T01:18:35.1915960Z ##[debug]Evaluating: success()
+2026-04-13T01:18:35.1917380Z ##[debug]Evaluating success:
+2026-04-13T01:18:35.1918280Z ##[debug]=> true
+2026-04-13T01:18:35.1919440Z ##[debug]Result: true
+2026-04-13T01:18:35.1920750Z ##[debug]Starting: Show toolchain
+2026-04-13T01:18:35.1977620Z ##[debug]Loading inputs
+2026-04-13T01:18:35.1982410Z ##[debug]Loading env
+2026-04-13T01:18:35.2065050Z ##[group]Run swift --version
+2026-04-13T01:18:35.2066140Z [36;1mswift --version[0m
+2026-04-13T01:18:35.2252590Z shell: /bin/bash -e {0}
+2026-04-13T01:18:35.2253320Z env:
+2026-04-13T01:18:35.2253730Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:18:35.2257250Z   DEVELOPER_DIR: /Applications/Xcode_26.3.app
+2026-04-13T01:18:35.2258980Z ##[endgroup]
+2026-04-13T01:18:35.2450580Z ##[debug]/bin/bash -e /Users/runner/work/_temp/72de3af5-df24-48cd-9fff-f800cff780be.sh
+2026-04-13T01:18:35.5817780Z swift-driver version: 1.127.15 
+2026-04-13T01:18:35.5819700Z Apple Swift version 6.2.4 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+2026-04-13T01:18:35.6522980Z Target: x86_64-apple-macosx15.0
+2026-04-13T01:18:35.6685660Z ##[debug]Finishing: Show toolchain

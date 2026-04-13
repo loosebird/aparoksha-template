@@ -1,0 +1,479 @@
+﻿2026-04-13T01:17:52.6484000Z ##[debug]Starting: Quality (SwiftFormat + SwiftLint)
+2026-04-13T01:17:52.6494940Z ##[debug]Cleaning runner temp folder: /Users/runner/work/_temp
+2026-04-13T01:17:52.6627520Z ##[debug]Starting: Set up job
+2026-04-13T01:17:52.6628040Z Current runner version: '2.333.1'
+2026-04-13T01:17:52.6638830Z ##[group]Runner Image Provisioner
+2026-04-13T01:17:52.6639230Z Hosted Compute Agent
+2026-04-13T01:17:52.6639540Z Version: 20260213.493
+2026-04-13T01:17:52.6639880Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-04-13T01:17:52.6640280Z Build Date: 2026-02-13T00:28:41Z
+2026-04-13T01:17:52.6640650Z Worker ID: {b31e7a7e-3b84-40b0-9683-5a2f24212064}
+2026-04-13T01:17:52.6641050Z Azure Region: westus
+2026-04-13T01:17:52.6641340Z ##[endgroup]
+2026-04-13T01:17:52.6642070Z ##[group]Operating System
+2026-04-13T01:17:52.6642370Z macOS
+2026-04-13T01:17:52.6642620Z 15.7.4
+2026-04-13T01:17:52.6642860Z 24G517
+2026-04-13T01:17:52.6643110Z ##[endgroup]
+2026-04-13T01:17:52.6643370Z ##[group]Runner Image
+2026-04-13T01:17:52.6643720Z Image: macos-15-arm64
+2026-04-13T01:17:52.6644010Z Version: 20260406.0256.1
+2026-04-13T01:17:52.6644640Z Included Software: https://github.com/actions/runner-images/blob/macos-15-arm64/20260406.0256/images/macos/macos-15-arm64-Readme.md
+2026-04-13T01:17:52.6645510Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-15-arm64%2F20260406.0256
+2026-04-13T01:17:52.6646050Z ##[endgroup]
+2026-04-13T01:17:52.6646610Z ##[group]GITHUB_TOKEN Permissions
+2026-04-13T01:17:52.6647420Z Contents: read
+2026-04-13T01:17:52.6647690Z Metadata: read
+2026-04-13T01:17:52.6647970Z ##[endgroup]
+2026-04-13T01:17:52.6649210Z Secret source: Actions
+2026-04-13T01:17:52.6649620Z ##[debug]Primary repository: loosebird/aparoksha-template
+2026-04-13T01:17:52.6650040Z Prepare workflow directory
+2026-04-13T01:17:52.6689510Z ##[debug]Creating pipeline directory: '/Users/runner/work/aparoksha-template'
+2026-04-13T01:17:52.6691730Z ##[debug]Creating workspace directory: '/Users/runner/work/aparoksha-template/aparoksha-template'
+2026-04-13T01:17:52.6692820Z ##[debug]Update context data
+2026-04-13T01:17:52.6694820Z ##[debug]Evaluating job-level environment variables
+2026-04-13T01:17:52.6879820Z ##[debug]Evaluating job container
+2026-04-13T01:17:52.6881640Z ##[debug]Evaluating job service containers
+2026-04-13T01:17:52.6883150Z ##[debug]Evaluating job defaults
+2026-04-13T01:17:52.6901870Z Prepare all required actions
+2026-04-13T01:17:52.6936340Z Getting action download info
+2026-04-13T01:17:52.9052070Z Download action repository 'actions/checkout@v5' (SHA:93cb6efe18208431cddfb8368fd83d5badbf9bfd)
+2026-04-13T01:17:52.9077100Z ##[debug]Copied action archive '/Users/runner/actionarchivecache/actions_checkout/93cb6efe18208431cddfb8368fd83d5badbf9bfd.tar.gz' to '/Users/runner/work/_actions/_temp_a052dab6-f6f3-4bbc-8155-d0ef36225eba/bf19fc9f-daf1-463c-ad8d-b8fe6b2d1395.tar.gz'
+2026-04-13T01:17:53.2617440Z ##[debug]Unwrap 'actions-checkout-93cb6ef' to '/Users/runner/work/_actions/actions/checkout/v5'
+2026-04-13T01:17:53.2741230Z ##[debug]Archive '/Users/runner/work/_actions/_temp_a052dab6-f6f3-4bbc-8155-d0ef36225eba/bf19fc9f-daf1-463c-ad8d-b8fe6b2d1395.tar.gz' has been unzipped into '/Users/runner/work/_actions/actions/checkout/v5'.
+2026-04-13T01:17:53.2837890Z ##[debug]action.yml for action: '/Users/runner/work/_actions/actions/checkout/v5/action.yml'.
+2026-04-13T01:17:53.3689910Z ##[debug]Set step '__actions_checkout' display name to: 'Checkout'
+2026-04-13T01:17:53.3692410Z ##[debug]Set step '__run' display name to: 'Install SwiftFormat and SwiftLint'
+2026-04-13T01:17:53.3694230Z ##[debug]Set step '__run_2' display name to: 'Show quality tool versions'
+2026-04-13T01:17:53.3695830Z ##[debug]Set step '__run_3' display name to: 'SwiftFormat'
+2026-04-13T01:17:53.3697200Z ##[debug]Set step '__run_4' display name to: 'SwiftLint'
+2026-04-13T01:17:53.3697760Z Complete job name: Quality (SwiftFormat + SwiftLint)
+2026-04-13T01:17:53.3716010Z ##[debug]Collect running processes for tracking orphan processes.
+2026-04-13T01:17:53.3785280Z ##[debug]Finishing: Set up job
+2026-04-13T01:17:53.3859940Z ##[debug]Evaluating condition for step: 'Checkout'
+2026-04-13T01:17:53.3885220Z ##[debug]Evaluating: success()
+2026-04-13T01:17:53.3889020Z ##[debug]Evaluating success:
+2026-04-13T01:17:53.3899060Z ##[debug]=> true
+2026-04-13T01:17:53.3902950Z ##[debug]Result: true
+2026-04-13T01:17:53.3920340Z ##[debug]Starting: Checkout
+2026-04-13T01:17:53.3976250Z ##[debug]Register post job cleanup for action: actions/checkout@v5
+2026-04-13T01:17:53.4032780Z ##[debug]Loading inputs
+2026-04-13T01:17:53.4041160Z ##[debug]Evaluating: github.repository
+2026-04-13T01:17:53.4041870Z ##[debug]Evaluating Index:
+2026-04-13T01:17:53.4043110Z ##[debug]..Evaluating github:
+2026-04-13T01:17:53.4043810Z ##[debug]..=> Object
+2026-04-13T01:17:53.4047200Z ##[debug]..Evaluating String:
+2026-04-13T01:17:53.4047730Z ##[debug]..=> 'repository'
+2026-04-13T01:17:53.4050520Z ##[debug]=> 'loosebird/aparoksha-template'
+2026-04-13T01:17:53.4051540Z ##[debug]Result: 'loosebird/aparoksha-template'
+2026-04-13T01:17:53.4054350Z ##[debug]Evaluating: github.token
+2026-04-13T01:17:53.4054710Z ##[debug]Evaluating Index:
+2026-04-13T01:17:53.4055050Z ##[debug]..Evaluating github:
+2026-04-13T01:17:53.4055390Z ##[debug]..=> Object
+2026-04-13T01:17:53.4055720Z ##[debug]..Evaluating String:
+2026-04-13T01:17:53.4056070Z ##[debug]..=> 'token'
+2026-04-13T01:17:53.4056610Z ##[debug]=> '***'
+2026-04-13T01:17:53.4057000Z ##[debug]Result: '***'
+2026-04-13T01:17:53.4069420Z ##[debug]Loading env
+2026-04-13T01:17:53.4132390Z ##[group]Run actions/checkout@v5
+2026-04-13T01:17:53.4132920Z with:
+2026-04-13T01:17:53.4133230Z   repository: loosebird/aparoksha-template
+2026-04-13T01:17:53.4133810Z   token: ***
+2026-04-13T01:17:53.4134120Z   ssh-strict: true
+2026-04-13T01:17:53.4134430Z   ssh-user: git
+2026-04-13T01:17:53.4134730Z   persist-credentials: true
+2026-04-13T01:17:53.4135150Z   clean: true
+2026-04-13T01:17:53.4135430Z   sparse-checkout-cone-mode: true
+2026-04-13T01:17:53.4135780Z   fetch-depth: 1
+2026-04-13T01:17:53.4136070Z   fetch-tags: false
+2026-04-13T01:17:53.4136430Z   show-progress: true
+2026-04-13T01:17:53.4136760Z   lfs: false
+2026-04-13T01:17:53.4137030Z   submodules: false
+2026-04-13T01:17:53.4137320Z   set-safe-directory: true
+2026-04-13T01:17:53.4138040Z env:
+2026-04-13T01:17:53.4138380Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:17:53.4138770Z ##[endgroup]
+2026-04-13T01:17:53.7501620Z ##[debug]GITHUB_WORKSPACE = '/Users/runner/work/aparoksha-template/aparoksha-template'
+2026-04-13T01:17:53.7504610Z ##[debug]qualified repository = 'loosebird/aparoksha-template'
+2026-04-13T01:17:53.7505580Z ##[debug]ref = 'refs/heads/main'
+2026-04-13T01:17:53.7506440Z ##[debug]commit = 'd883f23aa7d9f36f74f39943706f603d6f768a79'
+2026-04-13T01:17:53.7509160Z ##[debug]clean = true
+2026-04-13T01:17:53.7510050Z ##[debug]filter = undefined
+2026-04-13T01:17:53.7510990Z ##[debug]fetch depth = 1
+2026-04-13T01:17:53.7512010Z ##[debug]fetch tags = false
+2026-04-13T01:17:53.7513060Z ##[debug]show progress = true
+2026-04-13T01:17:53.7513750Z ##[debug]lfs = false
+2026-04-13T01:17:53.7514330Z ##[debug]submodules = false
+2026-04-13T01:17:53.7514940Z ##[debug]recursive submodules = false
+2026-04-13T01:17:53.7525140Z ##[debug]GitHub Host URL = 
+2026-04-13T01:17:53.7526840Z ::add-matcher::/Users/runner/work/_actions/actions/checkout/v5/dist/problem-matcher.json
+2026-04-13T01:17:53.7576120Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+2026-04-13T01:17:53.7579720Z Syncing repository: loosebird/aparoksha-template
+2026-04-13T01:17:53.7581890Z ::group::Getting Git version info
+2026-04-13T01:17:53.7582810Z ##[group]Getting Git version info
+2026-04-13T01:17:53.7583590Z Working directory is '/Users/runner/work/aparoksha-template/aparoksha-template'
+2026-04-13T01:17:53.7584420Z ##[debug]Getting git version
+2026-04-13T01:17:53.7584860Z [command]/opt/homebrew/bin/git version
+2026-04-13T01:17:53.8261460Z git version 2.53.0
+2026-04-13T01:17:53.8273580Z ##[debug]0
+2026-04-13T01:17:53.8275990Z ##[debug]git version 2.53.0
+2026-04-13T01:17:53.8276400Z ##[debug]
+2026-04-13T01:17:53.8277300Z ##[debug]Set git useragent to: git/2.53.0 (github-actions-checkout)
+2026-04-13T01:17:53.8278180Z ::endgroup::
+2026-04-13T01:17:53.8278580Z ##[endgroup]
+2026-04-13T01:17:53.8342780Z ::add-mask::***
+2026-04-13T01:17:53.8345960Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/66969894-a8c7-48c0-9ba6-d71445f4e8b1/.gitconfig'
+2026-04-13T01:17:53.8484240Z Temporarily overriding HOME='/Users/runner/work/_temp/66969894-a8c7-48c0-9ba6-d71445f4e8b1' before making global git config changes
+2026-04-13T01:17:53.8492420Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-13T01:17:53.8493910Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/aparoksha-template/aparoksha-template
+2026-04-13T01:17:53.8621950Z ##[debug]0
+2026-04-13T01:17:53.8623590Z ##[debug]
+2026-04-13T01:17:53.8626960Z Deleting the contents of '/Users/runner/work/aparoksha-template/aparoksha-template'
+2026-04-13T01:17:53.8630250Z ::group::Initializing the repository
+2026-04-13T01:17:53.8630710Z ##[group]Initializing the repository
+2026-04-13T01:17:53.8633340Z [command]/opt/homebrew/bin/git init /Users/runner/work/aparoksha-template/aparoksha-template
+2026-04-13T01:17:53.8853800Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-13T01:17:53.8854800Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-04-13T01:17:53.8855570Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-04-13T01:17:53.8856250Z hint: call:
+2026-04-13T01:17:53.8856650Z hint:
+2026-04-13T01:17:53.8857460Z hint: 	git config --global init.defaultBranch <name>
+2026-04-13T01:17:53.8858390Z hint:
+2026-04-13T01:17:53.8858970Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-13T01:17:53.8859920Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-13T01:17:53.8861080Z hint:
+2026-04-13T01:17:53.8861520Z hint: 	git branch -m <name>
+2026-04-13T01:17:53.8862220Z hint:
+2026-04-13T01:17:53.8862880Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-04-13T01:17:53.8864820Z Initialized empty Git repository in /Users/runner/work/aparoksha-template/aparoksha-template/.git/
+2026-04-13T01:17:53.8866190Z ##[debug]0
+2026-04-13T01:17:53.8867120Z ##[debug]Initialized empty Git repository in /Users/runner/work/aparoksha-template/aparoksha-template/.git/
+2026-04-13T01:17:53.8867970Z ##[debug]
+2026-04-13T01:17:53.8870260Z [command]/opt/homebrew/bin/git remote add origin https://github.com/loosebird/aparoksha-template
+2026-04-13T01:17:53.8981550Z ##[debug]0
+2026-04-13T01:17:53.8982900Z ##[debug]
+2026-04-13T01:17:53.8983790Z ::endgroup::
+2026-04-13T01:17:53.8984480Z ##[endgroup]
+2026-04-13T01:17:53.8985340Z ::group::Disabling automatic garbage collection
+2026-04-13T01:17:53.8986540Z ##[group]Disabling automatic garbage collection
+2026-04-13T01:17:53.8987430Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+2026-04-13T01:17:53.9052320Z ##[debug]0
+2026-04-13T01:17:53.9053980Z ##[debug]
+2026-04-13T01:17:53.9057330Z ::endgroup::
+2026-04-13T01:17:53.9057700Z ##[endgroup]
+2026-04-13T01:17:53.9060240Z ::group::Setting up auth
+2026-04-13T01:17:53.9060740Z ##[group]Setting up auth
+2026-04-13T01:17:53.9061430Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-13T01:17:53.9139610Z ##[debug]1
+2026-04-13T01:17:53.9141290Z ##[debug]
+2026-04-13T01:17:53.9144070Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-13T01:17:54.0183420Z ##[debug]0
+2026-04-13T01:17:54.0184190Z ##[debug]
+2026-04-13T01:17:54.0187330Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-13T01:17:54.0245590Z ##[debug]1
+2026-04-13T01:17:54.0246180Z ##[debug]
+2026-04-13T01:17:54.0248180Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-13T01:17:54.0864840Z ##[debug]0
+2026-04-13T01:17:54.0865400Z ##[debug]
+2026-04-13T01:17:54.0868420Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-13T01:17:54.0911320Z ##[debug]1
+2026-04-13T01:17:54.0911830Z ##[debug]
+2026-04-13T01:17:54.0913860Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-13T01:17:54.1639030Z ##[debug]0
+2026-04-13T01:17:54.1741090Z ##[debug]
+2026-04-13T01:17:54.1830110Z [command]/opt/homebrew/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-04-13T01:17:54.1831400Z ##[debug]0
+2026-04-13T01:17:54.1832070Z ##[debug]
+2026-04-13T01:17:54.1832650Z ::endgroup::
+2026-04-13T01:17:54.1832930Z ##[endgroup]
+2026-04-13T01:17:54.1833510Z ::group::Fetching the repository
+2026-04-13T01:17:54.1833900Z ##[group]Fetching the repository
+2026-04-13T01:17:54.1834850Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d883f23aa7d9f36f74f39943706f603d6f768a79:refs/remotes/origin/main
+2026-04-13T01:17:54.7811260Z From https://github.com/loosebird/aparoksha-template
+2026-04-13T01:17:54.7812510Z  * [new ref]         d883f23aa7d9f36f74f39943706f603d6f768a79 -> origin/main
+2026-04-13T01:17:54.7887640Z ##[debug]0
+2026-04-13T01:17:54.7888480Z ##[debug]
+2026-04-13T01:17:54.7889290Z ::endgroup::
+2026-04-13T01:17:54.7889600Z ##[endgroup]
+2026-04-13T01:17:54.7890260Z ::group::Determining the checkout info
+2026-04-13T01:17:54.7890680Z ##[group]Determining the checkout info
+2026-04-13T01:17:54.7892090Z ::endgroup::
+2026-04-13T01:17:54.7892420Z ##[endgroup]
+2026-04-13T01:17:54.7893160Z [command]/opt/homebrew/bin/git sparse-checkout disable
+2026-04-13T01:17:54.7957660Z ##[debug]0
+2026-04-13T01:17:54.7961710Z ##[debug]
+2026-04-13T01:17:54.7962740Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+2026-04-13T01:17:54.8011780Z ##[debug]0
+2026-04-13T01:17:54.8012480Z ##[debug]
+2026-04-13T01:17:54.8013100Z ::group::Checking out the ref
+2026-04-13T01:17:54.8013530Z ##[group]Checking out the ref
+2026-04-13T01:17:54.8014700Z [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-04-13T01:17:54.8119860Z Switched to a new branch 'main'
+2026-04-13T01:17:54.8129050Z branch 'main' set up to track 'origin/main'.
+2026-04-13T01:17:54.8132370Z ##[debug]0
+2026-04-13T01:17:54.8133300Z ##[debug]branch 'main' set up to track 'origin/main'.
+2026-04-13T01:17:54.8133860Z ##[debug]
+2026-04-13T01:17:54.8134710Z ::endgroup::
+2026-04-13T01:17:54.8135090Z ##[endgroup]
+2026-04-13T01:17:54.8200950Z ##[debug]0
+2026-04-13T01:17:54.8201920Z ##[debug]commit d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:54.8202860Z ##[debug]Author: viniciusnevescosta <vinicius.nevesco@gmail.com>
+2026-04-13T01:17:54.8203680Z ##[debug]Date:   Sun Apr 12 22:16:02 2026 -0300
+2026-04-13T01:17:54.8204290Z ##[debug]
+2026-04-13T01:17:54.8204680Z ##[debug]    ci(tools)!: Lint and format
+2026-04-13T01:17:54.8205190Z ##[debug]
+2026-04-13T01:17:54.8205750Z [command]/opt/homebrew/bin/git log -1 --format=%H
+2026-04-13T01:17:54.8251150Z d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:54.8252500Z ##[debug]0
+2026-04-13T01:17:54.8257520Z ##[debug]d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:54.8258270Z ##[debug]
+2026-04-13T01:17:54.8259230Z ##[debug]Unsetting HOME override
+2026-04-13T01:17:54.8263320Z ::remove-matcher owner=checkout-git::
+2026-04-13T01:17:54.8271920Z ##[debug]Removed matchers: 'checkout-git'
+2026-04-13T01:17:54.8334260Z ##[debug]Node Action run completed with exit code 0
+2026-04-13T01:17:54.8356570Z ##[debug]Save intra-action state isPost = true
+2026-04-13T01:17:54.8357720Z ##[debug]Save intra-action state setSafeDirectory = true
+2026-04-13T01:17:54.8358990Z ##[debug]Save intra-action state repositoryPath = /Users/runner/work/aparoksha-template/aparoksha-template
+2026-04-13T01:17:54.8362320Z ##[debug]Set output commit = d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:54.8363360Z ##[debug]Set output ref = refs/heads/main
+2026-04-13T01:17:54.8367170Z ##[debug]Finishing: Checkout
+2026-04-13T01:17:54.8387730Z ##[debug]Evaluating condition for step: 'Install SwiftFormat and SwiftLint'
+2026-04-13T01:17:54.8390730Z ##[debug]Evaluating: success()
+2026-04-13T01:17:54.8391470Z ##[debug]Evaluating success:
+2026-04-13T01:17:54.8392250Z ##[debug]=> true
+2026-04-13T01:17:54.8392960Z ##[debug]Result: true
+2026-04-13T01:17:54.8394120Z ##[debug]Starting: Install SwiftFormat and SwiftLint
+2026-04-13T01:17:54.8408360Z ##[debug]Loading inputs
+2026-04-13T01:17:54.8412420Z ##[debug]Loading env
+2026-04-13T01:17:54.8426600Z ##[group]Run brew update
+2026-04-13T01:17:54.8427130Z [36;1mbrew update[0m
+2026-04-13T01:17:54.8427650Z [36;1mbrew install swiftformat swiftlint[0m
+2026-04-13T01:17:54.8468070Z shell: /bin/bash -e {0}
+2026-04-13T01:17:54.8468600Z env:
+2026-04-13T01:17:54.8469070Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:17:54.8469720Z ##[endgroup]
+2026-04-13T01:17:54.8540040Z ##[debug]/bin/bash -e /Users/runner/work/_temp/becf517f-fa98-495d-b6e8-57a1d1ce701e.sh
+2026-04-13T01:17:57.0535430Z [34m==>[0m [1mUpdating Homebrew...[0m
+2026-04-13T01:18:11.3379480Z To restore the stashed changes to /opt/homebrew/Library/Taps/homebrew/homebrew-core, run:
+2026-04-13T01:18:11.3380150Z   cd /opt/homebrew/Library/Taps/homebrew/homebrew-core && git stash pop
+2026-04-13T01:18:12.8882000Z [34m==>[0m [1mHomebrew's analytics have entirely moved to our InfluxDB instance in the EU.[0m
+2026-04-13T01:18:12.8983930Z We gather less data than before and have destroyed all Google Analytics data:
+2026-04-13T01:18:12.9088140Z   [4mhttps://docs.brew.sh/Analytics[24m[0m
+2026-04-13T01:18:12.9190000Z Please reconsider re-enabling analytics to help our volunteer maintainers with:
+2026-04-13T01:18:12.9291980Z   brew analytics on
+2026-04-13T01:18:12.9394070Z [34m==>[0m [1mHomebrew is run entirely by unpaid volunteers. Please consider donating:[0m
+2026-04-13T01:18:12.9496150Z   [4mhttps://github.com/Homebrew/brew#donations[24m
+2026-04-13T01:18:12.9598540Z 
+2026-04-13T01:18:13.9632370Z Updated 3 taps (hashicorp/tap, homebrew/core and homebrew/cask).
+2026-04-13T01:18:13.9633680Z [34m==>[0m [1mNew Formulae[0m
+2026-04-13T01:18:14.3051470Z apache-arrow-adbc-glib: GLib bindings for Apache Arrow ADBC
+2026-04-13T01:18:14.3153500Z apfel: Apple Intelligence from the command-line, with OpenAi-compatible API server
+2026-04-13T01:18:14.3253680Z dart-sass: Reference implementation of Sass, written in Dart
+2026-04-13T01:18:14.3355160Z fvm: Manage Flutter SDK versions per project
+2026-04-13T01:18:14.3455940Z libheif-plugins: ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+2026-04-13T01:18:14.3557500Z nbytes: Library of byte handling functions extracted from Node.js core
+2026-04-13T01:18:14.3657660Z overturemaps: Python tools for interacting with Overture Maps data
+2026-04-13T01:18:14.3763660Z resticprofile: Configuration profiles manager and scheduler for restic backup
+2026-04-13T01:18:14.3864030Z rpiboot: Raspberry Pi USB boot tool for Compute Modules
+2026-04-13T01:18:14.3965550Z sheets: Terminal based spreadsheet tool
+2026-04-13T01:18:14.4067000Z skip: Tool for building Swift apps for Android
+2026-04-13T01:18:14.4168570Z [34m==>[0m [1mNew Casks[0m
+2026-04-13T01:18:14.4672360Z appgridmac: AI-assisted Launchpad replacement
+2026-04-13T01:18:14.4773150Z backblaze-restore: Computer backup restore client
+2026-04-13T01:18:14.4874400Z baoliandeng: VPN proxy powered by Mihomo (Clash Meta)
+2026-04-13T01:18:14.4976930Z cadran: Desktop clock rendered behind your icons
+2026-04-13T01:18:14.5077010Z cc-switch: Configuration manager for AI coding agents
+2026-04-13T01:18:14.5182880Z clearance: Markdown viewer and editor
+2026-04-13T01:18:14.5284630Z copilot-language-server: Language Server Protocol server for GitHub Copilot
+2026-04-13T01:18:14.5375600Z font-suez-one
+2026-04-13T01:18:14.5414150Z font-sulphur-point
+2026-04-13T01:18:14.5497920Z font-sumana
+2026-04-13T01:18:14.5532190Z font-sura
+2026-04-13T01:18:14.5547070Z font-suranna
+2026-04-13T01:18:14.5549530Z font-suravaram
+2026-04-13T01:18:14.5570470Z font-syne-mono
+2026-04-13T01:18:14.5575830Z font-syne-tactile
+2026-04-13T01:18:14.5584760Z happ: Platform for building proxies to bypass network restrictions
+2026-04-13T01:18:14.5608180Z hive-app: AI agent orchestrator for parallel coding across projects
+2026-04-13T01:18:14.5637490Z idevice-pair: Generate pair records for iOS devices
+2026-04-13T01:18:14.5642400Z intiface-central: Frontend application for the Buttplug sex toy control library
+2026-04-13T01:18:14.5643430Z orchard: Native GUI for Apple Containers
+2026-04-13T01:18:14.5644210Z paper-design: Design tool for creating interfaces and prototypes
+2026-04-13T01:18:14.5644800Z plamo-translate: Translator focused on Japanese
+2026-04-13T01:18:14.5645160Z rayon: AI-powered drawing for interior designers and architects
+2026-04-13T01:18:14.5646400Z rockxy-community: HTTP proxy
+2026-04-13T01:18:14.5646730Z rowboat: Open-source AI coworker, with memory
+2026-04-13T01:18:14.5647030Z tablen: Native SQL client
+2026-04-13T01:18:14.5647300Z vibe-island: Dynamic island AI agent utility
+2026-04-13T01:18:14.5647730Z worksheet-crafter: Worksheet and lesson material creator
+2026-04-13T01:18:14.8678430Z [34m==>[0m [1mOutdated Formulae[0m
+2026-04-13T01:18:14.8689460Z ant
+2026-04-13T01:18:14.8689850Z aws-sam-cli
+2026-04-13T01:18:14.8690990Z azure-cli
+2026-04-13T01:18:14.8691280Z cryptography
+2026-04-13T01:18:14.8691540Z libpng
+2026-04-13T01:18:14.8692700Z libsodium
+2026-04-13T01:18:14.8695590Z openssl@3
+2026-04-13T01:18:14.8695850Z python@3.13
+2026-04-13T01:18:14.8697230Z python@3.14
+2026-04-13T01:18:14.8698820Z sqlite
+2026-04-13T01:18:14.8700290Z swiftformat
+2026-04-13T01:18:14.8700690Z [34m==>[0m [1mOutdated Casks[0m
+2026-04-13T01:18:14.8701730Z session-manager-plugin
+2026-04-13T01:18:14.8703290Z 
+2026-04-13T01:18:14.8703600Z You have [1m11[0m outdated formulae and [1m1[0m outdated cask installed.
+2026-04-13T01:18:14.8705070Z You can upgrade them with [1mbrew upgrade[0m
+2026-04-13T01:18:14.8705900Z or list them with [1mbrew outdated[0m.
+2026-04-13T01:18:16.2398420Z swiftformat 0.60.1 is already installed but outdated (so it will be upgraded).
+2026-04-13T01:18:16.5845860Z [32m==>[0m [1mFetching downloads for: [32mswiftformat[39m and [32mswiftlint[39m[0m
+2026-04-13T01:18:17.0759540Z ✔︎ Bottle Manifest swiftformat (0.61.0)
+2026-04-13T01:18:17.2680070Z ✔︎ Bottle Manifest swiftlint (0.63.2)
+2026-04-13T01:18:18.1112330Z ✔︎ Bottle swiftformat (0.61.0)
+2026-04-13T01:18:18.1213620Z ✔︎ Bottle swiftlint (0.63.2)
+2026-04-13T01:18:18.2156310Z [32m==>[0m [1mUpgrading [32mswiftformat[39m[0m
+2026-04-13T01:18:18.2156710Z   0.60.1 -> 0.61.0 
+2026-04-13T01:18:18.2187690Z [34m==>[0m [1mPouring swiftformat--0.61.0.arm64_sequoia.bottle.tar.gz[0m
+2026-04-13T01:18:19.4780760Z 🍺  /opt/homebrew/Cellar/swiftformat/0.61.0: 7 files, 4.9MB
+2026-04-13T01:18:19.4805600Z [34m==>[0m [1mPouring swiftlint--0.63.2.arm64_sequoia.bottle.tar.gz[0m
+2026-04-13T01:18:20.6051640Z 🍺  /opt/homebrew/Cellar/swiftlint/0.63.2: 10 files, 40MB
+2026-04-13T01:18:20.6053360Z [32m==>[0m [1mCaveats[0m
+2026-04-13T01:18:20.6053660Z Bash completion has been installed to:
+2026-04-13T01:18:20.6357700Z   /opt/homebrew/etc/bash_completion.d
+2026-04-13T01:18:20.6368330Z ##[debug]Finishing: Install SwiftFormat and SwiftLint
+2026-04-13T01:18:20.6394520Z ##[debug]Evaluating condition for step: 'Show quality tool versions'
+2026-04-13T01:18:20.6399740Z ##[debug]Evaluating: success()
+2026-04-13T01:18:20.6400140Z ##[debug]Evaluating success:
+2026-04-13T01:18:20.6400770Z ##[debug]=> true
+2026-04-13T01:18:20.6401340Z ##[debug]Result: true
+2026-04-13T01:18:20.6404230Z ##[debug]Starting: Show quality tool versions
+2026-04-13T01:18:20.6415790Z ##[debug]Loading inputs
+2026-04-13T01:18:20.6417420Z ##[debug]Loading env
+2026-04-13T01:18:20.6422130Z ##[group]Run swiftformat --version
+2026-04-13T01:18:20.6422440Z [36;1mswiftformat --version[0m
+2026-04-13T01:18:20.6422660Z [36;1mswiftlint version[0m
+2026-04-13T01:18:20.6454920Z shell: /bin/bash -e {0}
+2026-04-13T01:18:20.6455120Z env:
+2026-04-13T01:18:20.6455380Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:18:20.6455620Z ##[endgroup]
+2026-04-13T01:18:20.6482480Z ##[debug]/bin/bash -e /Users/runner/work/_temp/6861b032-feb2-47c4-91da-67a65a8d83d1.sh
+2026-04-13T01:18:20.7056760Z 0.61.0
+2026-04-13T01:18:20.7188020Z 0.63.2
+2026-04-13T01:18:20.7211870Z ##[debug]Finishing: Show quality tool versions
+2026-04-13T01:18:20.7220390Z ##[debug]Evaluating condition for step: 'SwiftFormat'
+2026-04-13T01:18:20.7221990Z ##[debug]Evaluating: success()
+2026-04-13T01:18:20.7222270Z ##[debug]Evaluating success:
+2026-04-13T01:18:20.7222830Z ##[debug]=> true
+2026-04-13T01:18:20.7223210Z ##[debug]Result: true
+2026-04-13T01:18:20.7223750Z ##[debug]Starting: SwiftFormat
+2026-04-13T01:18:20.7232790Z ##[debug]Loading inputs
+2026-04-13T01:18:20.7233770Z ##[debug]Loading env
+2026-04-13T01:18:20.7237680Z ##[group]Run swiftformat --lint . --reporter github-actions-log
+2026-04-13T01:18:20.7238040Z [36;1mswiftformat --lint . --reporter github-actions-log[0m
+2026-04-13T01:18:20.7267260Z shell: /bin/bash -e {0}
+2026-04-13T01:18:20.7267390Z env:
+2026-04-13T01:18:20.7267610Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:18:20.7267890Z ##[endgroup]
+2026-04-13T01:18:20.7293590Z ##[debug]/bin/bash -e /Users/runner/work/_temp/99242356-bb96-478a-80e1-ceb2c27bc4a2.sh
+2026-04-13T01:18:20.7597970Z Running SwiftFormat...
+2026-04-13T01:18:20.7598360Z (lint mode - no files will be changed.)
+2026-04-13T01:18:20.7603650Z Reading config file at /Users/runner/work/aparoksha-template/aparoksha-template/.swiftformat
+2026-04-13T01:18:20.7939730Z SwiftFormat completed in 0.03s.
+2026-04-13T01:18:20.7957840Z ##[warning]Add or remove trailing commas in comma-separated lists. (trailingCommas)
+2026-04-13T01:18:20.7962090Z Source input did not pass lint check.
+2026-04-13T01:18:20.7962410Z 2/2 files require formatting, 1 file skipped.
+2026-04-13T01:18:20.7963450Z ##[warning]Add or remove trailing commas in comma-separated lists. (trailingCommas)
+2026-04-13T01:18:20.7964650Z ##[warning]Add or remove trailing commas in comma-separated lists. (trailingCommas)
+2026-04-13T01:18:20.7965650Z ##[warning]Add or remove trailing commas in comma-separated lists. (trailingCommas)
+2026-04-13T01:18:20.7966790Z ##[warning]Add or remove trailing commas in comma-separated lists. (trailingCommas)
+2026-04-13T01:18:20.7967880Z ##[warning]Remove leading blank line at the start of a scope. (blankLinesAtStartOfScope)
+2026-04-13T01:18:20.7968950Z ##[warning]Remove leading blank line at the start of a scope. (blankLinesAtStartOfScope)
+2026-04-13T01:18:20.7969980Z ##[warning]Remove leading blank line at the start of a scope. (blankLinesAtStartOfScope)
+2026-04-13T01:18:20.7971020Z ##[warning]Wrap single-line property bodies onto multiple lines. (wrapPropertyBodies)
+2026-04-13T01:18:20.7972060Z ##[warning]Wrap single-line property bodies onto multiple lines. (wrapPropertyBodies)
+2026-04-13T01:18:20.7973170Z ##[warning]Remove leading blank line at the start of a scope. (blankLinesAtStartOfScope)
+2026-04-13T01:18:20.7974940Z ##[error]Process completed with exit code 1.
+2026-04-13T01:18:20.7978960Z ##[debug]Finishing: SwiftFormat
+2026-04-13T01:18:20.7993490Z ##[debug]Evaluating condition for step: 'SwiftLint'
+2026-04-13T01:18:20.7994780Z ##[debug]Evaluating: success()
+2026-04-13T01:18:20.7995020Z ##[debug]Evaluating success:
+2026-04-13T01:18:20.7995280Z ##[debug]=> false
+2026-04-13T01:18:20.7995540Z ##[debug]Result: false
+2026-04-13T01:18:20.8000890Z ##[debug]Evaluating condition for step: 'Post Checkout'
+2026-04-13T01:18:20.8002210Z ##[debug]Evaluating: always()
+2026-04-13T01:18:20.8002450Z ##[debug]Evaluating always:
+2026-04-13T01:18:20.8003080Z ##[debug]=> true
+2026-04-13T01:18:20.8003340Z ##[debug]Result: true
+2026-04-13T01:18:20.8003680Z ##[debug]Starting: Post Checkout
+2026-04-13T01:18:20.8043300Z ##[debug]Loading inputs
+2026-04-13T01:18:20.8044720Z ##[debug]Evaluating: github.repository
+2026-04-13T01:18:20.8044990Z ##[debug]Evaluating Index:
+2026-04-13T01:18:20.8045170Z ##[debug]..Evaluating github:
+2026-04-13T01:18:20.8045380Z ##[debug]..=> Object
+2026-04-13T01:18:20.8045560Z ##[debug]..Evaluating String:
+2026-04-13T01:18:20.8045750Z ##[debug]..=> 'repository'
+2026-04-13T01:18:20.8045980Z ##[debug]=> 'loosebird/aparoksha-template'
+2026-04-13T01:18:20.8046230Z ##[debug]Result: 'loosebird/aparoksha-template'
+2026-04-13T01:18:20.8047840Z ##[debug]Evaluating: github.token
+2026-04-13T01:18:20.8048080Z ##[debug]Evaluating Index:
+2026-04-13T01:18:20.8048250Z ##[debug]..Evaluating github:
+2026-04-13T01:18:20.8048410Z ##[debug]..=> Object
+2026-04-13T01:18:20.8048570Z ##[debug]..Evaluating String:
+2026-04-13T01:18:20.8048750Z ##[debug]..=> 'token'
+2026-04-13T01:18:20.8049130Z ##[debug]=> '***'
+2026-04-13T01:18:20.8049390Z ##[debug]Result: '***'
+2026-04-13T01:18:20.8059330Z ##[debug]Loading env
+2026-04-13T01:18:20.8063230Z Post job cleanup.
+2026-04-13T01:18:21.0400870Z ##[debug]Getting git version
+2026-04-13T01:18:21.0407930Z [command]/opt/homebrew/bin/git version
+2026-04-13T01:18:21.0472060Z git version 2.53.0
+2026-04-13T01:18:21.0481010Z ##[debug]0
+2026-04-13T01:18:21.0481440Z ##[debug]git version 2.53.0
+2026-04-13T01:18:21.0481600Z ##[debug]
+2026-04-13T01:18:21.0481920Z ##[debug]Set git useragent to: git/2.53.0 (github-actions-checkout)
+2026-04-13T01:18:21.0483040Z ::add-mask::***
+2026-04-13T01:18:21.0488560Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/e081eec9-1f27-4961-be06-e3a51545c5e1/.gitconfig'
+2026-04-13T01:18:21.0494160Z Temporarily overriding HOME='/Users/runner/work/_temp/e081eec9-1f27-4961-be06-e3a51545c5e1' before making global git config changes
+2026-04-13T01:18:21.0494920Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-13T01:18:21.0497780Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/aparoksha-template/aparoksha-template
+2026-04-13T01:18:21.0545120Z ##[debug]0
+2026-04-13T01:18:21.0545350Z ##[debug]
+2026-04-13T01:18:21.0549110Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-13T01:18:21.0591240Z ##[debug]1
+2026-04-13T01:18:21.0591520Z ##[debug]
+2026-04-13T01:18:21.0594960Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-13T01:18:21.1213880Z ##[debug]0
+2026-04-13T01:18:21.1214160Z ##[debug]
+2026-04-13T01:18:21.1217760Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-13T01:18:21.1258470Z http.https://github.com/.extraheader
+2026-04-13T01:18:21.1260570Z ##[debug]0
+2026-04-13T01:18:21.1261010Z ##[debug]http.https://github.com/.extraheader
+2026-04-13T01:18:21.1261230Z ##[debug]
+2026-04-13T01:18:21.1263990Z [command]/opt/homebrew/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-04-13T01:18:21.1308580Z ##[debug]0
+2026-04-13T01:18:21.1308960Z ##[debug]
+2026-04-13T01:18:21.1312830Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-13T01:18:21.1896080Z ##[debug]0
+2026-04-13T01:18:21.1896340Z ##[debug]
+2026-04-13T01:18:21.1899870Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-13T01:18:21.1941570Z ##[debug]1
+2026-04-13T01:18:21.1941810Z ##[debug]
+2026-04-13T01:18:21.1943860Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-13T01:18:21.3098770Z ##[debug]0
+2026-04-13T01:18:21.3200620Z ##[debug]
+2026-04-13T01:18:21.3202390Z ##[debug]Unsetting HOME override
+2026-04-13T01:18:21.3203620Z ##[debug]Node Action run completed with exit code 0
+2026-04-13T01:18:21.3206430Z ##[debug]Finishing: Post Checkout
+2026-04-13T01:18:21.3250560Z ##[debug]Starting: Complete job
+2026-04-13T01:18:21.3251920Z Uploading runner diagnostic logs
+2026-04-13T01:18:21.3268080Z ##[debug]Starting diagnostic file upload.
+2026-04-13T01:18:21.3268320Z ##[debug]Setting up diagnostic log folders.
+2026-04-13T01:18:21.3269670Z ##[debug]Creating diagnostic log files folder.
+2026-04-13T01:18:21.3274620Z ##[debug]Copying 1 worker diagnostic logs.
+2026-04-13T01:18:21.3283500Z ##[debug]Copying 1 runner diagnostic logs.
+2026-04-13T01:18:21.3284740Z ##[debug]Zipping diagnostic files.
+2026-04-13T01:18:21.3431550Z ##[debug]Uploading diagnostic metadata file.
+2026-04-13T01:18:21.3455690Z ##[debug]Diagnostic file upload complete.
+2026-04-13T01:18:21.3456110Z Completed runner diagnostic log upload
+2026-04-13T01:18:21.3456300Z Cleaning up orphan processes
+2026-04-13T01:18:21.9737490Z ##[debug]Finishing: Complete job
+2026-04-13T01:18:21.9763900Z ##[debug]Finishing: Quality (SwiftFormat + SwiftLint)

@@ -1,0 +1,21 @@
+﻿2026-04-13T01:18:58.1481090Z ##[debug]Evaluating condition for step: 'Show toolchain'
+2026-04-13T01:18:58.1483563Z ##[debug]Evaluating: success()
+2026-04-13T01:18:58.1483965Z ##[debug]Evaluating success:
+2026-04-13T01:18:58.1484467Z ##[debug]=> true
+2026-04-13T01:18:58.1485046Z ##[debug]Result: true
+2026-04-13T01:18:58.1485814Z ##[debug]Starting: Show toolchain
+2026-04-13T01:18:58.1659932Z ##[debug]Loading inputs
+2026-04-13T01:18:58.1661918Z ##[debug]Loading env
+2026-04-13T01:18:58.1683085Z ##[group]Run swift --version
+2026-04-13T01:18:58.1683464Z [36;1mswift --version[0m
+2026-04-13T01:18:58.1743756Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-04-13T01:18:58.1744266Z env:
+2026-04-13T01:18:58.1744506Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:18:58.1745035Z   SDKROOT: C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\
+2026-04-13T01:18:58.1746682Z   SWIFTFLAGS: -sdk C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\ -I C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\usr\lib\swift -L C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\usr\lib\swift\windows
+2026-04-13T01:18:58.1748174Z ##[endgroup]
+2026-04-13T01:18:58.1846673Z ##[debug]C:\Program Files\PowerShell\7\pwsh.EXE -command ". 'C:\a\_temp\a9c61668-7fd0-4e8b-8e69-bbb6d5ac47d3.ps1'"
+2026-04-13T01:19:04.6753133Z Swift version 6.2.4 (swift-6.2.4-RELEASE)
+2026-04-13T01:19:04.6754213Z Target: aarch64-unknown-windows-msvc
+2026-04-13T01:19:04.6754508Z Build config: +assertions
+2026-04-13T01:19:05.1956843Z ##[debug]Finishing: Show toolchain

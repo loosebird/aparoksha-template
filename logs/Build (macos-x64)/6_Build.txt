@@ -1,0 +1,71 @@
+﻿2026-04-13T01:18:35.6733960Z ##[debug]Evaluating: matrix.backend
+2026-04-13T01:18:35.6735390Z ##[debug]Evaluating Index:
+2026-04-13T01:18:35.6737370Z ##[debug]..Evaluating matrix:
+2026-04-13T01:18:35.6740120Z ##[debug]..=> Object
+2026-04-13T01:18:35.6741100Z ##[debug]..Evaluating String:
+2026-04-13T01:18:35.6741740Z ##[debug]..=> 'backend'
+2026-04-13T01:18:35.6743360Z ##[debug]=> 'APPKIT'
+2026-04-13T01:18:35.6744830Z ##[debug]Result: 'APPKIT'
+2026-04-13T01:18:35.6751630Z ##[debug]Evaluating condition for step: 'Build'
+2026-04-13T01:18:35.6755930Z ##[debug]Evaluating: success()
+2026-04-13T01:18:35.6756960Z ##[debug]Evaluating success:
+2026-04-13T01:18:35.6758290Z ##[debug]=> true
+2026-04-13T01:18:35.6759760Z ##[debug]Result: true
+2026-04-13T01:18:35.6762210Z ##[debug]Starting: Build
+2026-04-13T01:18:35.6802310Z ##[debug]Loading inputs
+2026-04-13T01:18:35.6807190Z ##[debug]Loading env
+2026-04-13T01:18:35.6828080Z ##[group]Run swift build -c release
+2026-04-13T01:18:35.6829270Z [36;1mswift build -c release[0m
+2026-04-13T01:18:35.6945570Z shell: /bin/bash -e {0}
+2026-04-13T01:18:35.6948190Z env:
+2026-04-13T01:18:35.6948730Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:18:35.6949950Z   DEVELOPER_DIR: /Applications/Xcode_26.3.app
+2026-04-13T01:18:35.6953730Z   APAROKSHA_FRAMEWORK: APPKIT
+2026-04-13T01:18:35.6955670Z ##[endgroup]
+2026-04-13T01:18:35.7052730Z ##[debug]/bin/bash -e /Users/runner/work/_temp/8d2febc4-ff8e-4f45-85f7-0641f9417f46.sh
+2026-04-13T01:18:43.1367820Z Fetching https://git.aparoksha.dev/aparoksha/levenshtein-transformations
+2026-04-13T01:18:43.1368980Z Fetching https://github.com/stephencelis/SQLite.swift
+2026-04-13T01:18:43.1369870Z Fetching https://git.aparoksha.dev/aparoksha/macbackend
+2026-04-13T01:18:44.0356900Z [1/151] Fetching levenshtein-transformations
+2026-04-13T01:18:44.0358280Z [2/411] Fetching levenshtein-transformations, macbackend
+2026-04-13T01:18:44.0453750Z [106/11535] Fetching levenshtein-transformations, macbackend, sqlite.swift
+2026-04-13T01:18:44.9112140Z Fetched https://git.aparoksha.dev/aparoksha/macbackend from cache (1.77s)
+2026-04-13T01:18:44.9126830Z Fetched https://github.com/stephencelis/SQLite.swift from cache (1.77s)
+2026-04-13T01:18:44.9173840Z Fetched https://git.aparoksha.dev/aparoksha/levenshtein-transformations from cache (1.78s)
+2026-04-13T01:18:44.9283170Z Fetching https://git.aparoksha.dev/aparoksha/meta
+2026-04-13T01:18:44.9284230Z Fetching https://git.aparoksha.dev/aparoksha/aparoksha
+2026-04-13T01:18:44.9285710Z Fetching https://git.aparoksha.dev/aparoksha/meta-sqlite
+2026-04-13T01:18:45.6362530Z [1/61] Fetching meta-sqlite
+2026-04-13T01:18:45.7426330Z [62/573] Fetching meta-sqlite, aparoksha
+2026-04-13T01:18:45.7545980Z [103/1693] Fetching meta-sqlite, aparoksha, meta
+2026-04-13T01:18:45.9896100Z Fetched https://git.aparoksha.dev/aparoksha/meta-sqlite from cache (1.06s)
+2026-04-13T01:18:45.9925830Z Fetched https://git.aparoksha.dev/aparoksha/aparoksha from cache (1.06s)
+2026-04-13T01:18:45.9931350Z Fetched https://git.aparoksha.dev/aparoksha/meta from cache (1.06s)
+2026-04-13T01:18:46.0202720Z Creating working copy for https://git.aparoksha.dev/aparoksha/levenshtein-transformations
+2026-04-13T01:18:46.0207500Z Creating working copy for https://git.aparoksha.dev/aparoksha/macbackend
+2026-04-13T01:18:46.0210790Z Creating working copy for https://github.com/stephencelis/SQLite.swift
+2026-04-13T01:18:46.1396590Z Creating working copy for https://git.aparoksha.dev/aparoksha/meta-sqlite
+2026-04-13T01:18:46.2314380Z Creating working copy for https://git.aparoksha.dev/aparoksha/meta
+2026-04-13T01:18:46.2322410Z Working copy of https://git.aparoksha.dev/aparoksha/levenshtein-transformations resolved at main (06577a2)
+2026-04-13T01:18:46.2436230Z Working copy of https://git.aparoksha.dev/aparoksha/macbackend resolved at main (461f907)
+2026-04-13T01:18:46.2438440Z Working copy of https://github.com/stephencelis/SQLite.swift resolved at 0.16.0
+2026-04-13T01:18:46.2999540Z Working copy of https://git.aparoksha.dev/aparoksha/meta-sqlite resolved at main (6e7940c)
+2026-04-13T01:18:46.3030780Z Creating working copy for https://git.aparoksha.dev/aparoksha/aparoksha
+2026-04-13T01:18:46.3569090Z Working copy of https://git.aparoksha.dev/aparoksha/meta resolved at main (f47727d)
+2026-04-13T01:18:46.4149530Z Working copy of https://git.aparoksha.dev/aparoksha/aparoksha resolved at main (357f189)
+2026-04-13T01:18:54.4603670Z Building for production...
+2026-04-13T01:18:54.4828500Z [0/11] Write sources
+2026-04-13T01:18:54.4844320Z [1/11] Copying PrivacyInfo.xcprivacy
+2026-04-13T01:18:54.4846270Z [1/11] Write sources
+2026-04-13T01:18:54.7965320Z [8/11] Write swift-version-1977FEB4D2752686.txt
+2026-04-13T01:18:57.2443410Z [10/14] Compiling LevenshteinTransformations AsyncFunctions.swift
+2026-04-13T01:19:01.8180880Z [11/14] Compiling Meta Binding.swift
+2026-04-13T01:19:16.7524090Z [12/14] Compiling SQLite Backup.swift
+2026-04-13T01:19:17.3582380Z [13/15] Compiling MetaSQLite State.swift
+2026-04-13T01:19:30.6988550Z [14/16] Compiling Core Divider.swift
+2026-04-13T01:19:33.4096730Z [15/17] Compiling Aparoksha MenuButton.swift
+2026-04-13T01:19:34.4210900Z [16/18] Compiling AparokshaStarter main.swift
+2026-04-13T01:19:34.4253090Z [16/18] Write Objects.LinkFileList
+2026-04-13T01:19:35.9772250Z [17/18] Linking AparokshaStarter
+2026-04-13T01:19:35.9799740Z Build complete! (52.86s)
+2026-04-13T01:19:35.9850630Z ##[debug]Finishing: Build

@@ -1,0 +1,740 @@
+﻿2026-04-13T01:17:53.7430520Z ##[debug]Starting: Build (windows-x64)
+2026-04-13T01:17:53.7451029Z ##[debug]Cleaning runner temp folder: D:\a\_temp
+2026-04-13T01:17:53.7571701Z ##[debug]Starting: Set up job
+2026-04-13T01:17:53.7573311Z Current runner version: '2.333.1'
+2026-04-13T01:17:53.7603587Z ##[group]Runner Image Provisioner
+2026-04-13T01:17:53.7604659Z Hosted Compute Agent
+2026-04-13T01:17:53.7605456Z Version: 20260213.493
+2026-04-13T01:17:53.7606872Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-04-13T01:17:53.7607987Z Build Date: 2026-02-13T00:28:41Z
+2026-04-13T01:17:53.7608996Z Worker ID: {6288cf60-2834-4665-923a-fdeb749f6002}
+2026-04-13T01:17:53.7610006Z Azure Region: centralus
+2026-04-13T01:17:53.7610800Z ##[endgroup]
+2026-04-13T01:17:53.7613095Z ##[group]Operating System
+2026-04-13T01:17:53.7614067Z Microsoft Windows Server 2025
+2026-04-13T01:17:53.7614913Z 10.0.26100
+2026-04-13T01:17:53.7615553Z Datacenter
+2026-04-13T01:17:53.7616300Z ##[endgroup]
+2026-04-13T01:17:53.7617003Z ##[group]Runner Image
+2026-04-13T01:17:53.7618571Z Image: windows-2025
+2026-04-13T01:17:53.7619310Z Version: 20260405.77.1
+2026-04-13T01:17:53.7621063Z Included Software: https://github.com/actions/runner-images/blob/win25/20260405.77/images/windows/Windows2025-Readme.md
+2026-04-13T01:17:53.7623717Z Image Release: https://github.com/actions/runner-images/releases/tag/win25%2F20260405.77
+2026-04-13T01:17:53.7625171Z ##[endgroup]
+2026-04-13T01:17:53.7626957Z ##[group]GITHUB_TOKEN Permissions
+2026-04-13T01:17:53.7628999Z Contents: read
+2026-04-13T01:17:53.7629577Z Metadata: read
+2026-04-13T01:17:53.7630028Z ##[endgroup]
+2026-04-13T01:17:53.7632846Z Secret source: Actions
+2026-04-13T01:17:53.7633976Z ##[debug]Primary repository: loosebird/aparoksha-template
+2026-04-13T01:17:53.7634768Z Prepare workflow directory
+2026-04-13T01:17:53.7722096Z ##[debug]Creating pipeline directory: 'D:\a\aparoksha-template'
+2026-04-13T01:17:53.7727919Z ##[debug]Creating workspace directory: 'D:\a\aparoksha-template\aparoksha-template'
+2026-04-13T01:17:53.7730409Z ##[debug]Update context data
+2026-04-13T01:17:53.7733620Z ##[debug]Evaluating job-level environment variables
+2026-04-13T01:17:53.8015276Z ##[debug]Evaluating job container
+2026-04-13T01:17:53.8018972Z ##[debug]Evaluating job service containers
+2026-04-13T01:17:53.8022609Z ##[debug]Evaluating job defaults
+2026-04-13T01:17:53.8051194Z Prepare all required actions
+2026-04-13T01:17:53.8103899Z Getting action download info
+2026-04-13T01:17:54.0900233Z Download action repository 'actions/checkout@v5' (SHA:93cb6efe18208431cddfb8368fd83d5badbf9bfd)
+2026-04-13T01:17:54.1114177Z ##[debug]Copied action archive 'C:\actionarchivecache\actions_checkout\93cb6efe18208431cddfb8368fd83d5badbf9bfd.zip' to 'D:\a\_actions\_temp_44238b60-4019-4b1d-8abd-21f34f633a03\fddd0d4d-9181-425a-9462-501a74b7ac63.zip'
+2026-04-13T01:17:54.1578799Z ##[debug]Unwrap 'actions-checkout-93cb6ef' to 'D:\a\_actions\actions\checkout\v5'
+2026-04-13T01:17:54.2054902Z ##[debug]Archive 'D:\a\_actions\_temp_44238b60-4019-4b1d-8abd-21f34f633a03\fddd0d4d-9181-425a-9462-501a74b7ac63.zip' has been unzipped into 'D:\a\_actions\actions\checkout\v5'.
+2026-04-13T01:17:54.2190031Z Download action repository 'SwiftyLab/setup-swift@v1.13.0' (SHA:86a5d3b9cffda409de636eb5f63f3f5696fdbe36)
+2026-04-13T01:17:54.7663415Z ##[debug]Download 'https://api.github.com/repos/SwiftyLab/setup-swift/zipball/86a5d3b9cffda409de636eb5f63f3f5696fdbe36' to 'D:\a\_actions\_temp_29ba092e-a5b9-43be-a641-01bcdc4c5c2a\5d3bb9ef-b074-47a0-b974-617ea0d43c1d.zip'
+2026-04-13T01:17:54.8084339Z ##[debug]Unwrap 'SwiftyLab-setup-swift-86a5d3b' to 'D:\a\_actions\SwiftyLab\setup-swift\v1.13.0'
+2026-04-13T01:17:54.8497381Z ##[debug]Archive 'D:\a\_actions\_temp_29ba092e-a5b9-43be-a641-01bcdc4c5c2a\5d3bb9ef-b074-47a0-b974-617ea0d43c1d.zip' has been unzipped into 'D:\a\_actions\SwiftyLab\setup-swift\v1.13.0'.
+2026-04-13T01:17:54.8594076Z ##[debug]action.yml for action: 'D:\a\_actions\actions\checkout\v5\action.yml'.
+2026-04-13T01:17:54.9635800Z ##[debug]action.yml for action: 'D:\a\_actions\SwiftyLab\setup-swift\v1.13.0\action.yml'.
+2026-04-13T01:17:54.9746050Z ##[debug]Set step '__actions_checkout' display name to: 'Checkout'
+2026-04-13T01:17:54.9750976Z ##[debug]Set step '__SwiftyLab_setup-swift' display name to: 'Setup Swift'
+2026-04-13T01:17:54.9753748Z ##[debug]Set step '__run' display name to: 'Install Linux dependencies'
+2026-04-13T01:17:54.9756355Z ##[debug]Set step '__run_2' display name to: 'Show toolchain'
+2026-04-13T01:17:54.9827893Z ##[debug]Set step '__run_3' display name to: 'Build'
+2026-04-13T01:17:54.9828850Z Complete job name: Build (windows-x64)
+2026-04-13T01:17:54.9859681Z ##[debug]Collect running processes for tracking orphan processes.
+2026-04-13T01:17:54.9931182Z ##[debug]Finishing: Set up job
+2026-04-13T01:17:55.0073385Z ##[debug]Evaluating condition for step: 'Checkout'
+2026-04-13T01:17:55.0111713Z ##[debug]Evaluating: success()
+2026-04-13T01:17:55.0116860Z ##[debug]Evaluating success:
+2026-04-13T01:17:55.0132346Z ##[debug]=> true
+2026-04-13T01:17:55.0138599Z ##[debug]Result: true
+2026-04-13T01:17:55.0161751Z ##[debug]Starting: Checkout
+2026-04-13T01:17:55.0831055Z ##[debug]Register post job cleanup for action: actions/checkout@v5
+2026-04-13T01:17:55.0925587Z ##[debug]Loading inputs
+2026-04-13T01:17:55.0938006Z ##[debug]Evaluating: github.repository
+2026-04-13T01:17:55.0939270Z ##[debug]Evaluating Index:
+2026-04-13T01:17:55.0941743Z ##[debug]..Evaluating github:
+2026-04-13T01:17:55.0942968Z ##[debug]..=> Object
+2026-04-13T01:17:55.0948595Z ##[debug]..Evaluating String:
+2026-04-13T01:17:55.0949494Z ##[debug]..=> 'repository'
+2026-04-13T01:17:55.0953865Z ##[debug]=> 'loosebird/aparoksha-template'
+2026-04-13T01:17:55.0955591Z ##[debug]Result: 'loosebird/aparoksha-template'
+2026-04-13T01:17:55.0960683Z ##[debug]Evaluating: github.token
+2026-04-13T01:17:55.0961297Z ##[debug]Evaluating Index:
+2026-04-13T01:17:55.0961762Z ##[debug]..Evaluating github:
+2026-04-13T01:17:55.0962243Z ##[debug]..=> Object
+2026-04-13T01:17:55.0962662Z ##[debug]..Evaluating String:
+2026-04-13T01:17:55.0963144Z ##[debug]..=> 'token'
+2026-04-13T01:17:55.0963942Z ##[debug]=> '***'
+2026-04-13T01:17:55.0964512Z ##[debug]Result: '***'
+2026-04-13T01:17:55.0988084Z ##[debug]Loading env
+2026-04-13T01:17:55.1057456Z ##[group]Run actions/checkout@v5
+2026-04-13T01:17:55.1058169Z with:
+2026-04-13T01:17:55.1058585Z   repository: loosebird/aparoksha-template
+2026-04-13T01:17:55.1059395Z   token: ***
+2026-04-13T01:17:55.1059765Z   ssh-strict: true
+2026-04-13T01:17:55.1060149Z   ssh-user: git
+2026-04-13T01:17:55.1060549Z   persist-credentials: true
+2026-04-13T01:17:55.1060987Z   clean: true
+2026-04-13T01:17:55.1061381Z   sparse-checkout-cone-mode: true
+2026-04-13T01:17:55.1061861Z   fetch-depth: 1
+2026-04-13T01:17:55.1062267Z   fetch-tags: false
+2026-04-13T01:17:55.1062665Z   show-progress: true
+2026-04-13T01:17:55.1063062Z   lfs: false
+2026-04-13T01:17:55.1063672Z   submodules: false
+2026-04-13T01:17:55.1064099Z   set-safe-directory: true
+2026-04-13T01:17:55.1064816Z env:
+2026-04-13T01:17:55.1065214Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:17:55.1065721Z ##[endgroup]
+2026-04-13T01:17:55.2366573Z ##[debug]GITHUB_WORKSPACE = 'D:\a\aparoksha-template\aparoksha-template'
+2026-04-13T01:17:55.2369997Z ##[debug]qualified repository = 'loosebird/aparoksha-template'
+2026-04-13T01:17:55.2371788Z ##[debug]ref = 'refs/heads/main'
+2026-04-13T01:17:55.2373354Z ##[debug]commit = 'd883f23aa7d9f36f74f39943706f603d6f768a79'
+2026-04-13T01:17:55.2375106Z ##[debug]clean = true
+2026-04-13T01:17:55.2376500Z ##[debug]filter = undefined
+2026-04-13T01:17:55.2377909Z ##[debug]fetch depth = 1
+2026-04-13T01:17:55.2379683Z ##[debug]fetch tags = false
+2026-04-13T01:17:55.2381020Z ##[debug]show progress = true
+2026-04-13T01:17:55.2381838Z ##[debug]lfs = false
+2026-04-13T01:17:55.2382529Z ##[debug]submodules = false
+2026-04-13T01:17:55.2383256Z ##[debug]recursive submodules = false
+2026-04-13T01:17:55.2384056Z ##[debug]GitHub Host URL = 
+2026-04-13T01:17:55.2388507Z ::add-matcher::D:\a\_actions\actions\checkout\v5\dist\problem-matcher.json
+2026-04-13T01:17:55.2490894Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+2026-04-13T01:17:55.2496223Z Syncing repository: loosebird/aparoksha-template
+2026-04-13T01:17:55.2497696Z ::group::Getting Git version info
+2026-04-13T01:17:55.2499039Z ##[group]Getting Git version info
+2026-04-13T01:17:55.2499818Z Working directory is 'D:\a\aparoksha-template\aparoksha-template'
+2026-04-13T01:17:55.3361374Z ##[debug]Getting git version
+2026-04-13T01:17:55.3381141Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-04-13T01:17:55.7123209Z git version 2.53.0.windows.2
+2026-04-13T01:17:55.7169113Z ##[debug]0
+2026-04-13T01:17:55.7170959Z ##[debug]git version 2.53.0.windows.2
+2026-04-13T01:17:55.7172586Z ##[debug]
+2026-04-13T01:17:55.7174263Z ##[debug]Set git useragent to: git/2.53.0 (github-actions-checkout)
+2026-04-13T01:17:55.7175694Z ::endgroup::
+2026-04-13T01:17:55.7176280Z ##[endgroup]
+2026-04-13T01:17:55.7180426Z ::add-mask::***
+2026-04-13T01:17:55.7191129Z Temporarily overriding HOME='D:\a\_temp\38a28572-0054-4dbe-b226-f8eb6793c961' before making global git config changes
+2026-04-13T01:17:55.7193122Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-13T01:17:55.7201814Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\aparoksha-template\aparoksha-template
+2026-04-13T01:17:55.7973594Z ##[debug]0
+2026-04-13T01:17:55.7976201Z ##[debug]
+2026-04-13T01:17:55.7982039Z Deleting the contents of 'D:\a\aparoksha-template\aparoksha-template'
+2026-04-13T01:17:55.7989715Z ::group::Initializing the repository
+2026-04-13T01:17:55.7990785Z ##[group]Initializing the repository
+2026-04-13T01:17:55.8001818Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\aparoksha-template\aparoksha-template
+2026-04-13T01:17:55.8884768Z Initialized empty Git repository in D:/a/aparoksha-template/aparoksha-template/.git/
+2026-04-13T01:17:55.8920039Z ##[debug]0
+2026-04-13T01:17:55.8922401Z ##[debug]Initialized empty Git repository in D:/a/aparoksha-template/aparoksha-template/.git/
+2026-04-13T01:17:55.8924368Z ##[debug]
+2026-04-13T01:17:55.8930728Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/loosebird/aparoksha-template
+2026-04-13T01:17:55.9440239Z ##[debug]0
+2026-04-13T01:17:55.9441753Z ##[debug]
+2026-04-13T01:17:55.9443344Z ::endgroup::
+2026-04-13T01:17:55.9444211Z ##[endgroup]
+2026-04-13T01:17:55.9445789Z ::group::Disabling automatic garbage collection
+2026-04-13T01:17:55.9447215Z ##[group]Disabling automatic garbage collection
+2026-04-13T01:17:55.9450887Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2026-04-13T01:17:55.9765065Z ##[debug]0
+2026-04-13T01:17:55.9766546Z ##[debug]
+2026-04-13T01:17:55.9768259Z ::endgroup::
+2026-04-13T01:17:55.9769123Z ##[endgroup]
+2026-04-13T01:17:55.9770757Z ::group::Setting up auth
+2026-04-13T01:17:55.9771826Z ##[group]Setting up auth
+2026-04-13T01:17:55.9778616Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-04-13T01:17:56.0080305Z ##[debug]1
+2026-04-13T01:17:56.0081749Z ##[debug]
+2026-04-13T01:17:56.0093001Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-04-13T01:17:57.3947521Z ##[debug]0
+2026-04-13T01:17:57.3948719Z ##[debug]
+2026-04-13T01:17:57.3959770Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-13T01:17:57.4260486Z ##[debug]1
+2026-04-13T01:17:57.4260920Z ##[debug]
+2026-04-13T01:17:57.4270724Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-04-13T01:17:57.9605316Z ##[debug]0
+2026-04-13T01:17:57.9605732Z ##[debug]
+2026-04-13T01:17:57.9622446Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-13T01:17:57.9943442Z ##[debug]1
+2026-04-13T01:17:57.9944207Z ##[debug]
+2026-04-13T01:17:57.9954317Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-04-13T01:17:58.5645122Z ##[debug]0
+2026-04-13T01:17:58.5645778Z ##[debug]
+2026-04-13T01:17:58.5660413Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-04-13T01:17:58.5977641Z ##[debug]0
+2026-04-13T01:17:58.5978273Z ##[debug]
+2026-04-13T01:17:58.5992983Z ::endgroup::
+2026-04-13T01:17:58.5993291Z ##[endgroup]
+2026-04-13T01:17:58.5993858Z ::group::Fetching the repository
+2026-04-13T01:17:58.5994338Z ##[group]Fetching the repository
+2026-04-13T01:17:58.6008357Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d883f23aa7d9f36f74f39943706f603d6f768a79:refs/remotes/origin/main
+2026-04-13T01:17:59.4948396Z From https://github.com/loosebird/aparoksha-template
+2026-04-13T01:17:59.4948962Z  * [new ref]         d883f23aa7d9f36f74f39943706f603d6f768a79 -> origin/main
+2026-04-13T01:17:59.5458863Z ##[debug]0
+2026-04-13T01:17:59.5459410Z ##[debug]
+2026-04-13T01:17:59.5460022Z ::endgroup::
+2026-04-13T01:17:59.5460314Z ##[endgroup]
+2026-04-13T01:17:59.5460806Z ::group::Determining the checkout info
+2026-04-13T01:17:59.5461343Z ##[group]Determining the checkout info
+2026-04-13T01:17:59.5462311Z ::endgroup::
+2026-04-13T01:17:59.5462560Z ##[endgroup]
+2026-04-13T01:17:59.5473314Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2026-04-13T01:17:59.5978326Z ##[debug]0
+2026-04-13T01:17:59.5979467Z ##[debug]
+2026-04-13T01:17:59.5990266Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2026-04-13T01:17:59.6358887Z ##[debug]0
+2026-04-13T01:17:59.6359205Z ##[debug]
+2026-04-13T01:17:59.6359517Z ::group::Checking out the ref
+2026-04-13T01:17:59.6359742Z ##[group]Checking out the ref
+2026-04-13T01:17:59.6368883Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+2026-04-13T01:17:59.6963371Z Switched to a new branch 'main'
+2026-04-13T01:17:59.7029997Z branch 'main' set up to track 'origin/main'.
+2026-04-13T01:17:59.7075199Z ##[debug]0
+2026-04-13T01:17:59.7077266Z ##[debug]branch 'main' set up to track 'origin/main'.
+2026-04-13T01:17:59.7077600Z ##[debug]
+2026-04-13T01:17:59.7077915Z ::endgroup::
+2026-04-13T01:17:59.7078089Z ##[endgroup]
+2026-04-13T01:17:59.7486335Z ##[debug]0
+2026-04-13T01:17:59.7486778Z ##[debug]commit d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:59.7487230Z ##[debug]Author: viniciusnevescosta <vinicius.nevesco@gmail.com>
+2026-04-13T01:17:59.7487578Z ##[debug]Date:   Sun Apr 12 22:16:02 2026 -0300
+2026-04-13T01:17:59.7487808Z ##[debug]
+2026-04-13T01:17:59.7487968Z ##[debug]    ci(tools)!: Lint and format
+2026-04-13T01:17:59.7488175Z ##[debug]
+2026-04-13T01:17:59.7494490Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2026-04-13T01:17:59.7773597Z d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:59.7810822Z ##[debug]0
+2026-04-13T01:17:59.7811247Z ##[debug]d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:59.7811506Z ##[debug]
+2026-04-13T01:17:59.7819958Z ##[debug]Unsetting HOME override
+2026-04-13T01:17:59.7828459Z ::remove-matcher owner=checkout-git::
+2026-04-13T01:17:59.7840721Z ##[debug]Removed matchers: 'checkout-git'
+2026-04-13T01:17:59.7959910Z ##[debug]Node Action run completed with exit code 0
+2026-04-13T01:17:59.8000085Z ##[debug]Save intra-action state isPost = true
+2026-04-13T01:17:59.8000840Z ##[debug]Save intra-action state setSafeDirectory = true
+2026-04-13T01:17:59.8001335Z ##[debug]Save intra-action state repositoryPath = D:\a\aparoksha-template\aparoksha-template
+2026-04-13T01:17:59.8005318Z ##[debug]Set output commit = d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:17:59.8005787Z ##[debug]Set output ref = refs/heads/main
+2026-04-13T01:17:59.8008935Z ##[debug]Finishing: Checkout
+2026-04-13T01:17:59.8031500Z ##[debug]Evaluating condition for step: 'Setup Swift'
+2026-04-13T01:17:59.8036267Z ##[debug]Evaluating: success()
+2026-04-13T01:17:59.8036594Z ##[debug]Evaluating success:
+2026-04-13T01:17:59.8036965Z ##[debug]=> true
+2026-04-13T01:17:59.8037418Z ##[debug]Result: true
+2026-04-13T01:17:59.8038275Z ##[debug]Starting: Setup Swift
+2026-04-13T01:17:59.8205610Z ##[debug]Loading inputs
+2026-04-13T01:17:59.8219950Z ##[debug]Loading env
+2026-04-13T01:17:59.8230331Z ##[group]Run SwiftyLab/setup-swift@v1.13.0
+2026-04-13T01:17:59.8230590Z with:
+2026-04-13T01:17:59.8230789Z   swift-version: 6.2.4
+2026-04-13T01:17:59.8230976Z   development: false
+2026-04-13T01:17:59.8231171Z   check-latest: false
+2026-04-13T01:17:59.8231336Z   dry-run: false
+2026-04-13T01:17:59.8231500Z   cache-snapshot: true
+2026-04-13T01:17:59.8231691Z   prefer-oss-toolchain: false
+2026-04-13T01:17:59.8231924Z   prefer-visual-studio-linker: false
+2026-04-13T01:17:59.8232161Z   update-sdk-modules: false
+2026-04-13T01:17:59.8232406Z env:
+2026-04-13T01:17:59.8232568Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:17:59.8232800Z ##[endgroup]
+2026-04-13T01:18:00.0455444Z ##[debug]Input "6.2.4" not an URL
+2026-04-13T01:18:00.0456812Z ##[debug]Using latest 6.2.4 toolchain requirement
+2026-04-13T01:18:00.0458355Z ::group::Syncing swift.org data
+2026-04-13T01:18:00.0458663Z ##[group]Syncing swift.org data
+2026-04-13T01:18:00.1354968Z ##[debug]Recieved swift.org metadata: "{"commit":"50f426af8cb83550c16c1bac95fb36ad68f2fa68","release":{"name":"6.3","tag":"swift-6.3-RELEASE","xcode":"Xcode 26.4","xcode_release":true,"date":"2026-03-24T00:00:00.000Z","platforms":[{"name":"Ubuntu 22.04","platform":"Linux","docker":"6.3-jammy","archs":["x86_64","aarch64"]},{"name":"Ubuntu 24.04","platform":"Linux","docker":"6.3-noble","archs":["x86_64","aarch64"]},{"name":"Debian 12","platform":"Linux","docker":"6.3-bookworm","archs":["x86_64","aarch64"]},{"name":"Fedora 39","platform":"Linux","docker":"6.3-fedora39","archs":["x86_64","aarch64"]},{"name":"Fedora 41","platform":"Linux","docker":"6.3-fedora41","archs":["x86_64","aarch64"]},{"name":"Amazon Linux 2","platform":"Linux","docker":"6.3-amazonlinux2","archs":["x86_64","aarch64"]},{"name":"Red Hat Universal Base Image 9","platform":"Linux","docker":"6.3-rhel-ubi9","dir":"ubi9","archs":["x86_64","aarch64"]},{"name":"Windows 10","platform":"Windows","docker":"6.3-windowsservercore-ltsc2022","archs":["x86_64","arm64"]},{"name":"Static SDK","platform":"static-sdk","version":"0.1.0","checksum":"d2078b69bdeb5c31202c10e9d8a11d6f66f82938b51a4b75f032ccb35c4c286c","archs":["x86_64","arm64"]},{"name":"Wasm SDK","platform":"wasm-sdk","checksum":"9fa4016ee632c7e9e906608ec3b55cf13dfc4dff44e47574c5af58064dc33fd9","archs":["x86_64","arm64"]},{"name":"Android SDK","platform":"android-sdk","checksum":"2f2942c4bcea7965a08665206212c66991dabe23725aeec7c4365fc91acad088","archs":["x86_64","arm64"]}]},"dev":{"name":"6.3","date":"2026-03-05T16:10:00.000Z","tag":"swift-6.3-DEVELOPMENT-SNAPSHOT-2026-03-05-a"},"snapshot":{"date":"2026-04-01T16:10:00.000Z","tag":"swift-DEVELOPMENT-SNAPSHOT-2026-04-01-a"}}"
+2026-04-13T01:18:00.1361283Z ##[debug]Adding submodule at "D:\a\_actions\SwiftyLab\setup-swift\v1.13.0\swiftorg" directory
+2026-04-13T01:18:00.2223829Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\_actions\SwiftyLab\setup-swift\v1.13.0\swiftorg
+2026-04-13T01:18:00.2612341Z Initialized empty Git repository in D:/a/_actions/SwiftyLab/setup-swift/v1.13.0/swiftorg/.git/
+2026-04-13T01:18:00.3423837Z [command]"C:\Program Files\Git\bin\git.exe" fetch https://github.com/apple/swift-org-website.git 50f426af8cb83550c16c1bac95fb36ad68f2fa68 --depth=1 --no-tags
+2026-04-13T01:18:01.6095265Z From https://github.com/apple/swift-org-website
+2026-04-13T01:18:01.6095829Z  * branch            50f426af8cb83550c16c1bac95fb36ad68f2fa68 -> FETCH_HEAD
+2026-04-13T01:18:01.7015601Z [command]"C:\Program Files\Git\bin\git.exe" checkout FETCH_HEAD --detach
+2026-04-13T01:18:02.5683812Z HEAD is now at 50f426a [cxx-interop] Minor wording improvement in safe wrappers documentation
+2026-04-13T01:18:02.5826272Z ::endgroup::
+2026-04-13T01:18:02.5826551Z ##[endgroup]
+2026-04-13T01:18:02.5827289Z ::group::Detecting current platform
+2026-04-13T01:18:02.5827698Z ##[group]Detecting current platform
+2026-04-13T01:18:02.5830056Z Detected windows platform with arch "x64"
+2026-04-13T01:18:02.5831841Z ::endgroup::
+2026-04-13T01:18:02.5832108Z ##[endgroup]
+2026-04-13T01:18:02.5998500Z ::group::Installing Swift toolchain snapshot swift-6.2.4-RELEASE
+2026-04-13T01:18:02.5999313Z ##[group]Installing Swift toolchain snapshot swift-6.2.4-RELEASE
+2026-04-13T01:18:02.6000261Z No SDKs to install
+2026-04-13T01:18:02.6006238Z ##[debug]Finding tool with key: "swift-6.2.4-RELEASE-windows10", version: "6.2.4" and arch: "x86_64" in tool cache
+2026-04-13T01:18:02.6014286Z ##[debug]isExplicit: 6.2.4
+2026-04-13T01:18:02.6015073Z ##[debug]explicit? true
+2026-04-13T01:18:02.6018237Z ##[debug]checking cache: C:\hostedtoolcache\windows\swift-6.2.4-RELEASE-windows10\6.2.4\x86_64
+2026-04-13T01:18:02.6019363Z ##[debug]not found
+2026-04-13T01:18:02.6022842Z ##[debug]Cache service version: v2
+2026-04-13T01:18:02.6026898Z ##[debug]Resolved Keys:
+2026-04-13T01:18:02.6027663Z ##[debug]["swift-6.2.4-RELEASE-windows10-x86_64"]
+2026-04-13T01:18:02.6037063Z ##[debug]Checking zstd --quiet --version
+2026-04-13T01:18:02.7619616Z ##[debug]1.5.7
+2026-04-13T01:18:02.7622027Z ##[debug]zstd version: 1.5.7
+2026-04-13T01:18:02.7633831Z ##[debug][Request] GetCacheEntryDownloadURL https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.CacheService/GetCacheEntryDownloadURL
+2026-04-13T01:18:02.8665775Z ##[debug][Response] - 200
+2026-04-13T01:18:02.8666424Z ##[debug]Headers: {
+2026-04-13T01:18:02.8666710Z ##[debug]  "content-length": "56",
+2026-04-13T01:18:02.8667652Z ##[debug]  "content-type": "application/json",
+2026-04-13T01:18:02.8668124Z ##[debug]  "date": "Mon, 13 Apr 2026 01:18:02 GMT",
+2026-04-13T01:18:02.8668608Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-04-13T01:18:02.8669143Z ##[debug]  "x-github-request-id": "7C10:372FB:63345CA:7D77D08:69DC444A"
+2026-04-13T01:18:02.8669516Z ##[debug]}
+2026-04-13T01:18:02.8670270Z ##[debug]Body: {
+2026-04-13T01:18:02.8670466Z ##[debug]  "ok": false,
+2026-04-13T01:18:02.8670692Z ##[debug]  "signed_download_url": "",
+2026-04-13T01:18:02.8670963Z ##[debug]  "matched_key": ""
+2026-04-13T01:18:02.8671176Z ##[debug]}
+2026-04-13T01:18:02.8675924Z ##[debug]Cache not found for version 2703112e8bd56a798ff9f80e4005a37f0795c067cd3a20cb4aa4024acda00f99 of keys: swift-6.2.4-RELEASE-windows10-x86_64
+2026-04-13T01:18:02.8683587Z ##[debug]Downloading snapshot signature from "https:/download.swift.org/swift-6.2.4-release/windows10/swift-6.2.4-RELEASE/swift-6.2.4-RELEASE-windows10.exe.sig"
+2026-04-13T01:18:02.8696762Z ##[debug]Downloading https:/download.swift.org/swift-6.2.4-release/windows10/swift-6.2.4-RELEASE/swift-6.2.4-RELEASE-windows10.exe.sig
+2026-04-13T01:18:02.8697593Z ##[debug]Destination D:\a\_temp\b518074e-502c-49e2-9ba8-f6be89801d72
+2026-04-13T01:18:03.3472386Z ##[debug]Failed to download from "https:/download.swift.org/swift-6.2.4-release/windows10/swift-6.2.4-RELEASE/swift-6.2.4-RELEASE-windows10.exe.sig". Code(404) Message(Not Found)
+2026-04-13T01:18:03.3496027Z ##[warning]No signature at "https:/download.swift.org/swift-6.2.4-release/windows10/swift-6.2.4-RELEASE/swift-6.2.4-RELEASE-windows10.exe.sig"
+2026-04-13T01:18:03.3505022Z ##[debug]Downloading snapshot from "https://download.swift.org/swift-6.2.4-release/windows10/swift-6.2.4-RELEASE/swift-6.2.4-RELEASE-windows10.exe" for architecture x86_64
+2026-04-13T01:18:03.3506557Z ##[debug]Downloading https://download.swift.org/swift-6.2.4-release/windows10/swift-6.2.4-RELEASE/swift-6.2.4-RELEASE-windows10.exe
+2026-04-13T01:18:03.3507313Z ##[debug]Destination D:\a\_temp\82f3a575-049f-4f2e-93d6-c030e64061d6
+2026-04-13T01:18:09.7001111Z ##[debug]download complete
+2026-04-13T01:18:09.7006893Z ##[debug]Toolchain installer downloaded at "D:\a\_temp\82f3a575-049f-4f2e-93d6-c030e64061d6.exe"
+2026-04-13T01:18:09.7008013Z ##[debug]Unpacking for architecture "x86_64"
+2026-04-13T01:18:09.7008957Z ##[debug]Installing toolchain from "D:\a\_temp\82f3a575-049f-4f2e-93d6-c030e64061d6.exe"
+2026-04-13T01:18:09.8112065Z [command]C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command "& {[Environment]::GetEnvironmentVariables('Machine') | ConvertTo-Json}"
+2026-04-13T01:18:10.1998250Z {
+2026-04-13T01:18:10.1998627Z     "GHCUP_INSTALL_BASE_PREFIX":  "C:\\",
+2026-04-13T01:18:10.2011068Z     "Path":  "C:\\Program Files\\MongoDB\\Server\\7.0\\bin;C:\\vcpkg;C:\\tools\\zstd;C:\\hostedtoolcache\\windows\\stack\\3.9.3\\x64;C:\\cabal\\bin;C:\\\\ghcup\\bin;C:\\mingw64\\bin;C:\\Program Files\\dotnet;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\Program Files\\R\\R-4.5.3\\bin\\x64;C:\\SeleniumWebDrivers\\GeckoDriver;C:\\SeleniumWebDrivers\\EdgeDriver\\;C:\\SeleniumWebDrivers\\ChromeDriver;C:\\Program Files (x86)\\sbt\\bin;C:\\Program Files (x86)\\GitHub CLI;C:\\Program Files\\Git\\bin;C:\\Program Files (x86)\\pipx_bin;C:\\npm\\prefix;C:\\hostedtoolcache\\windows\\go\\1.24.13\\x64\\bin;C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Scripts;C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64;C:\\hostedtoolcache\\windows\\Ruby\\3.3.11\\x64\\bin;C:\\Program Files\\OpenSSL\\bin;C:\\tools\\kotlinc\\bin;C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\17.0.18-8\\x64\\bin;C:\\Program Files\\ImageMagick-7.1.2-Q16-HDRI;C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin;C:\\ProgramData\\kind;C:\\ProgramData\\Chocolatey\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\WiX Toolset v3.14\\bin;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\;C:\\ProgramData\\chocolatey\\lib\\pulumi\\tools\\Pulumi\\bin;C:\\Program Files\\CMake\\bin;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.14\\bin;C:\\Program Files\\Microsoft Service Fabric\\bin\\Fabric\\Fabric.Code;C:\\Program Files\\Microsoft SDKs\\Service Fabric\\Tools\\ServiceFabricLocalClusterManager;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\GitHub CLI\\;c:\\tools\\php;C:\\Program Files (x86)\\sbt\\bin;C:\\Program Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\SessionManagerPlugin\\bin\\;C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\mongosh\\;C:\\Program Files\\LLVM\\bin;C:\\Program Files (x86)\\LLVM\\bin",
+2026-04-13T01:18:10.2023827Z     "PIPX_HOME":  "C:\\Program Files (x86)\\pipx",
+2026-04-13T01:18:10.2024156Z     "ChocolateyInstall":  "C:\\ProgramData\\chocolatey",
+2026-04-13T01:18:10.2024595Z     "JAVA_HOME_11_X64":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\11.0.30-7\\x64",
+2026-04-13T01:18:10.2025844Z     "POWERSHELL_DISTRIBUTION_CHANNEL":  "GitHub-Actions-win25",
+2026-04-13T01:18:10.2026163Z     "TMP":  "C:\\Windows\\TEMP",
+2026-04-13T01:18:10.2026501Z     "PROCESSOR_ARCHITECTURE":  "AMD64",
+2026-04-13T01:18:10.2026853Z     "M2_REPO":  "C:\\ProgramData\\m2",
+2026-04-13T01:18:10.2027329Z     "PATHEXT":  ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+2026-04-13T01:18:10.2028031Z     "ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE":  "C:\\actionarchivecache\\",
+2026-04-13T01:18:10.2028357Z     "DOTNET_NOLOGO":  "1",
+2026-04-13T01:18:10.2028552Z     "ENABLE_RUNNER_TRACING":  "true",
+2026-04-13T01:18:10.2028771Z     "PROCESSOR_REVISION":  "0101",
+2026-04-13T01:18:10.2028975Z     "TEMP":  "C:\\Windows\\TEMP",
+2026-04-13T01:18:10.2029340Z     "PSModuleAnalysisCachePath":  "C:\\PSModuleAnalysisCachePath\\ModuleAnalysisCache",
+2026-04-13T01:18:10.2029727Z     "GCM_INTERACTIVE":  "Never",
+2026-04-13T01:18:10.2029972Z     "IEWebDriver":  "C:\\SeleniumWebDrivers\\IEDriver",
+2026-04-13T01:18:10.2030227Z     "USERNAME":  "SYSTEM",
+2026-04-13T01:18:10.2030486Z     "GOROOT_1_22_X64":  "C:\\hostedtoolcache\\windows\\go\\1.22.12\\x64",
+2026-04-13T01:18:10.2030898Z     "PROCESSOR_IDENTIFIER":  "AMD64 Family 25 Model 1 Stepping 1, AuthenticAMD",
+2026-04-13T01:18:10.2032016Z     "GeckoWebDriver":  "C:\\SeleniumWebDrivers\\GeckoDriver",
+2026-04-13T01:18:10.2032759Z     "ANDROID_NDK":  "C:\\Android\\android-sdk\\ndk\\27.3.13750724",
+2026-04-13T01:18:10.2033265Z     "POWERSHELL_UPDATECHECK":  "Off",
+2026-04-13T01:18:10.2033654Z     "PGUSER":  "postgres",
+2026-04-13T01:18:10.2105249Z     "SELENIUM_JAR_PATH":  "C:\\selenium\\selenium-server.jar",
+2026-04-13T01:18:10.2105975Z     "PIPX_BIN_DIR":  "C:\\Program Files (x86)\\pipx_bin",
+2026-04-13T01:18:10.2106808Z     "JAVA_HOME_21_X64":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\21.0.10-7.0\\x64",
+2026-04-13T01:18:10.2107595Z     "ChromeWebDriver":  "C:\\SeleniumWebDrivers\\ChromeDriver",
+2026-04-13T01:18:10.2108123Z     "PROCESSOR_LEVEL":  "25",
+2026-04-13T01:18:10.2108523Z     "ComSpec":  "C:\\Windows\\system32\\cmd.exe",
+2026-04-13T01:18:10.2109193Z     "JAVA_HOME_8_X64":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\8.0.482-8\\x64",
+2026-04-13T01:18:10.2109952Z     "ANDROID_NDK_HOME":  "C:\\Android\\android-sdk\\ndk\\27.3.13750724",
+2026-04-13T01:18:10.2110660Z     "GRADLE_HOME":  "C:\\ProgramData\\chocolatey\\lib\\gradle\\tools\\gradle-9.4.1",
+2026-04-13T01:18:10.2111267Z     "PHPROOT":  "c:\\tools\\php",
+2026-04-13T01:18:10.2111751Z     "GOROOT_1_23_X64":  "C:\\hostedtoolcache\\windows\\go\\1.23.12\\x64",
+2026-04-13T01:18:10.2112454Z     "ANDROID_NDK_LATEST_HOME":  "C:\\Android\\android-sdk\\ndk\\29.0.14206865",
+2026-04-13T01:18:10.2113151Z     "ANDROID_NDK_ROOT":  "C:\\Android\\android-sdk\\ndk\\27.3.13750724",
+2026-04-13T01:18:10.2113704Z     "npm_config_prefix":  "C:\\npm\\prefix",
+2026-04-13T01:18:10.2114201Z     "EdgeWebDriver":  "C:\\SeleniumWebDrivers\\EdgeDriver",
+2026-04-13T01:18:10.2114773Z     "AGENT_TOOLSDIRECTORY":  "C:\\hostedtoolcache\\windows",
+2026-04-13T01:18:10.2115267Z     "VCPKG_INSTALLATION_ROOT":  "C:\\vcpkg",
+2026-04-13T01:18:10.2115911Z     "JAVA_HOME_17_X64":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\17.0.18-8\\x64",
+2026-04-13T01:18:10.2116705Z     "GOROOT_1_24_X64":  "C:\\hostedtoolcache\\windows\\go\\1.24.13\\x64",
+2026-04-13T01:18:10.2117228Z     "DOTNET_MULTILEVEL_LOOKUP":  "0",
+2026-04-13T01:18:10.2117596Z     "PGPASSWORD":  "root",
+2026-04-13T01:18:10.2117958Z     "WIX":  "C:\\Program Files (x86)\\WiX Toolset v3.14\\",
+2026-04-13T01:18:10.2118482Z     "AZURE_DEVOPS_CACHE_DIR":  "C:\\azureDevOpsCli\\cache",
+2026-04-13T01:18:10.2118992Z     "ANDROID_SDK_ROOT":  "C:\\Android\\android-sdk",
+2026-04-13T01:18:10.2119514Z     "DriverData":  "C:\\Windows\\System32\\Drivers\\DriverData",
+2026-04-13T01:18:10.2120055Z     "PGROOT":  "C:\\Program Files\\PostgreSQL\\17",
+2026-04-13T01:18:10.2120464Z     "windir":  "C:\\Windows",
+2026-04-13T01:18:10.2120779Z     "GHCUP_MSYS2":  "C:\\msys64",
+2026-04-13T01:18:10.2121574Z     "NUMBER_OF_PROCESSORS":  "4",
+2026-04-13T01:18:10.2122217Z     "OS":  "Windows_NT",
+2026-04-13T01:18:10.2123229Z     "CABAL_DIR":  "C:\\cabal",
+2026-04-13T01:18:10.2123610Z     "ImageOS":  "win25",
+2026-04-13T01:18:10.2124303Z     "ImageVersion":  "20260405.77.1",
+2026-04-13T01:18:10.2125104Z     "JAVA_HOME_25_X64":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\25.0.2-10.0\\x64",
+2026-04-13T01:18:10.2125608Z     "RUNNER_TOOL_CACHE":  "C:\\hostedtoolcache\\windows",
+2026-04-13T01:18:10.2125892Z     "RTOOLS45_HOME":  "C:\\rtools45",
+2026-04-13T01:18:10.2126260Z     "JAVA_HOME":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\17.0.18-8\\x64",
+2026-04-13T01:18:10.2126679Z     "DOTNET_SKIP_FIRST_TIME_EXPERIENCE":  "1",
+2026-04-13T01:18:10.2127746Z     "PSModulePath":  "C:\\\\Modules\\az_14.6.0;C:\\Users\\packer\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\PowerShell\\Modules\\",
+2026-04-13T01:18:10.2128850Z     "AZURE_CONFIG_DIR":  "C:\\azureCli",
+2026-04-13T01:18:10.2129242Z     "ANT_HOME":  "C:\\ProgramData\\chocolatey\\lib\\ant\\tools\\apache-ant-1.10.16",
+2026-04-13T01:18:10.2129696Z     "M2":  "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.14\\bin",
+2026-04-13T01:18:10.2130117Z     "GOROOT_1_25_X64":  "C:\\hostedtoolcache\\windows\\go\\1.25.8\\x64",
+2026-04-13T01:18:10.2130571Z     "AZURE_EXTENSION_DIR":  "C:\\Program Files\\Common Files\\AzureCliExtensionDirectory",
+2026-04-13T01:18:10.2131003Z     "AZ_DEVOPS_GLOBAL_CONFIG_DIR":  "C:\\azureDevOpsCli",
+2026-04-13T01:18:10.2131289Z     "COBERTURA_HOME":  "C:\\cobertura-2.1.1",
+2026-04-13T01:18:10.2131534Z     "PGDATA":  "C:\\PostgreSQL\\17\\data",
+2026-04-13T01:18:10.2131807Z     "PGBIN":  "C:\\Program Files\\PostgreSQL\\17\\bin",
+2026-04-13T01:18:10.2132064Z     "MAVEN_OPTS":  "-Xms256m",
+2026-04-13T01:18:10.2132262Z     "CONDA":  "C:\\Miniconda",
+2026-04-13T01:18:10.2132472Z     "SBT_HOME":  "C:\\Program Files (x86)\\sbt\\",
+2026-04-13T01:18:10.2132744Z     "ANDROID_HOME":  "C:\\Android\\android-sdk"
+2026-04-13T01:18:10.2132964Z }
+2026-04-13T01:18:10.2973420Z [command]C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command "& {[Environment]::GetEnvironmentVariables('User') | ConvertTo-Json}"
+2026-04-13T01:18:10.6497695Z {
+2026-04-13T01:18:10.6498474Z     "Path":  "C:\\Users\\runneradmin\\.dotnet\\tools;C:\\Users\\runneradmin\\.cargo\\bin;C:\\Users\\runneradmin\\AppData\\Local\\Microsoft\\WindowsApps;",
+2026-04-13T01:18:10.6499273Z     "TEMP":  "C:\\Users\\runneradmin\\AppData\\Local\\Temp",
+2026-04-13T01:18:10.6499804Z     "TMP":  "C:\\Users\\runneradmin\\AppData\\Local\\Temp"
+2026-04-13T01:18:10.6500216Z }
+2026-04-13T01:18:10.6686635Z [command]D:\a\_temp\82f3a575-049f-4f2e-93d6-c030e64061d6.exe -q
+2026-04-13T01:19:02.0350423Z [command]C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command "& {[Environment]::GetEnvironmentVariables('Machine') | ConvertTo-Json}"
+2026-04-13T01:19:02.3950078Z {
+2026-04-13T01:19:02.3950468Z     "GHCUP_INSTALL_BASE_PREFIX":  "C:\\",
+2026-04-13T01:19:02.3963459Z     "Path":  "C:\\Program Files\\MongoDB\\Server\\7.0\\bin;C:\\vcpkg;C:\\tools\\zstd;C:\\hostedtoolcache\\windows\\stack\\3.9.3\\x64;C:\\cabal\\bin;C:\\\\ghcup\\bin;C:\\mingw64\\bin;C:\\Program Files\\dotnet;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\Program Files\\R\\R-4.5.3\\bin\\x64;C:\\SeleniumWebDrivers\\GeckoDriver;C:\\SeleniumWebDrivers\\EdgeDriver\\;C:\\SeleniumWebDrivers\\ChromeDriver;C:\\Program Files (x86)\\sbt\\bin;C:\\Program Files (x86)\\GitHub CLI;C:\\Program Files\\Git\\bin;C:\\Program Files (x86)\\pipx_bin;C:\\npm\\prefix;C:\\hostedtoolcache\\windows\\go\\1.24.13\\x64\\bin;C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64\\Scripts;C:\\hostedtoolcache\\windows\\Python\\3.12.10\\x64;C:\\hostedtoolcache\\windows\\Ruby\\3.3.11\\x64\\bin;C:\\Program Files\\OpenSSL\\bin;C:\\tools\\kotlinc\\bin;C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\17.0.18-8\\x64\\bin;C:\\Program Files\\ImageMagick-7.1.2-Q16-HDRI;C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin;C:\\ProgramData\\kind;C:\\ProgramData\\Chocolatey\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\WiX Toolset v3.14\\bin;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\;C:\\ProgramData\\chocolatey\\lib\\pulumi\\tools\\Pulumi\\bin;C:\\Program Files\\CMake\\bin;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.14\\bin;C:\\Program Files\\Microsoft Service Fabric\\bin\\Fabric\\Fabric.Code;C:\\Program Files\\Microsoft SDKs\\Service Fabric\\Tools\\ServiceFabricLocalClusterManager;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\GitHub CLI\\;c:\\tools\\php;C:\\Program Files (x86)\\sbt\\bin;C:\\Program Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\SessionManagerPlugin\\bin\\;C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\mongosh\\;C:\\Program Files\\LLVM\\bin;C:\\Program Files (x86)\\LLVM\\bin",
+2026-04-13T01:19:02.3973436Z     "PIPX_HOME":  "C:\\Program Files (x86)\\pipx",
+2026-04-13T01:19:02.3973770Z     "ChocolateyInstall":  "C:\\ProgramData\\chocolatey",
+2026-04-13T01:19:02.3974218Z     "JAVA_HOME_11_X64":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\11.0.30-7\\x64",
+2026-04-13T01:19:02.3974692Z     "POWERSHELL_DISTRIBUTION_CHANNEL":  "GitHub-Actions-win25",
+2026-04-13T01:19:02.3975006Z     "TMP":  "C:\\Windows\\TEMP",
+2026-04-13T01:19:02.3975227Z     "PROCESSOR_ARCHITECTURE":  "AMD64",
+2026-04-13T01:19:02.3975468Z     "M2_REPO":  "C:\\ProgramData\\m2",
+2026-04-13T01:19:02.3975781Z     "PATHEXT":  ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+2026-04-13T01:19:02.3976179Z     "ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE":  "C:\\actionarchivecache\\",
+2026-04-13T01:19:02.3976507Z     "DOTNET_NOLOGO":  "1",
+2026-04-13T01:19:02.3976708Z     "ENABLE_RUNNER_TRACING":  "true",
+2026-04-13T01:19:02.3976935Z     "PROCESSOR_REVISION":  "0101",
+2026-04-13T01:19:02.3977143Z     "TEMP":  "C:\\Windows\\TEMP",
+2026-04-13T01:19:02.3977527Z     "PSModuleAnalysisCachePath":  "C:\\PSModuleAnalysisCachePath\\ModuleAnalysisCache",
+2026-04-13T01:19:02.3977941Z     "GCM_INTERACTIVE":  "Never",
+2026-04-13T01:19:02.3978185Z     "IEWebDriver":  "C:\\SeleniumWebDrivers\\IEDriver",
+2026-04-13T01:19:02.3978445Z     "USERNAME":  "SYSTEM",
+2026-04-13T01:19:02.3978706Z     "GOROOT_1_22_X64":  "C:\\hostedtoolcache\\windows\\go\\1.22.12\\x64",
+2026-04-13T01:19:02.3979136Z     "PROCESSOR_IDENTIFIER":  "AMD64 Family 25 Model 1 Stepping 1, AuthenticAMD",
+2026-04-13T01:19:02.3979544Z     "GeckoWebDriver":  "C:\\SeleniumWebDrivers\\GeckoDriver",
+2026-04-13T01:19:02.3979915Z     "ANDROID_NDK":  "C:\\Android\\android-sdk\\ndk\\27.3.13750724",
+2026-04-13T01:19:02.3980220Z     "POWERSHELL_UPDATECHECK":  "Off",
+2026-04-13T01:19:02.3980449Z     "PGUSER":  "postgres",
+2026-04-13T01:19:02.3980713Z     "SELENIUM_JAR_PATH":  "C:\\selenium\\selenium-server.jar",
+2026-04-13T01:19:02.3981048Z     "PIPX_BIN_DIR":  "C:\\Program Files (x86)\\pipx_bin",
+2026-04-13T01:19:02.3981485Z     "JAVA_HOME_21_X64":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\21.0.10-7.0\\x64",
+2026-04-13T01:19:02.3982412Z     "ChromeWebDriver":  "C:\\SeleniumWebDrivers\\ChromeDriver",
+2026-04-13T01:19:02.3982933Z     "PROCESSOR_LEVEL":  "25",
+2026-04-13T01:19:02.3983253Z     "ComSpec":  "C:\\Windows\\system32\\cmd.exe",
+2026-04-13T01:19:02.3983827Z     "JAVA_HOME_8_X64":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\8.0.482-8\\x64",
+2026-04-13T01:19:02.3984310Z     "ANDROID_NDK_HOME":  "C:\\Android\\android-sdk\\ndk\\27.3.13750724",
+2026-04-13T01:19:02.3984731Z     "GRADLE_HOME":  "C:\\ProgramData\\chocolatey\\lib\\gradle\\tools\\gradle-9.4.1",
+2026-04-13T01:19:02.3985188Z     "PHPROOT":  "c:\\tools\\php",
+2026-04-13T01:19:02.3985589Z     "GOROOT_1_23_X64":  "C:\\hostedtoolcache\\windows\\go\\1.23.12\\x64",
+2026-04-13T01:19:02.3985999Z     "ANDROID_NDK_LATEST_HOME":  "C:\\Android\\android-sdk\\ndk\\29.0.14206865",
+2026-04-13T01:19:02.3986396Z     "ANDROID_NDK_ROOT":  "C:\\Android\\android-sdk\\ndk\\27.3.13750724",
+2026-04-13T01:19:02.3986929Z     "npm_config_prefix":  "C:\\npm\\prefix",
+2026-04-13T01:19:02.3987412Z     "EdgeWebDriver":  "C:\\SeleniumWebDrivers\\EdgeDriver",
+2026-04-13T01:19:02.3987994Z     "AGENT_TOOLSDIRECTORY":  "C:\\hostedtoolcache\\windows",
+2026-04-13T01:19:02.3988529Z     "VCPKG_INSTALLATION_ROOT":  "C:\\vcpkg",
+2026-04-13T01:19:02.3989211Z     "JAVA_HOME_17_X64":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\17.0.18-8\\x64",
+2026-04-13T01:19:02.3990409Z     "GOROOT_1_24_X64":  "C:\\hostedtoolcache\\windows\\go\\1.24.13\\x64",
+2026-04-13T01:19:02.3991010Z     "DOTNET_MULTILEVEL_LOOKUP":  "0",
+2026-04-13T01:19:02.3991400Z     "PGPASSWORD":  "root",
+2026-04-13T01:19:02.3991812Z     "WIX":  "C:\\Program Files (x86)\\WiX Toolset v3.14\\",
+2026-04-13T01:19:02.3992383Z     "AZURE_DEVOPS_CACHE_DIR":  "C:\\azureDevOpsCli\\cache",
+2026-04-13T01:19:02.3992945Z     "ANDROID_SDK_ROOT":  "C:\\Android\\android-sdk",
+2026-04-13T01:19:02.3993514Z     "DriverData":  "C:\\Windows\\System32\\Drivers\\DriverData",
+2026-04-13T01:19:02.3994139Z     "PGROOT":  "C:\\Program Files\\PostgreSQL\\17",
+2026-04-13T01:19:02.3994594Z     "windir":  "C:\\Windows",
+2026-04-13T01:19:02.3994798Z     "GHCUP_MSYS2":  "C:\\msys64",
+2026-04-13T01:19:02.3995017Z     "NUMBER_OF_PROCESSORS":  "4",
+2026-04-13T01:19:02.3995221Z     "OS":  "Windows_NT",
+2026-04-13T01:19:02.3995410Z     "CABAL_DIR":  "C:\\cabal",
+2026-04-13T01:19:02.3995607Z     "ImageOS":  "win25",
+2026-04-13T01:19:02.3995915Z     "ImageVersion":  "20260405.77.1",
+2026-04-13T01:19:02.3996553Z     "JAVA_HOME_25_X64":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\25.0.2-10.0\\x64",
+2026-04-13T01:19:02.3997387Z     "RUNNER_TOOL_CACHE":  "C:\\hostedtoolcache\\windows",
+2026-04-13T01:19:02.3997885Z     "RTOOLS45_HOME":  "C:\\rtools45",
+2026-04-13T01:19:02.3998506Z     "JAVA_HOME":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\17.0.18-8\\x64",
+2026-04-13T01:19:02.3999238Z     "DOTNET_SKIP_FIRST_TIME_EXPERIENCE":  "1",
+2026-04-13T01:19:02.4001037Z     "PSModulePath":  "C:\\\\Modules\\az_14.6.0;C:\\Users\\packer\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\PowerShell\\Modules\\",
+2026-04-13T01:19:02.4003497Z     "AZURE_CONFIG_DIR":  "C:\\azureCli",
+2026-04-13T01:19:02.4004150Z     "ANT_HOME":  "C:\\ProgramData\\chocolatey\\lib\\ant\\tools\\apache-ant-1.10.16",
+2026-04-13T01:19:02.4004869Z     "M2":  "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.14\\bin",
+2026-04-13T01:19:02.4005295Z     "GOROOT_1_25_X64":  "C:\\hostedtoolcache\\windows\\go\\1.25.8\\x64",
+2026-04-13T01:19:02.4005755Z     "AZURE_EXTENSION_DIR":  "C:\\Program Files\\Common Files\\AzureCliExtensionDirectory",
+2026-04-13T01:19:02.4006185Z     "AZ_DEVOPS_GLOBAL_CONFIG_DIR":  "C:\\azureDevOpsCli",
+2026-04-13T01:19:02.4006478Z     "COBERTURA_HOME":  "C:\\cobertura-2.1.1",
+2026-04-13T01:19:02.4007016Z     "PGDATA":  "C:\\PostgreSQL\\17\\data",
+2026-04-13T01:19:02.4007291Z     "PGBIN":  "C:\\Program Files\\PostgreSQL\\17\\bin",
+2026-04-13T01:19:02.4007554Z     "MAVEN_OPTS":  "-Xms256m",
+2026-04-13T01:19:02.4007754Z     "CONDA":  "C:\\Miniconda",
+2026-04-13T01:19:02.4007979Z     "SBT_HOME":  "C:\\Program Files (x86)\\sbt\\",
+2026-04-13T01:19:02.4008358Z     "ANDROID_HOME":  "C:\\Android\\android-sdk"
+2026-04-13T01:19:02.4008596Z }
+2026-04-13T01:19:02.4922057Z [command]C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command "& {[Environment]::GetEnvironmentVariables('User') | ConvertTo-Json}"
+2026-04-13T01:19:02.8505427Z {
+2026-04-13T01:19:02.8506862Z     "Path":  "C:\\Users\\runneradmin\\.dotnet\\tools;C:\\Users\\runneradmin\\.cargo\\bin;C:\\Users\\runneradmin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Swift\\Runtimes\\6.2.4\\usr\\bin\\;C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.4+Asserts\\usr\\bin\\",
+2026-04-13T01:19:02.8509253Z     "TEMP":  "C:\\Users\\runneradmin\\AppData\\Local\\Temp",
+2026-04-13T01:19:02.8509872Z     "SDKROOT":  "C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.4\\Windows.platform\\Developer\\SDKs\\Windows.sdk\\",
+2026-04-13T01:19:02.8510478Z     "TMP":  "C:\\Users\\runneradmin\\AppData\\Local\\Temp"
+2026-04-13T01:19:02.8510738Z }
+2026-04-13T01:19:02.8683851Z ##[debug]Trying second installation approach
+2026-04-13T01:19:02.8688091Z ##[debug]Failed 1 time(s), recent error "Error: ENOENT: no such file or directory, access 'C:\Program Files\Swift\Toolchains\0.0.0+Asserts'"
+2026-04-13T01:19:02.8689271Z ##[debug]Trying first installation approach
+2026-04-13T01:19:02.8692327Z ##[debug]Failed 2 time(s), recent error "Error: ENOENT: no such file or directory, access 'C:\Library\Developer\Toolchains\unknown-Asserts-development.xctoolchain'"
+2026-04-13T01:19:02.8693812Z ##[debug]Procceding with fallback installation approach
+2026-04-13T01:19:02.8700282Z ##[debug]Setting up environment with "{"newPaths":["C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Swift\\Runtimes\\6.2.4\\usr\\bin\\","C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.4+Asserts\\usr\\bin\\"],"variables":{"SDKROOT":"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.4\\Windows.platform\\Developer\\SDKs\\Windows.sdk\\"}}"
+2026-04-13T01:19:02.8715653Z ##[debug]Downloaded and installed snapshot at ""
+2026-04-13T01:19:02.8718996Z ##[debug]Getting swift version with command "swift --version"
+2026-04-13T01:19:03.1035765Z [command]C:\Users\runneradmin\AppData\Local\Programs\Swift\Toolchains\6.2.4+Asserts\usr\bin\swift.exe --version
+2026-04-13T01:19:03.3838432Z Swift version 6.2.4 (swift-6.2.4-RELEASE)
+2026-04-13T01:19:03.3838930Z Target: x86_64-unknown-windows-msvc
+2026-04-13T01:19:03.3839344Z Build config: +assertions
+2026-04-13T01:19:03.4001974Z ::endgroup::
+2026-04-13T01:19:03.4002213Z ##[endgroup]
+2026-04-13T01:19:03.4002687Z ##[debug]Getting swift version with command "swift --version"
+2026-04-13T01:19:03.4812720Z [command]C:\Users\runneradmin\AppData\Local\Programs\Swift\Toolchains\6.2.4+Asserts\usr\bin\swift.exe --version
+2026-04-13T01:19:03.5838367Z Swift version 6.2.4 (swift-6.2.4-RELEASE)
+2026-04-13T01:19:03.5838860Z Target: x86_64-unknown-windows-msvc
+2026-04-13T01:19:03.5839222Z Build config: +assertions
+2026-04-13T01:19:03.6130068Z ##[debug]Node Action run completed with exit code 0
+2026-04-13T01:19:03.6135410Z ##[debug]SDKROOT='C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\'
+2026-04-13T01:19:03.6137279Z ##[debug]SWIFTFLAGS='-sdk C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\ -I C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\usr\lib\swift -L C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\usr\lib\swift\windows'
+2026-04-13T01:19:03.6140939Z ##[debug]Set output swift-version = 6.2.4
+2026-04-13T01:19:03.6142439Z ##[debug]Set output toolchain = {"name":"Windows 10","date":"2026-02-26T00:00:00.000Z","download":"swift-6.2.4-RELEASE-windows10.exe","download_signature":"swift-6.2.4-RELEASE-windows10.exe.sig","dir":"swift-6.2.4-RELEASE","platform":"windows10","branch":"swift-6.2.4-release","docker":"6.2.4-windowsservercore-ltsc2022","windows":true,"preventCaching":false}
+2026-04-13T01:19:03.6143747Z ##[debug]Set output sdks = []
+2026-04-13T01:19:03.6144352Z ##[debug]Finishing: Setup Swift
+2026-04-13T01:19:03.6172089Z ##[debug]Evaluating condition for step: 'Install Linux dependencies'
+2026-04-13T01:19:03.6183328Z ##[debug]Evaluating: (success() && (runner.os == 'Linux'))
+2026-04-13T01:19:03.6183791Z ##[debug]Evaluating And:
+2026-04-13T01:19:03.6185891Z ##[debug]..Evaluating success:
+2026-04-13T01:19:03.6186366Z ##[debug]..=> true
+2026-04-13T01:19:03.6186705Z ##[debug]..Evaluating Equal:
+2026-04-13T01:19:03.6187810Z ##[debug]....Evaluating Index:
+2026-04-13T01:19:03.6188107Z ##[debug]......Evaluating runner:
+2026-04-13T01:19:03.6188397Z ##[debug]......=> Object
+2026-04-13T01:19:03.6188679Z ##[debug]......Evaluating String:
+2026-04-13T01:19:03.6188953Z ##[debug]......=> 'os'
+2026-04-13T01:19:03.6189299Z ##[debug]....=> 'Windows'
+2026-04-13T01:19:03.6189568Z ##[debug]....Evaluating String:
+2026-04-13T01:19:03.6190303Z ##[debug]....=> 'Linux'
+2026-04-13T01:19:03.6193626Z ##[debug]..=> false
+2026-04-13T01:19:03.6194071Z ##[debug]=> false
+2026-04-13T01:19:03.6197582Z ##[debug]Expanded: (true && ('Windows' == 'Linux'))
+2026-04-13T01:19:03.6198015Z ##[debug]Result: false
+2026-04-13T01:19:03.6210195Z ##[debug]Evaluating condition for step: 'Show toolchain'
+2026-04-13T01:19:03.6211765Z ##[debug]Evaluating: success()
+2026-04-13T01:19:03.6212075Z ##[debug]Evaluating success:
+2026-04-13T01:19:03.6212398Z ##[debug]=> true
+2026-04-13T01:19:03.6212699Z ##[debug]Result: true
+2026-04-13T01:19:03.6213154Z ##[debug]Starting: Show toolchain
+2026-04-13T01:19:03.6340424Z ##[debug]Loading inputs
+2026-04-13T01:19:03.6341843Z ##[debug]Loading env
+2026-04-13T01:19:03.6358723Z ##[group]Run swift --version
+2026-04-13T01:19:03.6358997Z [36;1mswift --version[0m
+2026-04-13T01:19:03.6765866Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-04-13T01:19:03.6766287Z env:
+2026-04-13T01:19:03.6766501Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:19:03.6767167Z   SDKROOT: C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\
+2026-04-13T01:19:03.6769414Z   SWIFTFLAGS: -sdk C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\ -I C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\usr\lib\swift -L C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\usr\lib\swift\windows
+2026-04-13T01:19:03.6771247Z ##[endgroup]
+2026-04-13T01:19:03.6883007Z ##[debug]C:\Program Files\PowerShell\7\pwsh.EXE -command ". 'D:\a\_temp\89efb5b3-b2db-4503-b843-2d2ed9b5cd78.ps1'"
+2026-04-13T01:19:09.7302123Z Swift version 6.2.4 (swift-6.2.4-RELEASE)
+2026-04-13T01:19:09.7302468Z Target: x86_64-unknown-windows-msvc
+2026-04-13T01:19:09.7302735Z Build config: +assertions
+2026-04-13T01:19:10.5127651Z ##[debug]Finishing: Show toolchain
+2026-04-13T01:19:10.5146082Z ##[debug]Evaluating: matrix.backend
+2026-04-13T01:19:10.5146479Z ##[debug]Evaluating Index:
+2026-04-13T01:19:10.5146731Z ##[debug]..Evaluating matrix:
+2026-04-13T01:19:10.5147003Z ##[debug]..=> Object
+2026-04-13T01:19:10.5147233Z ##[debug]..Evaluating String:
+2026-04-13T01:19:10.5147445Z ##[debug]..=> 'backend'
+2026-04-13T01:19:10.5147917Z ##[debug]=> 'WINUI'
+2026-04-13T01:19:10.5148109Z ##[debug]Result: 'WINUI'
+2026-04-13T01:19:10.5149074Z ##[debug]Evaluating condition for step: 'Build'
+2026-04-13T01:19:10.5150796Z ##[debug]Evaluating: success()
+2026-04-13T01:19:10.5151113Z ##[debug]Evaluating success:
+2026-04-13T01:19:10.5151431Z ##[debug]=> true
+2026-04-13T01:19:10.5151739Z ##[debug]Result: true
+2026-04-13T01:19:10.5152220Z ##[debug]Starting: Build
+2026-04-13T01:19:10.5281770Z ##[debug]Loading inputs
+2026-04-13T01:19:10.5283058Z ##[debug]Loading env
+2026-04-13T01:19:10.5287094Z ##[group]Run swift build -c release
+2026-04-13T01:19:10.5287388Z [36;1mswift build -c release[0m
+2026-04-13T01:19:10.5357384Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-04-13T01:19:10.5357714Z env:
+2026-04-13T01:19:10.5357895Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:19:10.5358436Z   SDKROOT: C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\
+2026-04-13T01:19:10.5360173Z   SWIFTFLAGS: -sdk C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\ -I C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\usr\lib\swift -L C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\usr\lib\swift\windows
+2026-04-13T01:19:10.5361654Z   APAROKSHA_FRAMEWORK: WINUI
+2026-04-13T01:19:10.5361869Z ##[endgroup]
+2026-04-13T01:19:10.5446504Z ##[debug]C:\Program Files\PowerShell\7\pwsh.EXE -command ". 'D:\a\_temp\856e9d61-c50f-4261-b508-3009fd93457b.ps1'"
+2026-04-13T01:19:18.5702214Z Fetching https://git.aparoksha.dev/aparoksha/aparoksha
+2026-04-13T01:19:20.1644763Z [1/512] Fetching aparoksha
+2026-04-13T01:19:20.2399626Z Fetched https://git.aparoksha.dev/aparoksha/aparoksha from cache (1.67s)
+2026-04-13T01:19:47.1433276Z Fetching https://git.aparoksha.dev/aparoksha/winui-swift
+2026-04-13T01:19:48.4030571Z [1/439] Fetching winui-swift
+2026-04-13T01:19:48.4924210Z Fetched https://git.aparoksha.dev/aparoksha/winui-swift from cache (1.35s)
+2026-04-13T01:19:49.2205252Z Fetching https://git.aparoksha.dev/aparoksha/meta
+2026-04-13T01:19:50.4832046Z [1/1120] Fetching meta
+2026-04-13T01:19:50.5922343Z Fetched https://git.aparoksha.dev/aparoksha/meta from cache (1.37s)
+2026-04-13T01:19:51.3446317Z Fetching https://git.aparoksha.dev/aparoksha/levenshtein-transformations
+2026-04-13T01:19:52.3326437Z [1/151] Fetching levenshtein-transformations
+2026-04-13T01:19:52.4441496Z Fetched https://git.aparoksha.dev/aparoksha/levenshtein-transformations from cache (1.10s)
+2026-04-13T01:19:53.1550352Z Fetching https://git.aparoksha.dev/winui-swift/swift-windowsappsdk
+2026-04-13T01:19:54.5938066Z [1/165] Fetching swift-windowsappsdk
+2026-04-13T01:19:54.6956088Z Fetched https://git.aparoksha.dev/winui-swift/swift-windowsappsdk from cache (1.54s)
+2026-04-13T01:20:05.3714309Z Fetching https://git.aparoksha.dev/winui-swift/swift-windowsfoundation
+2026-04-13T01:20:06.6130152Z [1/78] Fetching swift-windowsfoundation
+2026-04-13T01:20:06.7239849Z Fetched https://git.aparoksha.dev/winui-swift/swift-windowsfoundation from cache (1.35s)
+2026-04-13T01:20:07.4282786Z Fetching https://git.aparoksha.dev/winui-swift/swift-cwinrt
+2026-04-13T01:20:09.4339894Z [1/449] Fetching swift-cwinrt
+2026-04-13T01:20:09.5469350Z Fetched https://git.aparoksha.dev/winui-swift/swift-cwinrt from cache (2.12s)
+2026-04-13T01:20:10.8271747Z Fetching https://git.aparoksha.dev/winui-swift/swift-winui
+2026-04-13T01:20:14.0129218Z [1/128] Fetching swift-winui
+2026-04-13T01:20:14.1133390Z Fetched https://git.aparoksha.dev/winui-swift/swift-winui from cache (3.29s)
+2026-04-13T01:20:14.9053781Z Fetching https://git.aparoksha.dev/winui-swift/swift-uwp
+2026-04-13T01:20:16.7838384Z [1/205] Fetching swift-uwp
+2026-04-13T01:20:16.8928432Z Fetched https://git.aparoksha.dev/winui-swift/swift-uwp from cache (1.99s)
+2026-04-13T01:20:17.8332302Z Fetching https://git.aparoksha.dev/aparoksha/macbackend
+2026-04-13T01:20:17.8335947Z Fetching https://github.com/stephencelis/SQLite.swift
+2026-04-13T01:20:17.8515183Z Fetching https://git.aparoksha.dev/aparoksha/meta-sqlite
+2026-04-13T01:20:20.1582395Z [1/61] Fetching meta-sqlite
+2026-04-13T01:20:20.2569476Z Fetched https://git.aparoksha.dev/aparoksha/meta-sqlite from cache (2.42s)
+2026-04-13T01:20:21.0566108Z Creating working copy for https://git.aparoksha.dev/winui-swift/swift-windowsappsdk
+2026-04-13T01:20:21.7632825Z [1/260] Fetching macbackend
+2026-04-13T01:20:21.7636069Z [43/11384] Fetching macbackend, sqlite.swift
+2026-04-13T01:20:21.8498023Z Fetched https://git.aparoksha.dev/aparoksha/macbackend from cache (4.02s)
+2026-04-13T01:20:21.9141224Z Fetched https://github.com/stephencelis/SQLite.swift from cache (4.08s)
+2026-04-13T01:20:23.3416633Z Working copy of https://git.aparoksha.dev/winui-swift/swift-windowsappsdk resolved at main (072f2c7)
+2026-04-13T01:20:23.4236980Z Creating working copy for https://git.aparoksha.dev/aparoksha/winui-swift
+2026-04-13T01:20:23.7168070Z Working copy of https://git.aparoksha.dev/aparoksha/winui-swift resolved at main (df7cf30)
+2026-04-13T01:20:23.7975540Z Creating working copy for https://git.aparoksha.dev/winui-swift/swift-winui
+2026-04-13T01:20:24.0788740Z Working copy of https://git.aparoksha.dev/winui-swift/swift-winui resolved at main (8102ccd)
+2026-04-13T01:20:24.1628375Z Creating working copy for https://git.aparoksha.dev/aparoksha/aparoksha
+2026-04-13T01:20:24.4147503Z Working copy of https://git.aparoksha.dev/aparoksha/aparoksha resolved at main (357f189)
+2026-04-13T01:20:24.7303432Z Creating working copy for https://git.aparoksha.dev/aparoksha/levenshtein-transformations
+2026-04-13T01:20:25.4639718Z Working copy of https://git.aparoksha.dev/aparoksha/levenshtein-transformations resolved at main (06577a2)
+2026-04-13T01:20:25.5688015Z Creating working copy for https://git.aparoksha.dev/winui-swift/swift-cwinrt
+2026-04-13T01:20:26.2131268Z Working copy of https://git.aparoksha.dev/winui-swift/swift-cwinrt resolved at main (f574581)
+2026-04-13T01:20:26.3043403Z Creating working copy for https://git.aparoksha.dev/winui-swift/swift-uwp
+2026-04-13T01:20:26.6704731Z Working copy of https://git.aparoksha.dev/winui-swift/swift-uwp resolved at main (756b80f)
+2026-04-13T01:20:26.7558253Z Creating working copy for https://git.aparoksha.dev/winui-swift/swift-windowsfoundation
+2026-04-13T01:20:27.0106376Z Working copy of https://git.aparoksha.dev/winui-swift/swift-windowsfoundation resolved at main (f746a3b)
+2026-04-13T01:20:27.0981486Z Creating working copy for https://git.aparoksha.dev/aparoksha/meta
+2026-04-13T01:20:27.3428177Z Working copy of https://git.aparoksha.dev/aparoksha/meta resolved at main (f47727d)
+2026-04-13T01:20:34.2543089Z Building for production...
+2026-04-13T01:20:34.2822472Z [0/25] Write sources
+2026-04-13T01:20:34.2845601Z [4/25] Copying Microsoft.WindowsAppRuntime.Bootstrap.dll
+2026-04-13T01:20:34.2846146Z [5/25] Write sources
+2026-04-13T01:20:34.4205891Z [10/25] Compiling CWinRT shim.c
+2026-04-13T01:20:34.4215281Z [11/25] Write Objects.LinkFileList
+2026-04-13T01:20:34.5867658Z [12/25] Linking CWinRT.dll
+2026-04-13T01:20:35.2012533Z [13/25] Write swift-version--1DA7216B37EB00F0.txt
+2026-04-13T01:20:35.2335908Z [14/25] Compiling CWinAppSDK delayloadhelper.c
+2026-04-13T01:20:43.4468929Z [16/28] Compiling LevenshteinTransformations AsyncFunctions.swift
+2026-04-13T01:20:59.9266547Z [17/28] Compiling Meta Binding.swift
+2026-04-13T01:21:42.6223786Z [18/28] Compiling WindowsFoundation AGGREGATION.swift
+2026-04-13T01:21:42.6487269Z [18/28] Write Objects.LinkFileList
+2026-04-13T01:21:42.9254222Z [19/28] Linking WindowsFoundation.dll
+2026-04-13T01:30:40.2012445Z [21/29] Compiling UWP UWP+Generics.swift
+2026-04-13T01:30:40.2762321Z [21/29] Write Objects.LinkFileList
+2026-04-13T01:30:41.5589191Z [22/29] Linking UWP.dll
+2026-04-13T01:32:27.4325420Z [24/30] Compiling WinAppSDK Microsoft.Graphics.DirectX+ABI.swift
+2026-04-13T01:32:27.4586271Z [24/30] Write Objects.LinkFileList
+2026-04-13T01:32:27.9571723Z [25/30] Linking WinAppSDK.dll
+2026-04-13T01:39:09.0079100Z [27/31] Compiling WinUI MainRunLoopTickler.swift
+2026-04-13T01:39:09.0498589Z [27/31] Write Objects.LinkFileList
+2026-04-13T01:39:10.1425915Z [28/31] Linking WinUI.dll
+2026-04-13T01:39:24.2249153Z [30/32] Compiling Core CommandBarCollection.swift
+2026-04-13T01:39:31.0646429Z [31/33] Compiling Aparoksha MenuButton.swift
+2026-04-13T01:39:33.4681805Z [32/34] Compiling AparokshaStarter main.swift
+2026-04-13T01:39:33.4794317Z [32/34] Write Objects.LinkFileList
+2026-04-13T01:39:33.8704532Z [33/34] Linking AparokshaStarter.exe
+2026-04-13T01:39:33.8825985Z Build complete! (1215.36s)
+2026-04-13T01:39:34.6908217Z ##[debug]Finishing: Build
+2026-04-13T01:39:34.7245954Z ##[debug]Evaluating condition for step: 'Post Checkout'
+2026-04-13T01:39:34.7465514Z ##[debug]Evaluating: always()
+2026-04-13T01:39:34.7466182Z ##[debug]Evaluating always:
+2026-04-13T01:39:34.7474611Z ##[debug]=> true
+2026-04-13T01:39:34.7478016Z ##[debug]Result: true
+2026-04-13T01:39:34.7481718Z ##[debug]Starting: Post Checkout
+2026-04-13T01:39:34.8087823Z ##[debug]Loading inputs
+2026-04-13T01:39:34.8092356Z ##[debug]Evaluating: github.repository
+2026-04-13T01:39:34.8092752Z ##[debug]Evaluating Index:
+2026-04-13T01:39:34.8095559Z ##[debug]..Evaluating github:
+2026-04-13T01:39:34.8095957Z ##[debug]..=> Object
+2026-04-13T01:39:34.8096253Z ##[debug]..Evaluating String:
+2026-04-13T01:39:34.8098755Z ##[debug]..=> 'repository'
+2026-04-13T01:39:34.8099243Z ##[debug]=> 'loosebird/aparoksha-template'
+2026-04-13T01:39:34.8099596Z ##[debug]Result: 'loosebird/aparoksha-template'
+2026-04-13T01:39:34.8104025Z ##[debug]Evaluating: github.token
+2026-04-13T01:39:34.8107007Z ##[debug]Evaluating Index:
+2026-04-13T01:39:34.8107283Z ##[debug]..Evaluating github:
+2026-04-13T01:39:34.8110050Z ##[debug]..=> Object
+2026-04-13T01:39:34.8110337Z ##[debug]..Evaluating String:
+2026-04-13T01:39:34.8110582Z ##[debug]..=> 'token'
+2026-04-13T01:39:34.8118612Z ##[debug]=> '***'
+2026-04-13T01:39:34.8119079Z ##[debug]Result: '***'
+2026-04-13T01:39:34.8150982Z ##[debug]Loading env
+2026-04-13T01:39:34.8172994Z Post job cleanup.
+2026-04-13T01:39:35.6683647Z ##[debug]Getting git version
+2026-04-13T01:39:35.6711954Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-04-13T01:39:35.7401145Z git version 2.53.0.windows.2
+2026-04-13T01:39:35.7466975Z ##[debug]0
+2026-04-13T01:39:35.7481616Z ##[debug]git version 2.53.0.windows.2
+2026-04-13T01:39:35.7481921Z ##[debug]
+2026-04-13T01:39:35.7485704Z ##[debug]Set git useragent to: git/2.53.0 (github-actions-checkout)
+2026-04-13T01:39:35.7487036Z ::add-mask::***
+2026-04-13T01:39:35.7515147Z Temporarily overriding HOME='D:\a\_temp\8d7d3ea8-239d-460a-adc7-c55d17dae91c' before making global git config changes
+2026-04-13T01:39:35.7517686Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-13T01:39:35.7535170Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\aparoksha-template\aparoksha-template
+2026-04-13T01:39:35.8033650Z ##[debug]0
+2026-04-13T01:39:35.8034459Z ##[debug]
+2026-04-13T01:39:35.8048346Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-04-13T01:39:35.8389711Z ##[debug]1
+2026-04-13T01:39:35.8393620Z ##[debug]
+2026-04-13T01:39:35.8403158Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-04-13T01:39:36.5217067Z ##[debug]0
+2026-04-13T01:39:36.5217803Z ##[debug]
+2026-04-13T01:39:36.5231311Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-13T01:39:36.5522369Z http.https://github.com/.extraheader
+2026-04-13T01:39:36.5567394Z ##[debug]0
+2026-04-13T01:39:36.5571265Z ##[debug]http.https://github.com/.extraheader
+2026-04-13T01:39:36.5571834Z ##[debug]
+2026-04-13T01:39:36.5584519Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2026-04-13T01:39:36.5919737Z ##[debug]0
+2026-04-13T01:39:36.5923874Z ##[debug]
+2026-04-13T01:39:36.5932548Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-04-13T01:39:37.1722570Z ##[debug]0
+2026-04-13T01:39:37.1723258Z ##[debug]
+2026-04-13T01:39:37.1735746Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-13T01:39:37.2073680Z ##[debug]1
+2026-04-13T01:39:37.2077055Z ##[debug]
+2026-04-13T01:39:37.2085077Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-04-13T01:39:37.8341515Z ##[debug]0
+2026-04-13T01:39:37.8342154Z ##[debug]
+2026-04-13T01:39:37.8345825Z ##[debug]Unsetting HOME override
+2026-04-13T01:39:37.8497691Z ##[debug]Node Action run completed with exit code 0
+2026-04-13T01:39:37.8505941Z ##[debug]Finishing: Post Checkout
+2026-04-13T01:39:37.8590216Z ##[debug]Starting: Complete job
+2026-04-13T01:39:37.8597879Z Uploading runner diagnostic logs
+2026-04-13T01:39:37.8613825Z ##[debug]Starting diagnostic file upload.
+2026-04-13T01:39:37.8617138Z ##[debug]Setting up diagnostic log folders.
+2026-04-13T01:39:37.8623097Z ##[debug]Creating diagnostic log files folder.
+2026-04-13T01:39:37.8644222Z ##[debug]Copying 1 worker diagnostic logs.
+2026-04-13T01:39:37.8780249Z ##[debug]Copying 1 runner diagnostic logs.
+2026-04-13T01:39:37.8791288Z ##[debug]Zipping diagnostic files.
+2026-04-13T01:39:37.8963844Z ##[debug]Uploading diagnostic metadata file.
+2026-04-13T01:39:37.9218289Z ##[debug]Diagnostic file upload complete.
+2026-04-13T01:39:37.9222328Z Completed runner diagnostic log upload
+2026-04-13T01:39:37.9222688Z Cleaning up orphan processes
+2026-04-13T01:39:37.9885738Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: SwiftyLab/setup-swift@v1.13.0. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-04-13T01:39:37.9888041Z ##[debug]Finishing: Complete job
+2026-04-13T01:39:37.9928014Z ##[debug]Finishing: Build (windows-x64)

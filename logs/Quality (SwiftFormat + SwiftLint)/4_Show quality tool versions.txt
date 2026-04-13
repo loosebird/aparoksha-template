@@ -1,0 +1,19 @@
+﻿2026-04-13T01:18:20.6394510Z ##[debug]Evaluating condition for step: 'Show quality tool versions'
+2026-04-13T01:18:20.6399730Z ##[debug]Evaluating: success()
+2026-04-13T01:18:20.6400140Z ##[debug]Evaluating success:
+2026-04-13T01:18:20.6400770Z ##[debug]=> true
+2026-04-13T01:18:20.6401330Z ##[debug]Result: true
+2026-04-13T01:18:20.6404230Z ##[debug]Starting: Show quality tool versions
+2026-04-13T01:18:20.6415780Z ##[debug]Loading inputs
+2026-04-13T01:18:20.6417420Z ##[debug]Loading env
+2026-04-13T01:18:20.6422130Z ##[group]Run swiftformat --version
+2026-04-13T01:18:20.6422440Z [36;1mswiftformat --version[0m
+2026-04-13T01:18:20.6422660Z [36;1mswiftlint version[0m
+2026-04-13T01:18:20.6454920Z shell: /bin/bash -e {0}
+2026-04-13T01:18:20.6455120Z env:
+2026-04-13T01:18:20.6455380Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:18:20.6455620Z ##[endgroup]
+2026-04-13T01:18:20.6482480Z ##[debug]/bin/bash -e /Users/runner/work/_temp/6861b032-feb2-47c4-91da-67a65a8d83d1.sh
+2026-04-13T01:18:20.7056130Z 0.61.0
+2026-04-13T01:18:20.7187980Z 0.63.2
+2026-04-13T01:18:20.7211870Z ##[debug]Finishing: Show quality tool versions

@@ -1,0 +1,75 @@
+﻿2026-04-13T01:17:56.8965410Z ##[debug]Evaluating condition for step: 'Setup Swift'
+2026-04-13T01:17:56.8968850Z ##[debug]Evaluating: success()
+2026-04-13T01:17:56.8969790Z ##[debug]Evaluating success:
+2026-04-13T01:17:56.8970680Z ##[debug]=> true
+2026-04-13T01:17:56.8971540Z ##[debug]Result: true
+2026-04-13T01:17:56.8972590Z ##[debug]Starting: Setup Swift
+2026-04-13T01:17:56.9027570Z ##[debug]Loading inputs
+2026-04-13T01:17:56.9049410Z ##[debug]Loading env
+2026-04-13T01:17:56.9065190Z ##[group]Run SwiftyLab/setup-swift@v1.13.0
+2026-04-13T01:17:56.9066010Z with:
+2026-04-13T01:17:56.9066490Z   swift-version: 6.2.4
+2026-04-13T01:17:56.9067050Z   development: false
+2026-04-13T01:17:56.9067600Z   check-latest: false
+2026-04-13T01:17:56.9068130Z   dry-run: false
+2026-04-13T01:17:56.9068630Z   cache-snapshot: true
+2026-04-13T01:17:56.9069210Z   prefer-oss-toolchain: false
+2026-04-13T01:17:56.9069870Z   prefer-visual-studio-linker: false
+2026-04-13T01:17:56.9070570Z   update-sdk-modules: false
+2026-04-13T01:17:56.9071160Z env:
+2026-04-13T01:17:56.9071710Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:17:56.9072410Z ##[endgroup]
+2026-04-13T01:17:57.0715040Z ##[debug]Input "6.2.4" not an URL
+2026-04-13T01:17:57.1237880Z ##[debug]Using latest 6.2.4 toolchain requirement
+2026-04-13T01:17:57.1239200Z ::group::Syncing swift.org data
+2026-04-13T01:17:57.1239850Z ##[group]Syncing swift.org data
+2026-04-13T01:17:57.1254030Z ##[debug]Recieved swift.org metadata: "{"commit":"50f426af8cb83550c16c1bac95fb36ad68f2fa68","release":{"name":"6.3","tag":"swift-6.3-RELEASE","xcode":"Xcode 26.4","xcode_release":true,"date":"2026-03-24T00:00:00.000Z","platforms":[{"name":"Ubuntu 22.04","platform":"Linux","docker":"6.3-jammy","archs":["x86_64","aarch64"]},{"name":"Ubuntu 24.04","platform":"Linux","docker":"6.3-noble","archs":["x86_64","aarch64"]},{"name":"Debian 12","platform":"Linux","docker":"6.3-bookworm","archs":["x86_64","aarch64"]},{"name":"Fedora 39","platform":"Linux","docker":"6.3-fedora39","archs":["x86_64","aarch64"]},{"name":"Fedora 41","platform":"Linux","docker":"6.3-fedora41","archs":["x86_64","aarch64"]},{"name":"Amazon Linux 2","platform":"Linux","docker":"6.3-amazonlinux2","archs":["x86_64","aarch64"]},{"name":"Red Hat Universal Base Image 9","platform":"Linux","docker":"6.3-rhel-ubi9","dir":"ubi9","archs":["x86_64","aarch64"]},{"name":"Windows 10","platform":"Windows","docker":"6.3-windowsservercore-ltsc2022","archs":["x86_64","arm64"]},{"name":"Static SDK","platform":"static-sdk","version":"0.1.0","checksum":"d2078b69bdeb5c31202c10e9d8a11d6f66f82938b51a4b75f032ccb35c4c286c","archs":["x86_64","arm64"]},{"name":"Wasm SDK","platform":"wasm-sdk","checksum":"9fa4016ee632c7e9e906608ec3b55cf13dfc4dff44e47574c5af58064dc33fd9","archs":["x86_64","arm64"]},{"name":"Android SDK","platform":"android-sdk","checksum":"2f2942c4bcea7965a08665206212c66991dabe23725aeec7c4365fc91acad088","archs":["x86_64","arm64"]}]},"dev":{"name":"6.3","date":"2026-03-05T16:10:00.000Z","tag":"swift-6.3-DEVELOPMENT-SNAPSHOT-2026-03-05-a"},"snapshot":{"date":"2026-04-01T16:10:00.000Z","tag":"swift-DEVELOPMENT-SNAPSHOT-2026-04-01-a"}}"
+2026-04-13T01:17:57.1269450Z ##[debug]Adding submodule at "/Users/runner/work/_actions/SwiftyLab/setup-swift/v1.13.0/swiftorg" directory
+2026-04-13T01:17:57.1271180Z [command]/opt/homebrew/bin/git init /Users/runner/work/_actions/SwiftyLab/setup-swift/v1.13.0/swiftorg
+2026-04-13T01:17:57.1372340Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-13T01:17:57.1409970Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-04-13T01:17:57.1425630Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-04-13T01:17:57.1426930Z hint: call:
+2026-04-13T01:17:57.1427550Z hint:
+2026-04-13T01:17:57.1428280Z hint: 	git config --global init.defaultBranch <name>
+2026-04-13T01:17:57.1429160Z hint:
+2026-04-13T01:17:57.1429970Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-13T01:17:57.1431270Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-13T01:17:57.1433140Z hint:
+2026-04-13T01:17:57.1433810Z hint: 	git branch -m <name>
+2026-04-13T01:17:57.1434490Z hint:
+2026-04-13T01:17:57.1435410Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-04-13T01:17:57.1437310Z Initialized empty Git repository in /Users/runner/work/_actions/SwiftyLab/setup-swift/v1.13.0/swiftorg/.git/
+2026-04-13T01:17:57.1439590Z [command]/opt/homebrew/bin/git fetch https://github.com/apple/swift-org-website.git 50f426af8cb83550c16c1bac95fb36ad68f2fa68 --depth=1 --no-tags
+2026-04-13T01:17:59.4465610Z From https://github.com/apple/swift-org-website
+2026-04-13T01:17:59.4466580Z  * branch            50f426af8cb83550c16c1bac95fb36ad68f2fa68 -> FETCH_HEAD
+2026-04-13T01:17:59.4581780Z [command]/opt/homebrew/bin/git checkout FETCH_HEAD --detach
+2026-04-13T01:17:59.9759630Z HEAD is now at 50f426a [cxx-interop] Minor wording improvement in safe wrappers documentation
+2026-04-13T01:17:59.9773220Z ::endgroup::
+2026-04-13T01:17:59.9773490Z ##[endgroup]
+2026-04-13T01:17:59.9773820Z ::group::Detecting current platform
+2026-04-13T01:17:59.9774050Z ##[group]Detecting current platform
+2026-04-13T01:17:59.9775210Z Detected xcode platform with arch "arm64"
+2026-04-13T01:17:59.9775730Z ::endgroup::
+2026-04-13T01:17:59.9775870Z ##[endgroup]
+2026-04-13T01:17:59.9975810Z ::group::Installing Swift toolchain snapshot swift-6.2.4-RELEASE
+2026-04-13T01:17:59.9977020Z ##[group]Installing Swift toolchain snapshot swift-6.2.4-RELEASE
+2026-04-13T01:18:00.0004390Z No SDKs to install
+2026-04-13T01:18:00.0058700Z [command]/usr/bin/sudo xcode-select --switch /Applications/Xcode_26.3.app
+2026-04-13T01:18:00.0545510Z ##[debug]Getting swift version with command "xcrun swift,--version"
+2026-04-13T01:18:00.0580910Z [command]/usr/bin/xcrun swift --version
+2026-04-13T01:18:05.8297280Z swift-driver version: 1.127.15 Apple Swift version 6.2.4 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+2026-04-13T01:18:05.8297960Z Target: arm64-apple-macosx15.0
+2026-04-13T01:18:05.8348250Z ##[debug]Found toolchain "6.2.4" bundled with Xcode 26.3
+2026-04-13T01:18:05.8349460Z ::endgroup::
+2026-04-13T01:18:05.8350010Z ##[endgroup]
+2026-04-13T01:18:05.8350820Z ##[debug]Getting swift version with command "xcrun swift,--version"
+2026-04-13T01:18:05.8365460Z [command]/usr/bin/xcrun swift --version
+2026-04-13T01:18:05.9225010Z swift-driver version: 1.127.15 Apple Swift version 6.2.4 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+2026-04-13T01:18:05.9225670Z Target: arm64-apple-macosx15.0
+2026-04-13T01:18:05.9491240Z ##[debug]Node Action run completed with exit code 0
+2026-04-13T01:18:05.9504970Z ##[debug]DEVELOPER_DIR='/Applications/Xcode_26.3.app'
+2026-04-13T01:18:05.9511890Z ##[debug]Set output swift-version = 6.2.4
+2026-04-13T01:18:05.9513040Z ##[debug]Set output toolchain = {"name":"Xcode Swift 6.2.4","date":"2026-02-26T00:00:00.000Z","download":"swift-6.2.4-RELEASE-osx.pkg","debug_info":"swift-6.2.4-RELEASE-osx-symbols.pkg","dir":"swift-6.2.4-RELEASE","xcode":"26.3","platform":"xcode","branch":"swift-6.2.4-release","preventCaching":false}
+2026-04-13T01:18:05.9514160Z ##[debug]Set output sdks = []
+2026-04-13T01:18:05.9515110Z ##[debug]Finishing: Setup Swift

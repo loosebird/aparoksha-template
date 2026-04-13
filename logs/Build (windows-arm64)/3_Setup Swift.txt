@@ -1,0 +1,247 @@
+﻿2026-04-13T01:18:01.5712541Z ##[debug]Evaluating condition for step: 'Setup Swift'
+2026-04-13T01:18:01.5717800Z ##[debug]Evaluating: success()
+2026-04-13T01:18:01.5718279Z ##[debug]Evaluating success:
+2026-04-13T01:18:01.5718795Z ##[debug]=> true
+2026-04-13T01:18:01.5719521Z ##[debug]Result: true
+2026-04-13T01:18:01.5721100Z ##[debug]Starting: Setup Swift
+2026-04-13T01:18:01.5924837Z ##[debug]Loading inputs
+2026-04-13T01:18:01.5944555Z ##[debug]Loading env
+2026-04-13T01:18:01.5959414Z ##[group]Run SwiftyLab/setup-swift@v1.13.0
+2026-04-13T01:18:01.5959835Z with:
+2026-04-13T01:18:01.5960082Z   swift-version: 6.2.4
+2026-04-13T01:18:01.5960300Z   development: false
+2026-04-13T01:18:01.5960537Z   check-latest: false
+2026-04-13T01:18:01.5960761Z   dry-run: false
+2026-04-13T01:18:01.5960980Z   cache-snapshot: true
+2026-04-13T01:18:01.5961562Z   prefer-oss-toolchain: false
+2026-04-13T01:18:01.5961902Z   prefer-visual-studio-linker: false
+2026-04-13T01:18:01.5962165Z   update-sdk-modules: false
+2026-04-13T01:18:01.5962400Z env:
+2026-04-13T01:18:01.5962750Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:18:01.5963033Z ##[endgroup]
+2026-04-13T01:18:01.8813136Z ##[debug]Input "6.2.4" not an URL
+2026-04-13T01:18:01.8814023Z ##[debug]Using latest 6.2.4 toolchain requirement
+2026-04-13T01:18:01.8814863Z ::group::Syncing swift.org data
+2026-04-13T01:18:01.8815157Z ##[group]Syncing swift.org data
+2026-04-13T01:18:01.9592647Z ##[debug]Recieved swift.org metadata: "{"commit":"50f426af8cb83550c16c1bac95fb36ad68f2fa68","release":{"name":"6.3","tag":"swift-6.3-RELEASE","xcode":"Xcode 26.4","xcode_release":true,"date":"2026-03-24T00:00:00.000Z","platforms":[{"name":"Ubuntu 22.04","platform":"Linux","docker":"6.3-jammy","archs":["x86_64","aarch64"]},{"name":"Ubuntu 24.04","platform":"Linux","docker":"6.3-noble","archs":["x86_64","aarch64"]},{"name":"Debian 12","platform":"Linux","docker":"6.3-bookworm","archs":["x86_64","aarch64"]},{"name":"Fedora 39","platform":"Linux","docker":"6.3-fedora39","archs":["x86_64","aarch64"]},{"name":"Fedora 41","platform":"Linux","docker":"6.3-fedora41","archs":["x86_64","aarch64"]},{"name":"Amazon Linux 2","platform":"Linux","docker":"6.3-amazonlinux2","archs":["x86_64","aarch64"]},{"name":"Red Hat Universal Base Image 9","platform":"Linux","docker":"6.3-rhel-ubi9","dir":"ubi9","archs":["x86_64","aarch64"]},{"name":"Windows 10","platform":"Windows","docker":"6.3-windowsservercore-ltsc2022","archs":["x86_64","arm64"]},{"name":"Static SDK","platform":"static-sdk","version":"0.1.0","checksum":"d2078b69bdeb5c31202c10e9d8a11d6f66f82938b51a4b75f032ccb35c4c286c","archs":["x86_64","arm64"]},{"name":"Wasm SDK","platform":"wasm-sdk","checksum":"9fa4016ee632c7e9e906608ec3b55cf13dfc4dff44e47574c5af58064dc33fd9","archs":["x86_64","arm64"]},{"name":"Android SDK","platform":"android-sdk","checksum":"2f2942c4bcea7965a08665206212c66991dabe23725aeec7c4365fc91acad088","archs":["x86_64","arm64"]}]},"dev":{"name":"6.3","date":"2026-03-05T16:10:00.000Z","tag":"swift-6.3-DEVELOPMENT-SNAPSHOT-2026-03-05-a"},"snapshot":{"date":"2026-04-01T16:10:00.000Z","tag":"swift-DEVELOPMENT-SNAPSHOT-2026-04-01-a"}}"
+2026-04-13T01:18:01.9598515Z ##[debug]Adding submodule at "C:\a\_actions\SwiftyLab\setup-swift\v1.13.0\swiftorg" directory
+2026-04-13T01:18:02.0567063Z [command]"C:\Program Files\Git\bin\git.exe" init C:\a\_actions\SwiftyLab\setup-swift\v1.13.0\swiftorg
+2026-04-13T01:18:02.1190529Z Initialized empty Git repository in C:/a/_actions/SwiftyLab/setup-swift/v1.13.0/swiftorg/.git/
+2026-04-13T01:18:02.2243147Z [command]"C:\Program Files\Git\bin\git.exe" fetch https://github.com/apple/swift-org-website.git 50f426af8cb83550c16c1bac95fb36ad68f2fa68 --depth=1 --no-tags
+2026-04-13T01:18:05.5149652Z From https://github.com/apple/swift-org-website
+2026-04-13T01:18:05.5150264Z  * branch            50f426af8cb83550c16c1bac95fb36ad68f2fa68 -> FETCH_HEAD
+2026-04-13T01:18:05.6394421Z [command]"C:\Program Files\Git\bin\git.exe" checkout FETCH_HEAD --detach
+2026-04-13T01:18:07.0729237Z HEAD is now at 50f426a [cxx-interop] Minor wording improvement in safe wrappers documentation
+2026-04-13T01:18:07.0900437Z ::endgroup::
+2026-04-13T01:18:07.0900738Z ##[endgroup]
+2026-04-13T01:18:07.0901133Z ::group::Detecting current platform
+2026-04-13T01:18:07.0901427Z ##[group]Detecting current platform
+2026-04-13T01:18:07.0903260Z Detected windows platform with arch "arm64"
+2026-04-13T01:18:07.0904356Z ::endgroup::
+2026-04-13T01:18:07.0904581Z ##[endgroup]
+2026-04-13T01:18:07.1019494Z ::group::Installing Swift toolchain snapshot swift-6.2.4-RELEASE
+2026-04-13T01:18:07.1020321Z ##[group]Installing Swift toolchain snapshot swift-6.2.4-RELEASE
+2026-04-13T01:18:07.1021171Z No SDKs to install
+2026-04-13T01:18:07.1025825Z ##[debug]Finding tool with key: "swift-6.2.4-RELEASE-windows10-arm64", version: "6.2.4" and arch: "arm64" in tool cache
+2026-04-13T01:18:07.1033913Z ##[debug]isExplicit: 6.2.4
+2026-04-13T01:18:07.1034656Z ##[debug]explicit? true
+2026-04-13T01:18:07.1036643Z ##[debug]checking cache: C:\hostedtoolcache\windows\swift-6.2.4-RELEASE-windows10-arm64\6.2.4\arm64
+2026-04-13T01:18:07.1038425Z ##[debug]not found
+2026-04-13T01:18:07.1042633Z ##[debug]Cache service version: v2
+2026-04-13T01:18:07.1046053Z ##[debug]Resolved Keys:
+2026-04-13T01:18:07.1046879Z ##[debug]["swift-6.2.4-RELEASE-windows10-arm64-arm64"]
+2026-04-13T01:18:07.1053648Z ##[debug]Checking zstd --quiet --version
+2026-04-13T01:18:07.2144737Z ##[debug]Unable to locate executable file: zstd. Please verify either the file path exists or the file can be found within a directory specified by the PATH environment variable. Also verify the file has a valid extension for an executable file.
+2026-04-13T01:18:07.2145885Z ##[debug]
+2026-04-13T01:18:07.2146298Z ##[debug]zstd version: null
+2026-04-13T01:18:07.2161676Z ##[debug][Request] GetCacheEntryDownloadURL https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.CacheService/GetCacheEntryDownloadURL
+2026-04-13T01:18:07.3501276Z ##[debug][Response] - 200
+2026-04-13T01:18:07.3501897Z ##[debug]Headers: {
+2026-04-13T01:18:07.3502173Z ##[debug]  "content-length": "56",
+2026-04-13T01:18:07.3502539Z ##[debug]  "content-type": "application/json",
+2026-04-13T01:18:07.3502849Z ##[debug]  "date": "Mon, 13 Apr 2026 01:18:07 GMT",
+2026-04-13T01:18:07.3503166Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-04-13T01:18:07.3503499Z ##[debug]  "x-github-request-id": "8C03:B1C97:658C1C7:7FCA148:69DC444F"
+2026-04-13T01:18:07.3503865Z ##[debug]}
+2026-04-13T01:18:07.3504235Z ##[debug]Body: {
+2026-04-13T01:18:07.3504425Z ##[debug]  "ok": false,
+2026-04-13T01:18:07.3504695Z ##[debug]  "signed_download_url": "",
+2026-04-13T01:18:07.3504970Z ##[debug]  "matched_key": ""
+2026-04-13T01:18:07.3505186Z ##[debug]}
+2026-04-13T01:18:07.3509088Z ##[debug]Cache not found for version e4a9eea43f1b599c5cdb4b54dd41a23575626bf95644a4a8d1e2e35b276a2734 of keys: swift-6.2.4-RELEASE-windows10-arm64-arm64
+2026-04-13T01:18:07.3516026Z ##[debug]Downloading snapshot signature from "https:/download.swift.org/swift-6.2.4-release/windows10-arm64/swift-6.2.4-RELEASE/swift-6.2.4-RELEASE-windows10-arm64.exe.sig"
+2026-04-13T01:18:07.3528259Z ##[debug]Downloading https:/download.swift.org/swift-6.2.4-release/windows10-arm64/swift-6.2.4-RELEASE/swift-6.2.4-RELEASE-windows10-arm64.exe.sig
+2026-04-13T01:18:07.3529414Z ##[debug]Destination C:\a\_temp\385818d1-afcc-4a4c-b464-28aef006f4d5
+2026-04-13T01:18:08.0037653Z ##[debug]Failed to download from "https:/download.swift.org/swift-6.2.4-release/windows10-arm64/swift-6.2.4-RELEASE/swift-6.2.4-RELEASE-windows10-arm64.exe.sig". Code(404) Message(Not Found)
+2026-04-13T01:18:08.0059852Z ##[warning]No signature at "https:/download.swift.org/swift-6.2.4-release/windows10-arm64/swift-6.2.4-RELEASE/swift-6.2.4-RELEASE-windows10-arm64.exe.sig"
+2026-04-13T01:18:08.0069859Z ##[debug]Downloading snapshot from "https://download.swift.org/swift-6.2.4-release/windows10-arm64/swift-6.2.4-RELEASE/swift-6.2.4-RELEASE-windows10-arm64.exe" for architecture arm64
+2026-04-13T01:18:08.0071763Z ##[debug]Downloading https://download.swift.org/swift-6.2.4-release/windows10-arm64/swift-6.2.4-RELEASE/swift-6.2.4-RELEASE-windows10-arm64.exe
+2026-04-13T01:18:08.0074111Z ##[debug]Destination C:\a\_temp\817c5e92-6aaa-4233-8e12-f7964cbeaee7
+2026-04-13T01:18:18.3075921Z ##[debug]download complete
+2026-04-13T01:18:18.5310853Z ##[debug]Toolchain installer downloaded at "C:\a\_temp\817c5e92-6aaa-4233-8e12-f7964cbeaee7.exe"
+2026-04-13T01:18:18.5311633Z ##[debug]Unpacking for architecture "arm64"
+2026-04-13T01:18:18.5313155Z ##[debug]Installing toolchain from "C:\a\_temp\817c5e92-6aaa-4233-8e12-f7964cbeaee7.exe"
+2026-04-13T01:18:18.6325819Z [command]C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command "& {[Environment]::GetEnvironmentVariables('Machine') | ConvertTo-Json}"
+2026-04-13T01:18:20.5895405Z {
+2026-04-13T01:18:20.5905565Z     "Path":  "C:\\aliyun-cli;C:\\vcpkg;C:\\Program Files (x86)\\NSIS\\;C:\\Program Files\\Mercurial\\;C:\\hostedtoolcache\\windows\\stack\\3.7.1\\x64;C:\\mingw64\\bin;C:\\Program Files\\dotnet;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\Program Files (x86)\\R\\R-4.5.2\\bin\\x64;C:\\SeleniumWebDrivers\\GeckoDriver;C:\\SeleniumWebDrivers\\EdgeDriver\\;C:\\SeleniumWebDrivers\\ChromeDriver;C:\\Program Files (x86)\\sbt\\bin;C:\\Program Files (x86)\\GitHub CLI;C:\\Program Files\\Git\\bin;C:\\Program Files (x86)\\pipx_bin;C:\\npm\\prefix;C:\\hostedtoolcache\\windows\\go\\1.24.11\\arm64\\bin;C:\\hostedtoolcache\\windows\\Python\\3.13.11\\arm64\\Scripts;C:\\hostedtoolcache\\windows\\Python\\3.13.11\\arm64;C:\\hostedtoolcache\\windows\\Ruby\\3.4.7\\aarch64\\bin;C:\\Program Files\\OpenSSL\\bin;C:\\tools\\kotlinc\\bin;C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\21.0.9-10.0\\aarch64\\bin;C:\\Program Files (x86)\\ImageMagick-7.1.2-Q16-HDRI;C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin;C:\\ProgramData\\kind;C:\\ProgramData\\Chocolatey\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\ProgramData\\chocolatey\\lib\\pulumi\\tools\\Pulumi\\bin;C:\\Program Files\\CMake\\bin;C:\\Tools\\Ninja;C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin;C:\\Program Files\\LLVM\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\clangarm64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\GitHub CLI\\;c:\\tools\\php;C:\\Program Files (x86)\\sbt\\bin;C:\\Program Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\SessionManagerPlugin\\bin\\;C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\",
+2026-04-13T01:18:20.5913583Z     "PIPX_HOME":  "C:\\Program Files (x86)\\pipx",
+2026-04-13T01:18:20.5913974Z     "ChocolateyInstall":  "C:\\ProgramData\\chocolatey",
+2026-04-13T01:18:20.5914457Z     "PROCESSOR_IDENTIFIER":  "ARMv8 (64-bit) Family 8 Model D49 Revision   0, MICROSOFT CORPORATION",
+2026-04-13T01:18:20.5915099Z     "JAVA_HOME_21_AARCH64":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\21.0.9-10.0\\aarch64",
+2026-04-13T01:18:20.5915566Z     "TMP":  "C:\\Windows\\TEMP",
+2026-04-13T01:18:20.5916339Z     "PROCESSOR_ARCHITECTURE":  "ARM64",
+2026-04-13T01:18:20.5916627Z     "M2_REPO":  "C:\\ProgramData\\m2",
+2026-04-13T01:18:20.5916943Z     "PATHEXT":  ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+2026-04-13T01:18:20.5917842Z     "ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE":  "C:\\actionarchivecache\\",
+2026-04-13T01:18:20.5918226Z     "DOTNET_NOLOGO":  "1",
+2026-04-13T01:18:20.5918500Z     "ENABLE_RUNNER_TRACING":  "true",
+2026-04-13T01:18:20.5918875Z     "PROCESSOR_REVISION":  "0000",
+2026-04-13T01:18:20.5919121Z     "TEMP":  "C:\\Windows\\TEMP",
+2026-04-13T01:18:20.5919385Z     "GCM_INTERACTIVE":  "Never",
+2026-04-13T01:18:20.5919747Z     "IEWebDriver":  "C:\\SeleniumWebDrivers\\IEDriver",
+2026-04-13T01:18:20.5920042Z     "USERNAME":  "SYSTEM",
+2026-04-13T01:18:20.5920459Z     "PSModuleAnalysisCachePath":  "C:\\PSModuleAnalysisCachePath\\ModuleAnalysisCache",
+2026-04-13T01:18:20.5920958Z     "GeckoWebDriver":  "C:\\SeleniumWebDrivers\\GeckoDriver",
+2026-04-13T01:18:20.5921369Z     "ChromeWebDriver":  "C:\\SeleniumWebDrivers\\ChromeDriver",
+2026-04-13T01:18:20.5921700Z     "POWERSHELL_UPDATECHECK":  "Off",
+2026-04-13T01:18:20.5922066Z     "SELENIUM_JAR_PATH":  "C:\\selenium\\selenium-server.jar",
+2026-04-13T01:18:20.5922478Z     "POWERSHELL_DISTRIBUTION_CHANNEL":  "GitHub-Actions-win22",
+2026-04-13T01:18:20.5922839Z     "PIPX_BIN_DIR":  "C:\\Program Files (x86)\\pipx_bin",
+2026-04-13T01:18:20.5923251Z     "GOROOT_1_22_AARCH64":  "C:\\hostedtoolcache\\windows\\go\\1.22.12\\arm64",
+2026-04-13T01:18:20.5923606Z     "PROCESSOR_LEVEL":  "3401",
+2026-04-13T01:18:20.5923881Z     "ComSpec":  "C:\\Windows\\system32\\cmd.exe",
+2026-04-13T01:18:20.5924808Z     "JAVA_HOME_23_AARCH64":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\23.0.2-7\\aarch64",
+2026-04-13T01:18:20.5925454Z     "GRADLE_HOME":  "C:\\ProgramData\\chocolatey\\lib\\gradle\\tools\\gradle-9.1.0",
+2026-04-13T01:18:20.5925854Z     "PHPROOT":  "c:\\tools\\php",
+2026-04-13T01:18:20.5926179Z     "GOROOT_1_24_AARCH64":  "C:\\hostedtoolcache\\windows\\go\\1.24.11\\arm64",
+2026-04-13T01:18:20.5926581Z     "npm_config_prefix":  "C:\\npm\\prefix",
+2026-04-13T01:18:20.5926902Z     "EdgeWebDriver":  "C:\\SeleniumWebDrivers\\EdgeDriver",
+2026-04-13T01:18:20.5927299Z     "AGENT_TOOLSDIRECTORY":  "C:\\hostedtoolcache\\windows",
+2026-04-13T01:18:20.5927636Z     "VCPKG_INSTALLATION_ROOT":  "C:\\vcpkg",
+2026-04-13T01:18:20.5927954Z     "DOTNET_MULTILEVEL_LOOKUP":  "0",
+2026-04-13T01:18:20.5928367Z     "M2":  "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin",
+2026-04-13T01:18:20.5928810Z     "AZURE_DEVOPS_CACHE_DIR":  "C:\\azureDevOpsCli\\cache",
+2026-04-13T01:18:20.5929157Z     "DOTNET_SKIP_FIRST_TIME_EXPERIENCE":  "1",
+2026-04-13T01:18:20.5929476Z     "DriverData":  "C:\\Windows\\System32\\Drivers\\DriverData",
+2026-04-13T01:18:20.5929833Z     "windir":  "C:\\Windows",
+2026-04-13T01:18:20.5930061Z     "NUMBER_OF_PROCESSORS":  "4",
+2026-04-13T01:18:20.5930302Z     "OS":  "Windows_NT",
+2026-04-13T01:18:20.5930581Z     "ImageOS":  "win22",
+2026-04-13T01:18:20.5930819Z     "ImageVersion":  "20260318.50.1",
+2026-04-13T01:18:20.5931135Z     "RUNNER_TOOL_CACHE":  "C:\\hostedtoolcache\\windows",
+2026-04-13T01:18:20.5931448Z     "RTOOLS45_HOME":  "C:\\rtools45",
+2026-04-13T01:18:20.5931858Z     "JAVA_HOME":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\21.0.9-10.0\\aarch64",
+2026-04-13T01:18:20.5932991Z     "PSModulePath":  "C:\\\\Modules\\az_12.5.0;C:\\Users\\packer\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\PowerShell\\Modules\\",
+2026-04-13T01:18:20.5934125Z     "GOROOT_1_23_AARCH64":  "C:\\hostedtoolcache\\windows\\go\\1.23.12\\arm64",
+2026-04-13T01:18:20.5934498Z     "AZURE_CONFIG_DIR":  "C:\\azureCli",
+2026-04-13T01:18:20.5934848Z     "ANT_HOME":  "C:\\ProgramData\\chocolatey\\lib\\ant\\tools\\apache-ant-1.10.15",
+2026-04-13T01:18:20.5935778Z     "AZURE_EXTENSION_DIR":  "C:\\Program Files\\Common Files\\AzureCliExtensionDirectory",
+2026-04-13T01:18:20.5936226Z     "AZ_DEVOPS_GLOBAL_CONFIG_DIR":  "C:\\azureDevOpsCli",
+2026-04-13T01:18:20.5936731Z     "COBERTURA_HOME":  "C:\\cobertura-2.1.1",
+2026-04-13T01:18:20.5937134Z     "GOROOT_1_25_AARCH64":  "C:\\hostedtoolcache\\windows\\go\\1.25.5\\arm64",
+2026-04-13T01:18:20.5937483Z     "MAVEN_OPTS":  "-Xms256m",
+2026-04-13T01:18:20.5937743Z     "SBT_HOME":  "C:\\Program Files (x86)\\sbt\\"
+2026-04-13T01:18:20.5938226Z }
+2026-04-13T01:18:20.7243137Z [command]C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command "& {[Environment]::GetEnvironmentVariables('User') | ConvertTo-Json}"
+2026-04-13T01:18:21.1421061Z {
+2026-04-13T01:18:21.1421830Z     "Path":  "C:\\Users\\runneradmin\\.dotnet\\tools;C:\\Users\\runneradmin\\.cargo\\bin;C:\\Users\\runneradmin\\AppData\\Local\\Microsoft\\WindowsApps;",
+2026-04-13T01:18:21.1422477Z     "TEMP":  "C:\\Users\\runneradmin\\AppData\\Local\\Temp",
+2026-04-13T01:18:21.1422877Z     "OneDrive":  "C:\\Users\\runneradmin\\OneDrive",
+2026-04-13T01:18:21.1423231Z     "TMP":  "C:\\Users\\runneradmin\\AppData\\Local\\Temp"
+2026-04-13T01:18:21.1423538Z }
+2026-04-13T01:18:21.1635712Z [command]C:\a\_temp\817c5e92-6aaa-4233-8e12-f7964cbeaee7.exe -q
+2026-04-13T01:18:55.5814577Z [command]C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command "& {[Environment]::GetEnvironmentVariables('Machine') | ConvertTo-Json}"
+2026-04-13T01:18:55.9683930Z {
+2026-04-13T01:18:55.9692293Z     "Path":  "C:\\aliyun-cli;C:\\vcpkg;C:\\Program Files (x86)\\NSIS\\;C:\\Program Files\\Mercurial\\;C:\\hostedtoolcache\\windows\\stack\\3.7.1\\x64;C:\\mingw64\\bin;C:\\Program Files\\dotnet;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\Program Files (x86)\\R\\R-4.5.2\\bin\\x64;C:\\SeleniumWebDrivers\\GeckoDriver;C:\\SeleniumWebDrivers\\EdgeDriver\\;C:\\SeleniumWebDrivers\\ChromeDriver;C:\\Program Files (x86)\\sbt\\bin;C:\\Program Files (x86)\\GitHub CLI;C:\\Program Files\\Git\\bin;C:\\Program Files (x86)\\pipx_bin;C:\\npm\\prefix;C:\\hostedtoolcache\\windows\\go\\1.24.11\\arm64\\bin;C:\\hostedtoolcache\\windows\\Python\\3.13.11\\arm64\\Scripts;C:\\hostedtoolcache\\windows\\Python\\3.13.11\\arm64;C:\\hostedtoolcache\\windows\\Ruby\\3.4.7\\aarch64\\bin;C:\\Program Files\\OpenSSL\\bin;C:\\tools\\kotlinc\\bin;C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\21.0.9-10.0\\aarch64\\bin;C:\\Program Files (x86)\\ImageMagick-7.1.2-Q16-HDRI;C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin;C:\\ProgramData\\kind;C:\\ProgramData\\Chocolatey\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\ProgramData\\chocolatey\\lib\\pulumi\\tools\\Pulumi\\bin;C:\\Program Files\\CMake\\bin;C:\\Tools\\Ninja;C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin;C:\\Program Files\\LLVM\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\clangarm64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\GitHub CLI\\;c:\\tools\\php;C:\\Program Files (x86)\\sbt\\bin;C:\\Program Files\\Amazon\\AWSCLIV2\\;C:\\Program Files\\Amazon\\SessionManagerPlugin\\bin\\;C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\",
+2026-04-13T01:18:55.9702067Z     "PIPX_HOME":  "C:\\Program Files (x86)\\pipx",
+2026-04-13T01:18:55.9702471Z     "ChocolateyInstall":  "C:\\ProgramData\\chocolatey",
+2026-04-13T01:18:55.9703842Z     "PROCESSOR_IDENTIFIER":  "ARMv8 (64-bit) Family 8 Model D49 Revision   0, MICROSOFT CORPORATION",
+2026-04-13T01:18:55.9704510Z     "JAVA_HOME_21_AARCH64":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\21.0.9-10.0\\aarch64",
+2026-04-13T01:18:55.9704970Z     "TMP":  "C:\\Windows\\TEMP",
+2026-04-13T01:18:55.9705232Z     "PROCESSOR_ARCHITECTURE":  "ARM64",
+2026-04-13T01:18:55.9705481Z     "M2_REPO":  "C:\\ProgramData\\m2",
+2026-04-13T01:18:55.9705845Z     "PATHEXT":  ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+2026-04-13T01:18:55.9706281Z     "ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE":  "C:\\actionarchivecache\\",
+2026-04-13T01:18:55.9706611Z     "DOTNET_NOLOGO":  "1",
+2026-04-13T01:18:55.9706875Z     "ENABLE_RUNNER_TRACING":  "true",
+2026-04-13T01:18:55.9707134Z     "PROCESSOR_REVISION":  "0000",
+2026-04-13T01:18:55.9707396Z     "TEMP":  "C:\\Windows\\TEMP",
+2026-04-13T01:18:55.9707645Z     "GCM_INTERACTIVE":  "Never",
+2026-04-13T01:18:55.9707935Z     "IEWebDriver":  "C:\\SeleniumWebDrivers\\IEDriver",
+2026-04-13T01:18:55.9708228Z     "USERNAME":  "SYSTEM",
+2026-04-13T01:18:55.9708622Z     "PSModuleAnalysisCachePath":  "C:\\PSModuleAnalysisCachePath\\ModuleAnalysisCache",
+2026-04-13T01:18:55.9709108Z     "GeckoWebDriver":  "C:\\SeleniumWebDrivers\\GeckoDriver",
+2026-04-13T01:18:55.9709489Z     "ChromeWebDriver":  "C:\\SeleniumWebDrivers\\ChromeDriver",
+2026-04-13T01:18:55.9709857Z     "POWERSHELL_UPDATECHECK":  "Off",
+2026-04-13T01:18:55.9710167Z     "SELENIUM_JAR_PATH":  "C:\\selenium\\selenium-server.jar",
+2026-04-13T01:18:55.9710628Z     "POWERSHELL_DISTRIBUTION_CHANNEL":  "GitHub-Actions-win22",
+2026-04-13T01:18:55.9711033Z     "PIPX_BIN_DIR":  "C:\\Program Files (x86)\\pipx_bin",
+2026-04-13T01:18:55.9711412Z     "GOROOT_1_22_AARCH64":  "C:\\hostedtoolcache\\windows\\go\\1.22.12\\arm64",
+2026-04-13T01:18:55.9711788Z     "PROCESSOR_LEVEL":  "3401",
+2026-04-13T01:18:55.9712038Z     "ComSpec":  "C:\\Windows\\system32\\cmd.exe",
+2026-04-13T01:18:55.9712531Z     "JAVA_HOME_23_AARCH64":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\23.0.2-7\\aarch64",
+2026-04-13T01:18:55.9713073Z     "GRADLE_HOME":  "C:\\ProgramData\\chocolatey\\lib\\gradle\\tools\\gradle-9.1.0",
+2026-04-13T01:18:55.9713470Z     "PHPROOT":  "c:\\tools\\php",
+2026-04-13T01:18:55.9713819Z     "GOROOT_1_24_AARCH64":  "C:\\hostedtoolcache\\windows\\go\\1.24.11\\arm64",
+2026-04-13T01:18:55.9714179Z     "npm_config_prefix":  "C:\\npm\\prefix",
+2026-04-13T01:18:55.9714517Z     "EdgeWebDriver":  "C:\\SeleniumWebDrivers\\EdgeDriver",
+2026-04-13T01:18:55.9714883Z     "AGENT_TOOLSDIRECTORY":  "C:\\hostedtoolcache\\windows",
+2026-04-13T01:18:55.9715222Z     "VCPKG_INSTALLATION_ROOT":  "C:\\vcpkg",
+2026-04-13T01:18:55.9715480Z     "DOTNET_MULTILEVEL_LOOKUP":  "0",
+2026-04-13T01:18:55.9715905Z     "M2":  "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin",
+2026-04-13T01:18:55.9716329Z     "AZURE_DEVOPS_CACHE_DIR":  "C:\\azureDevOpsCli\\cache",
+2026-04-13T01:18:55.9716651Z     "DOTNET_SKIP_FIRST_TIME_EXPERIENCE":  "1",
+2026-04-13T01:18:55.9717020Z     "DriverData":  "C:\\Windows\\System32\\Drivers\\DriverData",
+2026-04-13T01:18:55.9717333Z     "windir":  "C:\\Windows",
+2026-04-13T01:18:55.9717573Z     "NUMBER_OF_PROCESSORS":  "4",
+2026-04-13T01:18:55.9717820Z     "OS":  "Windows_NT",
+2026-04-13T01:18:55.9718040Z     "ImageOS":  "win22",
+2026-04-13T01:18:55.9718257Z     "ImageVersion":  "20260318.50.1",
+2026-04-13T01:18:55.9718567Z     "RUNNER_TOOL_CACHE":  "C:\\hostedtoolcache\\windows",
+2026-04-13T01:18:55.9718888Z     "RTOOLS45_HOME":  "C:\\rtools45",
+2026-04-13T01:18:55.9719283Z     "JAVA_HOME":  "C:\\hostedtoolcache\\windows\\Java_Temurin-Hotspot_jdk\\21.0.9-10.0\\aarch64",
+2026-04-13T01:18:55.9720695Z     "PSModulePath":  "C:\\\\Modules\\az_12.5.0;C:\\Users\\packer\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\PowerShell\\Modules\\",
+2026-04-13T01:18:55.9722329Z     "GOROOT_1_23_AARCH64":  "C:\\hostedtoolcache\\windows\\go\\1.23.12\\arm64",
+2026-04-13T01:18:55.9722692Z     "AZURE_CONFIG_DIR":  "C:\\azureCli",
+2026-04-13T01:18:55.9723106Z     "ANT_HOME":  "C:\\ProgramData\\chocolatey\\lib\\ant\\tools\\apache-ant-1.10.15",
+2026-04-13T01:18:55.9723610Z     "AZURE_EXTENSION_DIR":  "C:\\Program Files\\Common Files\\AzureCliExtensionDirectory",
+2026-04-13T01:18:55.9724069Z     "AZ_DEVOPS_GLOBAL_CONFIG_DIR":  "C:\\azureDevOpsCli",
+2026-04-13T01:18:55.9724406Z     "COBERTURA_HOME":  "C:\\cobertura-2.1.1",
+2026-04-13T01:18:55.9724755Z     "GOROOT_1_25_AARCH64":  "C:\\hostedtoolcache\\windows\\go\\1.25.5\\arm64",
+2026-04-13T01:18:55.9725115Z     "MAVEN_OPTS":  "-Xms256m",
+2026-04-13T01:18:55.9725364Z     "SBT_HOME":  "C:\\Program Files (x86)\\sbt\\"
+2026-04-13T01:18:55.9725664Z }
+2026-04-13T01:18:56.0909291Z [command]C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command "& {[Environment]::GetEnvironmentVariables('User') | ConvertTo-Json}"
+2026-04-13T01:18:57.1838680Z {
+2026-04-13T01:18:57.1839943Z     "Path":  "C:\\Users\\runneradmin\\.dotnet\\tools;C:\\Users\\runneradmin\\.cargo\\bin;C:\\Users\\runneradmin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Swift\\Runtimes\\6.2.4\\usr\\bin\\;C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.4+Asserts\\usr\\bin\\",
+2026-04-13T01:18:57.1841169Z     "TEMP":  "C:\\Users\\runneradmin\\AppData\\Local\\Temp",
+2026-04-13T01:18:57.1841822Z     "SDKROOT":  "C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.4\\Windows.platform\\Developer\\SDKs\\Windows.sdk\\",
+2026-04-13T01:18:57.1842426Z     "OneDrive":  "C:\\Users\\runneradmin\\OneDrive",
+2026-04-13T01:18:57.1842775Z     "TMP":  "C:\\Users\\runneradmin\\AppData\\Local\\Temp"
+2026-04-13T01:18:57.1843085Z }
+2026-04-13T01:18:57.2051678Z ##[debug]Trying second installation approach
+2026-04-13T01:18:57.2056115Z ##[debug]Failed 1 time(s), recent error "Error: ENOENT: no such file or directory, access 'C:\Program Files\Swift\Toolchains\0.0.0+Asserts'"
+2026-04-13T01:18:57.2057136Z ##[debug]Trying first installation approach
+2026-04-13T01:18:57.2061237Z ##[debug]Failed 2 time(s), recent error "Error: ENOENT: no such file or directory, access 'C:\Library\Developer\Toolchains\unknown-Asserts-development.xctoolchain'"
+2026-04-13T01:18:57.2062184Z ##[debug]Procceding with fallback installation approach
+2026-04-13T01:18:57.2068798Z ##[debug]Setting up environment with "{"newPaths":["C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Swift\\Runtimes\\6.2.4\\usr\\bin\\","C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Swift\\Toolchains\\6.2.4+Asserts\\usr\\bin\\"],"variables":{"SDKROOT":"C:\\Users\\runneradmin\\AppData\\Local\\Programs\\Swift\\Platforms\\6.2.4\\Windows.platform\\Developer\\SDKs\\Windows.sdk\\"}}"
+2026-04-13T01:18:57.2089055Z ##[debug]Downloaded and installed snapshot at ""
+2026-04-13T01:18:57.2092191Z ##[debug]Getting swift version with command "swift --version"
+2026-04-13T01:18:57.3192288Z [command]C:\Users\runneradmin\AppData\Local\Programs\Swift\Toolchains\6.2.4+Asserts\usr\bin\swift.exe --version
+2026-04-13T01:18:57.8624960Z Swift version 6.2.4 (swift-6.2.4-RELEASE)
+2026-04-13T01:18:57.8625505Z Target: aarch64-unknown-windows-msvc
+2026-04-13T01:18:57.8629099Z Build config: +assertions
+2026-04-13T01:18:57.8826595Z ::endgroup::
+2026-04-13T01:18:57.8827078Z ##[endgroup]
+2026-04-13T01:18:57.8827638Z ##[debug]Getting swift version with command "swift --version"
+2026-04-13T01:18:57.9875361Z [command]C:\Users\runneradmin\AppData\Local\Programs\Swift\Toolchains\6.2.4+Asserts\usr\bin\swift.exe --version
+2026-04-13T01:18:58.0983666Z Swift version 6.2.4 (swift-6.2.4-RELEASE)
+2026-04-13T01:18:58.0984654Z Target: aarch64-unknown-windows-msvc
+2026-04-13T01:18:58.0984979Z Build config: +assertions
+2026-04-13T01:18:58.1385400Z ##[debug]Node Action run completed with exit code 0
+2026-04-13T01:18:58.1393880Z ##[debug]SDKROOT='C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\'
+2026-04-13T01:18:58.1396209Z ##[debug]SWIFTFLAGS='-sdk C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\ -I C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\usr\lib\swift -L C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\usr\lib\swift\windows'
+2026-04-13T01:18:58.1401339Z ##[debug]Set output swift-version = 6.2.4
+2026-04-13T01:18:58.1403050Z ##[debug]Set output toolchain = {"name":"Windows 10","date":"2026-02-26T00:00:00.000Z","download":"swift-6.2.4-RELEASE-windows10-arm64.exe","download_signature":"swift-6.2.4-RELEASE-windows10-arm64.exe.sig","dir":"swift-6.2.4-RELEASE","platform":"windows10-arm64","branch":"swift-6.2.4-release","docker":"6.2.4-windowsservercore-ltsc2022","windows":true,"preventCaching":false}
+2026-04-13T01:18:58.1404491Z ##[debug]Set output sdks = []
+2026-04-13T01:18:58.1405602Z ##[debug]Finishing: Setup Swift

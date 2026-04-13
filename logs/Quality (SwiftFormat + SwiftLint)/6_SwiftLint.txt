@@ -1,0 +1,5 @@
+﻿2026-04-13T01:18:20.7993490Z ##[debug]Evaluating condition for step: 'SwiftLint'
+2026-04-13T01:18:20.7994780Z ##[debug]Evaluating: success()
+2026-04-13T01:18:20.7995020Z ##[debug]Evaluating success:
+2026-04-13T01:18:20.7995280Z ##[debug]=> false
+2026-04-13T01:18:20.7995540Z ##[debug]Result: false

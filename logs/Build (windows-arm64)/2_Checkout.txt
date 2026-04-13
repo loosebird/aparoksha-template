@@ -1,0 +1,173 @@
+﻿2026-04-13T01:17:55.3223090Z ##[debug]Evaluating condition for step: 'Checkout'
+2026-04-13T01:17:55.3261700Z ##[debug]Evaluating: success()
+2026-04-13T01:17:55.3266906Z ##[debug]Evaluating success:
+2026-04-13T01:17:55.3282045Z ##[debug]=> true
+2026-04-13T01:17:55.3288569Z ##[debug]Result: true
+2026-04-13T01:17:55.3312358Z ##[debug]Starting: Checkout
+2026-04-13T01:17:55.3853668Z ##[debug]Register post job cleanup for action: actions/checkout@v5
+2026-04-13T01:17:55.3996797Z ##[debug]Loading inputs
+2026-04-13T01:17:55.4011690Z ##[debug]Evaluating: github.repository
+2026-04-13T01:17:55.4013339Z ##[debug]Evaluating Index:
+2026-04-13T01:17:55.4016067Z ##[debug]..Evaluating github:
+2026-04-13T01:17:55.4017815Z ##[debug]..=> Object
+2026-04-13T01:17:55.4024785Z ##[debug]..Evaluating String:
+2026-04-13T01:17:55.4026189Z ##[debug]..=> 'repository'
+2026-04-13T01:17:55.4030799Z ##[debug]=> 'loosebird/aparoksha-template'
+2026-04-13T01:17:55.4033120Z ##[debug]Result: 'loosebird/aparoksha-template'
+2026-04-13T01:17:55.4039812Z ##[debug]Evaluating: github.token
+2026-04-13T01:17:55.4040745Z ##[debug]Evaluating Index:
+2026-04-13T01:17:55.4041693Z ##[debug]..Evaluating github:
+2026-04-13T01:17:55.4042336Z ##[debug]..=> Object
+2026-04-13T01:17:55.4042893Z ##[debug]..Evaluating String:
+2026-04-13T01:17:55.4043443Z ##[debug]..=> 'token'
+2026-04-13T01:17:55.4044842Z ##[debug]=> '***'
+2026-04-13T01:17:55.4045594Z ##[debug]Result: '***'
+2026-04-13T01:17:55.4081182Z ##[debug]Loading env
+2026-04-13T01:17:55.4177939Z ##[group]Run actions/checkout@v5
+2026-04-13T01:17:55.4179110Z with:
+2026-04-13T01:17:55.4179666Z   repository: loosebird/aparoksha-template
+2026-04-13T01:17:55.4180719Z   token: ***
+2026-04-13T01:17:55.4181272Z   ssh-strict: true
+2026-04-13T01:17:55.4181715Z   ssh-user: git
+2026-04-13T01:17:55.4182473Z   persist-credentials: true
+2026-04-13T01:17:55.4183003Z   clean: true
+2026-04-13T01:17:55.4183490Z   sparse-checkout-cone-mode: true
+2026-04-13T01:17:55.4184109Z   fetch-depth: 1
+2026-04-13T01:17:55.4184647Z   fetch-tags: false
+2026-04-13T01:17:55.4185169Z   show-progress: true
+2026-04-13T01:17:55.4185671Z   lfs: false
+2026-04-13T01:17:55.4186169Z   submodules: false
+2026-04-13T01:17:55.4186636Z   set-safe-directory: true
+2026-04-13T01:17:55.4187730Z env:
+2026-04-13T01:17:55.4188286Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:17:55.4188957Z ##[endgroup]
+2026-04-13T01:17:55.6427316Z ##[debug]GITHUB_WORKSPACE = 'C:\a\aparoksha-template\aparoksha-template'
+2026-04-13T01:17:55.6430739Z ##[debug]qualified repository = 'loosebird/aparoksha-template'
+2026-04-13T01:17:55.6432574Z ##[debug]ref = 'refs/heads/main'
+2026-04-13T01:17:55.6436127Z ##[debug]commit = 'd883f23aa7d9f36f74f39943706f603d6f768a79'
+2026-04-13T01:17:55.6438090Z ##[debug]clean = true
+2026-04-13T01:17:55.6439806Z ##[debug]filter = undefined
+2026-04-13T01:17:55.6442806Z ##[debug]fetch depth = 1
+2026-04-13T01:17:55.6444350Z ##[debug]fetch tags = false
+2026-04-13T01:17:55.6445815Z ##[debug]show progress = true
+2026-04-13T01:17:55.6447514Z ##[debug]lfs = false
+2026-04-13T01:17:55.6449104Z ##[debug]submodules = false
+2026-04-13T01:17:55.6450616Z ##[debug]recursive submodules = false
+2026-04-13T01:17:55.6455789Z ##[debug]GitHub Host URL = 
+2026-04-13T01:17:55.6461310Z ::add-matcher::C:\a\_actions\actions\checkout\v5\dist\problem-matcher.json
+2026-04-13T01:17:55.6551280Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+2026-04-13T01:17:55.6559103Z Syncing repository: loosebird/aparoksha-template
+2026-04-13T01:17:55.6561485Z ::group::Getting Git version info
+2026-04-13T01:17:55.6563346Z ##[group]Getting Git version info
+2026-04-13T01:17:55.6564622Z Working directory is 'C:\a\aparoksha-template\aparoksha-template'
+2026-04-13T01:17:55.7428249Z ##[debug]Getting git version
+2026-04-13T01:17:55.7449584Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-04-13T01:17:55.8547442Z git version 2.52.0.windows.1
+2026-04-13T01:17:55.8608536Z ##[debug]0
+2026-04-13T01:17:55.8612991Z ##[debug]git version 2.52.0.windows.1
+2026-04-13T01:17:55.8613988Z ##[debug]
+2026-04-13T01:17:55.8615364Z ##[debug]Set git useragent to: git/2.52.0 (github-actions-checkout)
+2026-04-13T01:17:55.8617127Z ::endgroup::
+2026-04-13T01:17:55.8618003Z ##[endgroup]
+2026-04-13T01:17:55.8623342Z ::add-mask::***
+2026-04-13T01:17:55.8648057Z Temporarily overriding HOME='C:\a\_temp\6c53b899-392c-4d77-b4a2-ffdbe519b065' before making global git config changes
+2026-04-13T01:17:55.8650153Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-13T01:17:55.8657006Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory C:\a\aparoksha-template\aparoksha-template
+2026-04-13T01:17:55.9142875Z ##[debug]0
+2026-04-13T01:17:55.9144123Z ##[debug]
+2026-04-13T01:17:55.9154002Z Deleting the contents of 'C:\a\aparoksha-template\aparoksha-template'
+2026-04-13T01:17:55.9163365Z ::group::Initializing the repository
+2026-04-13T01:17:55.9164424Z ##[group]Initializing the repository
+2026-04-13T01:17:55.9172787Z [command]"C:\Program Files\Git\bin\git.exe" init C:\a\aparoksha-template\aparoksha-template
+2026-04-13T01:17:55.9844195Z Initialized empty Git repository in C:/a/aparoksha-template/aparoksha-template/.git/
+2026-04-13T01:17:55.9896884Z ##[debug]0
+2026-04-13T01:17:55.9898814Z ##[debug]Initialized empty Git repository in C:/a/aparoksha-template/aparoksha-template/.git/
+2026-04-13T01:17:55.9900133Z ##[debug]
+2026-04-13T01:17:55.9905676Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/loosebird/aparoksha-template
+2026-04-13T01:17:56.0418794Z ##[debug]0
+2026-04-13T01:17:56.0420077Z ##[debug]
+2026-04-13T01:17:56.0421296Z ::endgroup::
+2026-04-13T01:17:56.0421983Z ##[endgroup]
+2026-04-13T01:17:56.0423140Z ::group::Disabling automatic garbage collection
+2026-04-13T01:17:56.0424148Z ##[group]Disabling automatic garbage collection
+2026-04-13T01:17:56.0429053Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2026-04-13T01:17:56.0917148Z ##[debug]0
+2026-04-13T01:17:56.0918473Z ##[debug]
+2026-04-13T01:17:56.0931000Z ::endgroup::
+2026-04-13T01:17:56.0931731Z ##[endgroup]
+2026-04-13T01:17:56.0932861Z ::group::Setting up auth
+2026-04-13T01:17:56.0934078Z ##[group]Setting up auth
+2026-04-13T01:17:56.0935406Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-04-13T01:17:56.1409842Z ##[debug]1
+2026-04-13T01:17:56.1411309Z ##[debug]
+2026-04-13T01:17:56.1421532Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-04-13T01:17:58.0554839Z ##[debug]0
+2026-04-13T01:17:58.0561826Z ##[debug]
+2026-04-13T01:17:58.0564137Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-13T01:17:58.1091432Z ##[debug]1
+2026-04-13T01:17:58.1093352Z ##[debug]
+2026-04-13T01:17:58.1099453Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-04-13T01:17:59.2396831Z ##[debug]0
+2026-04-13T01:17:59.2397531Z ##[debug]
+2026-04-13T01:17:59.2408904Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-13T01:17:59.2887534Z ##[debug]1
+2026-04-13T01:17:59.2888289Z ##[debug]
+2026-04-13T01:17:59.2897619Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-04-13T01:18:00.3962762Z ##[debug]0
+2026-04-13T01:18:00.3976780Z ##[debug]
+2026-04-13T01:18:00.3977529Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-04-13T01:18:00.4462008Z ##[debug]0
+2026-04-13T01:18:00.4462711Z ##[debug]
+2026-04-13T01:18:00.4478150Z ::endgroup::
+2026-04-13T01:18:00.4478611Z ##[endgroup]
+2026-04-13T01:18:00.4479071Z ::group::Fetching the repository
+2026-04-13T01:18:00.4479360Z ##[group]Fetching the repository
+2026-04-13T01:18:00.4491300Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d883f23aa7d9f36f74f39943706f603d6f768a79:refs/remotes/origin/main
+2026-04-13T01:18:01.2178361Z From https://github.com/loosebird/aparoksha-template
+2026-04-13T01:18:01.2179682Z  * [new ref]         d883f23aa7d9f36f74f39943706f603d6f768a79 -> origin/main
+2026-04-13T01:18:01.2543680Z ##[debug]0
+2026-04-13T01:18:01.2544437Z ##[debug]
+2026-04-13T01:18:01.2544901Z ::endgroup::
+2026-04-13T01:18:01.2545163Z ##[endgroup]
+2026-04-13T01:18:01.2545873Z ::group::Determining the checkout info
+2026-04-13T01:18:01.2546599Z ##[group]Determining the checkout info
+2026-04-13T01:18:01.2547386Z ::endgroup::
+2026-04-13T01:18:01.2547596Z ##[endgroup]
+2026-04-13T01:18:01.2560626Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2026-04-13T01:18:01.3105626Z ##[debug]0
+2026-04-13T01:18:01.3106320Z ##[debug]
+2026-04-13T01:18:01.3116290Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2026-04-13T01:18:01.3593380Z ##[debug]0
+2026-04-13T01:18:01.3594063Z ##[debug]
+2026-04-13T01:18:01.3594647Z ::group::Checking out the ref
+2026-04-13T01:18:01.3594955Z ##[group]Checking out the ref
+2026-04-13T01:18:01.3603772Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+2026-04-13T01:18:01.4386360Z Switched to a new branch 'main'
+2026-04-13T01:18:01.4410764Z branch 'main' set up to track 'origin/main'.
+2026-04-13T01:18:01.4470634Z ##[debug]0
+2026-04-13T01:18:01.4473176Z ##[debug]branch 'main' set up to track 'origin/main'.
+2026-04-13T01:18:01.4473508Z ##[debug]
+2026-04-13T01:18:01.4474065Z ::endgroup::
+2026-04-13T01:18:01.4474310Z ##[endgroup]
+2026-04-13T01:18:01.4973350Z ##[debug]0
+2026-04-13T01:18:01.4974080Z ##[debug]commit d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:18:01.4974517Z ##[debug]Author: viniciusnevescosta <vinicius.nevesco@gmail.com>
+2026-04-13T01:18:01.4974911Z ##[debug]Date:   Sun Apr 12 22:16:02 2026 -0300
+2026-04-13T01:18:01.4975169Z ##[debug]
+2026-04-13T01:18:01.4975533Z ##[debug]    ci(tools)!: Lint and format
+2026-04-13T01:18:01.4975785Z ##[debug]
+2026-04-13T01:18:01.4982435Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2026-04-13T01:18:01.5405545Z d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:18:01.5458307Z ##[debug]0
+2026-04-13T01:18:01.5458850Z ##[debug]d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:18:01.5459226Z ##[debug]
+2026-04-13T01:18:01.5468465Z ##[debug]Unsetting HOME override
+2026-04-13T01:18:01.5481722Z ::remove-matcher owner=checkout-git::
+2026-04-13T01:18:01.5494419Z ##[debug]Removed matchers: 'checkout-git'
+2026-04-13T01:18:01.5635706Z ##[debug]Node Action run completed with exit code 0
+2026-04-13T01:18:01.5677967Z ##[debug]Save intra-action state isPost = true
+2026-04-13T01:18:01.5678611Z ##[debug]Save intra-action state setSafeDirectory = true
+2026-04-13T01:18:01.5679212Z ##[debug]Save intra-action state repositoryPath = C:\a\aparoksha-template\aparoksha-template
+2026-04-13T01:18:01.5685086Z ##[debug]Set output commit = d883f23aa7d9f36f74f39943706f603d6f768a79
+2026-04-13T01:18:01.5686593Z ##[debug]Set output ref = refs/heads/main
+2026-04-13T01:18:01.5690720Z ##[debug]Finishing: Checkout

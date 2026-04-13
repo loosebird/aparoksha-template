@@ -1,0 +1,14 @@
+﻿2026-04-13T01:36:02.9407461Z ##[debug]Starting: Complete job
+2026-04-13T01:36:02.9410644Z Uploading runner diagnostic logs
+2026-04-13T01:36:02.9423497Z ##[debug]Starting diagnostic file upload.
+2026-04-13T01:36:02.9423894Z ##[debug]Setting up diagnostic log folders.
+2026-04-13T01:36:02.9429023Z ##[debug]Creating diagnostic log files folder.
+2026-04-13T01:36:02.9445029Z ##[debug]Copying 1 worker diagnostic logs.
+2026-04-13T01:36:02.9461520Z ##[debug]Copying 1 runner diagnostic logs.
+2026-04-13T01:36:02.9472663Z ##[debug]Zipping diagnostic files.
+2026-04-13T01:36:02.9593394Z ##[debug]Uploading diagnostic metadata file.
+2026-04-13T01:36:02.9716797Z ##[debug]Diagnostic file upload complete.
+2026-04-13T01:36:02.9717542Z Completed runner diagnostic log upload
+2026-04-13T01:36:02.9717901Z Cleaning up orphan processes
+2026-04-13T01:36:03.0491195Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: SwiftyLab/setup-swift@v1.13.0. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-04-13T01:36:03.0493548Z ##[debug]Finishing: Complete job

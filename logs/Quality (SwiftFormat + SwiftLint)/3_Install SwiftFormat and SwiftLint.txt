@@ -1,0 +1,103 @@
+﻿2026-04-13T01:17:54.8387710Z ##[debug]Evaluating condition for step: 'Install SwiftFormat and SwiftLint'
+2026-04-13T01:17:54.8390720Z ##[debug]Evaluating: success()
+2026-04-13T01:17:54.8391470Z ##[debug]Evaluating success:
+2026-04-13T01:17:54.8392250Z ##[debug]=> true
+2026-04-13T01:17:54.8392960Z ##[debug]Result: true
+2026-04-13T01:17:54.8394110Z ##[debug]Starting: Install SwiftFormat and SwiftLint
+2026-04-13T01:17:54.8408350Z ##[debug]Loading inputs
+2026-04-13T01:17:54.8412410Z ##[debug]Loading env
+2026-04-13T01:17:54.8426600Z ##[group]Run brew update
+2026-04-13T01:17:54.8427130Z [36;1mbrew update[0m
+2026-04-13T01:17:54.8427650Z [36;1mbrew install swiftformat swiftlint[0m
+2026-04-13T01:17:54.8468050Z shell: /bin/bash -e {0}
+2026-04-13T01:17:54.8468590Z env:
+2026-04-13T01:17:54.8469060Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:17:54.8469710Z ##[endgroup]
+2026-04-13T01:17:54.8539990Z ##[debug]/bin/bash -e /Users/runner/work/_temp/becf517f-fa98-495d-b6e8-57a1d1ce701e.sh
+2026-04-13T01:17:57.0535110Z [34m==>[0m [1mUpdating Homebrew...[0m
+2026-04-13T01:18:11.3379280Z To restore the stashed changes to /opt/homebrew/Library/Taps/homebrew/homebrew-core, run:
+2026-04-13T01:18:11.3380140Z   cd /opt/homebrew/Library/Taps/homebrew/homebrew-core && git stash pop
+2026-04-13T01:18:12.8881900Z [34m==>[0m [1mHomebrew's analytics have entirely moved to our InfluxDB instance in the EU.[0m
+2026-04-13T01:18:12.8983860Z We gather less data than before and have destroyed all Google Analytics data:
+2026-04-13T01:18:12.9088070Z   [4mhttps://docs.brew.sh/Analytics[24m[0m
+2026-04-13T01:18:12.9189940Z Please reconsider re-enabling analytics to help our volunteer maintainers with:
+2026-04-13T01:18:12.9291900Z   brew analytics on
+2026-04-13T01:18:12.9394000Z [34m==>[0m [1mHomebrew is run entirely by unpaid volunteers. Please consider donating:[0m
+2026-04-13T01:18:12.9496100Z   [4mhttps://github.com/Homebrew/brew#donations[24m
+2026-04-13T01:18:12.9598480Z 
+2026-04-13T01:18:13.9632100Z Updated 3 taps (hashicorp/tap, homebrew/core and homebrew/cask).
+2026-04-13T01:18:13.9633670Z [34m==>[0m [1mNew Formulae[0m
+2026-04-13T01:18:14.3051410Z apache-arrow-adbc-glib: GLib bindings for Apache Arrow ADBC
+2026-04-13T01:18:14.3153370Z apfel: Apple Intelligence from the command-line, with OpenAi-compatible API server
+2026-04-13T01:18:14.3253650Z dart-sass: Reference implementation of Sass, written in Dart
+2026-04-13T01:18:14.3355120Z fvm: Manage Flutter SDK versions per project
+2026-04-13T01:18:14.3455910Z libheif-plugins: ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+2026-04-13T01:18:14.3557470Z nbytes: Library of byte handling functions extracted from Node.js core
+2026-04-13T01:18:14.3657630Z overturemaps: Python tools for interacting with Overture Maps data
+2026-04-13T01:18:14.3763620Z resticprofile: Configuration profiles manager and scheduler for restic backup
+2026-04-13T01:18:14.3864000Z rpiboot: Raspberry Pi USB boot tool for Compute Modules
+2026-04-13T01:18:14.3965490Z sheets: Terminal based spreadsheet tool
+2026-04-13T01:18:14.4066960Z skip: Tool for building Swift apps for Android
+2026-04-13T01:18:14.4168540Z [34m==>[0m [1mNew Casks[0m
+2026-04-13T01:18:14.4672330Z appgridmac: AI-assisted Launchpad replacement
+2026-04-13T01:18:14.4773110Z backblaze-restore: Computer backup restore client
+2026-04-13T01:18:14.4874140Z baoliandeng: VPN proxy powered by Mihomo (Clash Meta)
+2026-04-13T01:18:14.4976900Z cadran: Desktop clock rendered behind your icons
+2026-04-13T01:18:14.5076980Z cc-switch: Configuration manager for AI coding agents
+2026-04-13T01:18:14.5182850Z clearance: Markdown viewer and editor
+2026-04-13T01:18:14.5284600Z copilot-language-server: Language Server Protocol server for GitHub Copilot
+2026-04-13T01:18:14.5375570Z font-suez-one
+2026-04-13T01:18:14.5414120Z font-sulphur-point
+2026-04-13T01:18:14.5497880Z font-sumana
+2026-04-13T01:18:14.5532170Z font-sura
+2026-04-13T01:18:14.5547050Z font-suranna
+2026-04-13T01:18:14.5549520Z font-suravaram
+2026-04-13T01:18:14.5570440Z font-syne-mono
+2026-04-13T01:18:14.5574670Z font-syne-tactile
+2026-04-13T01:18:14.5584750Z happ: Platform for building proxies to bypass network restrictions
+2026-04-13T01:18:14.5608160Z hive-app: AI agent orchestrator for parallel coding across projects
+2026-04-13T01:18:14.5637460Z idevice-pair: Generate pair records for iOS devices
+2026-04-13T01:18:14.5642400Z intiface-central: Frontend application for the Buttplug sex toy control library
+2026-04-13T01:18:14.5643420Z orchard: Native GUI for Apple Containers
+2026-04-13T01:18:14.5644210Z paper-design: Design tool for creating interfaces and prototypes
+2026-04-13T01:18:14.5644800Z plamo-translate: Translator focused on Japanese
+2026-04-13T01:18:14.5645150Z rayon: AI-powered drawing for interior designers and architects
+2026-04-13T01:18:14.5646390Z rockxy-community: HTTP proxy
+2026-04-13T01:18:14.5646720Z rowboat: Open-source AI coworker, with memory
+2026-04-13T01:18:14.5647020Z tablen: Native SQL client
+2026-04-13T01:18:14.5647290Z vibe-island: Dynamic island AI agent utility
+2026-04-13T01:18:14.5647710Z worksheet-crafter: Worksheet and lesson material creator
+2026-04-13T01:18:14.8678400Z [34m==>[0m [1mOutdated Formulae[0m
+2026-04-13T01:18:14.8689450Z ant
+2026-04-13T01:18:14.8689850Z aws-sam-cli
+2026-04-13T01:18:14.8690990Z azure-cli
+2026-04-13T01:18:14.8691280Z cryptography
+2026-04-13T01:18:14.8691540Z libpng
+2026-04-13T01:18:14.8692700Z libsodium
+2026-04-13T01:18:14.8695590Z openssl@3
+2026-04-13T01:18:14.8695850Z python@3.13
+2026-04-13T01:18:14.8697220Z python@3.14
+2026-04-13T01:18:14.8698820Z sqlite
+2026-04-13T01:18:14.8700290Z swiftformat
+2026-04-13T01:18:14.8700690Z [34m==>[0m [1mOutdated Casks[0m
+2026-04-13T01:18:14.8701730Z session-manager-plugin
+2026-04-13T01:18:14.8703280Z 
+2026-04-13T01:18:14.8703600Z You have [1m11[0m outdated formulae and [1m1[0m outdated cask installed.
+2026-04-13T01:18:14.8705070Z You can upgrade them with [1mbrew upgrade[0m
+2026-04-13T01:18:14.8705890Z or list them with [1mbrew outdated[0m.
+2026-04-13T01:18:16.2398350Z swiftformat 0.60.1 is already installed but outdated (so it will be upgraded).
+2026-04-13T01:18:16.5845690Z [32m==>[0m [1mFetching downloads for: [32mswiftformat[39m and [32mswiftlint[39m[0m
+2026-04-13T01:18:17.0759480Z ✔︎ Bottle Manifest swiftformat (0.61.0)
+2026-04-13T01:18:17.2680030Z ✔︎ Bottle Manifest swiftlint (0.63.2)
+2026-04-13T01:18:18.1112290Z ✔︎ Bottle swiftformat (0.61.0)
+2026-04-13T01:18:18.1213590Z ✔︎ Bottle swiftlint (0.63.2)
+2026-04-13T01:18:18.2156280Z [32m==>[0m [1mUpgrading [32mswiftformat[39m[0m
+2026-04-13T01:18:18.2156710Z   0.60.1 -> 0.61.0 
+2026-04-13T01:18:18.2187670Z [34m==>[0m [1mPouring swiftformat--0.61.0.arm64_sequoia.bottle.tar.gz[0m
+2026-04-13T01:18:19.4780730Z 🍺  /opt/homebrew/Cellar/swiftformat/0.61.0: 7 files, 4.9MB
+2026-04-13T01:18:19.4805580Z [34m==>[0m [1mPouring swiftlint--0.63.2.arm64_sequoia.bottle.tar.gz[0m
+2026-04-13T01:18:20.6051610Z 🍺  /opt/homebrew/Cellar/swiftlint/0.63.2: 10 files, 40MB
+2026-04-13T01:18:20.6053350Z [32m==>[0m [1mCaveats[0m
+2026-04-13T01:18:20.6053630Z Bash completion has been installed to:
+2026-04-13T01:18:20.6357680Z   /opt/homebrew/etc/bash_completion.d
+2026-04-13T01:18:20.6368330Z ##[debug]Finishing: Install SwiftFormat and SwiftLint

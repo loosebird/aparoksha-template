@@ -1,0 +1,19 @@
+﻿2026-04-13T01:19:54.5755172Z ##[debug]Evaluating condition for step: 'Show toolchain'
+2026-04-13T01:19:54.5757322Z ##[debug]Evaluating: success()
+2026-04-13T01:19:54.5757657Z ##[debug]Evaluating success:
+2026-04-13T01:19:54.5758037Z ##[debug]=> true
+2026-04-13T01:19:54.5758346Z ##[debug]Result: true
+2026-04-13T01:19:54.5758994Z ##[debug]Starting: Show toolchain
+2026-04-13T01:19:54.5766862Z ##[debug]Loading inputs
+2026-04-13T01:19:54.5768167Z ##[debug]Loading env
+2026-04-13T01:19:54.5772351Z ##[group]Run swift --version
+2026-04-13T01:19:54.5772607Z [36;1mswift --version[0m
+2026-04-13T01:19:54.5789554Z shell: /usr/bin/bash -e {0}
+2026-04-13T01:19:54.5789803Z env:
+2026-04-13T01:19:54.5789982Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:19:54.5790294Z   SWIFT_SETUP_TOOL_KEY: swift-6.2.4-RELEASE-ubuntu2404-aarch64
+2026-04-13T01:19:54.5790588Z ##[endgroup]
+2026-04-13T01:19:54.5810277Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/9933ab53-93d2-4235-aef9-1dd5bc795adb.sh
+2026-04-13T01:19:54.6277096Z Swift version 6.2.4 (swift-6.2.4-RELEASE)
+2026-04-13T01:19:54.6277574Z Target: aarch64-unknown-linux-gnu
+2026-04-13T01:19:54.6304898Z ##[debug]Finishing: Show toolchain

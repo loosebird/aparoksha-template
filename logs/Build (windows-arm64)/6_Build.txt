@@ -1,0 +1,110 @@
+﻿2026-04-13T01:19:05.1978505Z ##[debug]Evaluating: matrix.backend
+2026-04-13T01:19:05.1979148Z ##[debug]Evaluating Index:
+2026-04-13T01:19:05.1979482Z ##[debug]..Evaluating matrix:
+2026-04-13T01:19:05.1979846Z ##[debug]..=> Object
+2026-04-13T01:19:05.1980144Z ##[debug]..Evaluating String:
+2026-04-13T01:19:05.1980434Z ##[debug]..=> 'backend'
+2026-04-13T01:19:05.1981047Z ##[debug]=> 'WINUI'
+2026-04-13T01:19:05.1981281Z ##[debug]Result: 'WINUI'
+2026-04-13T01:19:05.1982944Z ##[debug]Evaluating condition for step: 'Build'
+2026-04-13T01:19:05.1984932Z ##[debug]Evaluating: success()
+2026-04-13T01:19:05.1985358Z ##[debug]Evaluating success:
+2026-04-13T01:19:05.1985846Z ##[debug]=> true
+2026-04-13T01:19:05.1986358Z ##[debug]Result: true
+2026-04-13T01:19:05.1987211Z ##[debug]Starting: Build
+2026-04-13T01:19:05.2138200Z ##[debug]Loading inputs
+2026-04-13T01:19:05.2140053Z ##[debug]Loading env
+2026-04-13T01:19:05.2146761Z ##[group]Run swift build -c release
+2026-04-13T01:19:05.2147075Z [36;1mswift build -c release[0m
+2026-04-13T01:19:05.2200559Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-04-13T01:19:05.2200924Z env:
+2026-04-13T01:19:05.2201211Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-04-13T01:19:05.2201737Z   SDKROOT: C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\
+2026-04-13T01:19:05.2203391Z   SWIFTFLAGS: -sdk C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\ -I C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\usr\lib\swift -L C:\Users\runneradmin\AppData\Local\Programs\Swift\Platforms\6.2.4\Windows.platform\Developer\SDKs\Windows.sdk\usr\lib\swift\windows
+2026-04-13T01:19:05.2204900Z   APAROKSHA_FRAMEWORK: WINUI
+2026-04-13T01:19:05.2205147Z ##[endgroup]
+2026-04-13T01:19:05.2271249Z ##[debug]C:\Program Files\PowerShell\7\pwsh.EXE -command ". 'C:\a\_temp\8fcc9f54-7805-4bb9-b31e-1fe04f1d9a2b.ps1'"
+2026-04-13T01:19:10.9562912Z Fetching https://git.aparoksha.dev/aparoksha/aparoksha
+2026-04-13T01:19:12.6067367Z [1/512] Fetching aparoksha
+2026-04-13T01:19:12.7498350Z Fetched https://git.aparoksha.dev/aparoksha/aparoksha from cache (1.79s)
+2026-04-13T01:19:38.5934681Z Fetching https://git.aparoksha.dev/aparoksha/winui-swift
+2026-04-13T01:19:40.2001135Z [1/439] Fetching winui-swift
+2026-04-13T01:19:40.3594832Z Fetched https://git.aparoksha.dev/aparoksha/winui-swift from cache (1.77s)
+2026-04-13T01:19:41.2345150Z Fetching https://git.aparoksha.dev/aparoksha/meta
+2026-04-13T01:19:42.5183372Z [1/1120] Fetching meta
+2026-04-13T01:19:42.6799731Z Fetched https://git.aparoksha.dev/aparoksha/meta from cache (1.45s)
+2026-04-13T01:19:43.5361217Z Fetching https://git.aparoksha.dev/aparoksha/levenshtein-transformations
+2026-04-13T01:19:44.5250845Z [1/151] Fetching levenshtein-transformations
+2026-04-13T01:19:44.7036973Z Fetched https://git.aparoksha.dev/aparoksha/levenshtein-transformations from cache (1.17s)
+2026-04-13T01:19:45.6335290Z Fetching https://git.aparoksha.dev/winui-swift/swift-windowsappsdk
+2026-04-13T01:19:47.1491384Z [1/165] Fetching swift-windowsappsdk
+2026-04-13T01:19:47.3146150Z Fetched https://git.aparoksha.dev/winui-swift/swift-windowsappsdk from cache (1.68s)
+2026-04-13T01:19:58.8648462Z Fetching https://git.aparoksha.dev/winui-swift/swift-windowsfoundation
+2026-04-13T01:20:00.0306928Z [1/78] Fetching swift-windowsfoundation
+2026-04-13T01:20:00.3422221Z Fetched https://git.aparoksha.dev/winui-swift/swift-windowsfoundation from cache (1.48s)
+2026-04-13T01:20:01.1887268Z Fetching https://git.aparoksha.dev/winui-swift/swift-cwinrt
+2026-04-13T01:20:03.5575000Z [1/449] Fetching swift-cwinrt
+2026-04-13T01:20:03.7658276Z Fetched https://git.aparoksha.dev/winui-swift/swift-cwinrt from cache (2.58s)
+2026-04-13T01:20:05.1523420Z Fetching https://git.aparoksha.dev/winui-swift/swift-winui
+2026-04-13T01:20:07.1309789Z [1/128] Fetching swift-winui
+2026-04-13T01:20:07.3060928Z Fetched https://git.aparoksha.dev/winui-swift/swift-winui from cache (2.15s)
+2026-04-13T01:20:08.1760217Z Fetching https://git.aparoksha.dev/winui-swift/swift-uwp
+2026-04-13T01:20:10.0197853Z [1/205] Fetching swift-uwp
+2026-04-13T01:20:10.2415917Z Fetched https://git.aparoksha.dev/winui-swift/swift-uwp from cache (2.07s)
+2026-04-13T01:20:11.1436845Z Fetching https://github.com/stephencelis/SQLite.swift
+2026-04-13T01:20:11.1442396Z Fetching https://git.aparoksha.dev/aparoksha/macbackend
+2026-04-13T01:20:11.1443365Z Fetching https://git.aparoksha.dev/aparoksha/meta-sqlite
+2026-04-13T01:20:14.6496011Z [1/61] Fetching meta-sqlite
+2026-04-13T01:20:14.6496757Z [62/11185] Fetching meta-sqlite, sqlite.swift
+2026-04-13T01:20:14.6500581Z [63/11445] Fetching meta-sqlite, sqlite.swift, macbackend
+2026-04-13T01:20:15.1508325Z Fetched https://git.aparoksha.dev/aparoksha/meta-sqlite from cache (4.01s)
+2026-04-13T01:20:15.1850024Z Fetched https://github.com/stephencelis/SQLite.swift from cache (4.04s)
+2026-04-13T01:20:15.1965882Z Fetched https://git.aparoksha.dev/aparoksha/macbackend from cache (4.05s)
+2026-04-13T01:20:16.3400846Z Creating working copy for https://git.aparoksha.dev/aparoksha/aparoksha
+2026-04-13T01:20:16.7186936Z Working copy of https://git.aparoksha.dev/aparoksha/aparoksha resolved at main (357f189)
+2026-04-13T01:20:16.8280846Z Creating working copy for https://git.aparoksha.dev/aparoksha/meta
+2026-04-13T01:20:17.1865620Z Working copy of https://git.aparoksha.dev/aparoksha/meta resolved at main (f47727d)
+2026-04-13T01:20:17.2925223Z Creating working copy for https://git.aparoksha.dev/winui-swift/swift-cwinrt
+2026-04-13T01:20:18.2550987Z Working copy of https://git.aparoksha.dev/winui-swift/swift-cwinrt resolved at main (f574581)
+2026-04-13T01:20:18.3632780Z Creating working copy for https://git.aparoksha.dev/aparoksha/winui-swift
+2026-04-13T01:20:18.7341587Z Working copy of https://git.aparoksha.dev/aparoksha/winui-swift resolved at main (df7cf30)
+2026-04-13T01:20:18.8406677Z Creating working copy for https://git.aparoksha.dev/winui-swift/swift-windowsappsdk
+2026-04-13T01:20:19.2785716Z Working copy of https://git.aparoksha.dev/winui-swift/swift-windowsappsdk resolved at main (072f2c7)
+2026-04-13T01:20:19.3852835Z Creating working copy for https://git.aparoksha.dev/winui-swift/swift-uwp
+2026-04-13T01:20:19.9107868Z Working copy of https://git.aparoksha.dev/winui-swift/swift-uwp resolved at main (756b80f)
+2026-04-13T01:20:20.0179829Z Creating working copy for https://git.aparoksha.dev/winui-swift/swift-winui
+2026-04-13T01:20:20.4269730Z Working copy of https://git.aparoksha.dev/winui-swift/swift-winui resolved at main (8102ccd)
+2026-04-13T01:20:20.5364377Z Creating working copy for https://git.aparoksha.dev/aparoksha/levenshtein-transformations
+2026-04-13T01:20:20.8739198Z Working copy of https://git.aparoksha.dev/aparoksha/levenshtein-transformations resolved at main (06577a2)
+2026-04-13T01:20:20.9802542Z Creating working copy for https://git.aparoksha.dev/winui-swift/swift-windowsfoundation
+2026-04-13T01:20:21.3519205Z Working copy of https://git.aparoksha.dev/winui-swift/swift-windowsfoundation resolved at main (f746a3b)
+2026-04-13T01:20:28.3053765Z Building for production...
+2026-04-13T01:20:28.3460099Z [0/25] Write sources
+2026-04-13T01:20:28.3815532Z [7/25] Copying Microsoft.WindowsAppRuntime.Bootstrap.dll
+2026-04-13T01:20:28.3960235Z [8/25] Write sources
+2026-04-13T01:20:28.4308026Z [10/25] Compiling CWinRT shim.c
+2026-04-13T01:20:28.4322130Z [11/25] Write Objects.LinkFileList
+2026-04-13T01:20:28.5496519Z [12/25] Write swift-version--1DA7216B37EB00F0.txt
+2026-04-13T01:20:28.6742336Z [13/25] Linking CWinRT.dll
+2026-04-13T01:20:29.5960604Z [14/28] Compiling CWinAppSDK delayloadhelper.c
+2026-04-13T01:20:34.4726640Z [16/28] Compiling LevenshteinTransformations AsyncFunctions.swift
+2026-04-13T01:20:52.2298582Z [17/28] Compiling Meta Binding.swift
+2026-04-13T01:21:31.6122158Z [18/28] Compiling WindowsFoundation AGGREGATION.swift
+2026-04-13T01:21:31.6390738Z [18/28] Write Objects.LinkFileList
+2026-04-13T01:21:31.9640767Z [19/28] Linking WindowsFoundation.dll
+2026-04-13T01:29:03.4093499Z [21/29] Compiling UWP UWP+Generics.swift
+2026-04-13T01:29:03.4799240Z [21/29] Write Objects.LinkFileList
+2026-04-13T01:29:04.3840057Z [22/29] Linking UWP.dll
+2026-04-13T01:30:30.3187991Z [24/30] Compiling WinAppSDK Microsoft.Graphics.DirectX+ABI.swift
+2026-04-13T01:30:30.3434846Z [24/30] Write Objects.LinkFileList
+2026-04-13T01:30:30.7481825Z [25/30] Linking WinAppSDK.dll
+2026-04-13T01:35:39.1650752Z [27/31] Compiling WinUI MainRunLoopTickler.swift
+2026-04-13T01:35:39.1957677Z [27/31] Write Objects.LinkFileList
+2026-04-13T01:35:39.9124520Z [28/31] Linking WinUI.dll
+2026-04-13T01:35:50.7298433Z [30/32] Compiling Core CommandBarCollection.swift
+2026-04-13T01:35:56.1655036Z [31/33] Compiling Aparoksha MenuButton.swift
+2026-04-13T01:35:58.3330837Z [32/34] Compiling AparokshaStarter main.swift
+2026-04-13T01:35:58.3458781Z [32/34] Write Objects.LinkFileList
+2026-04-13T01:35:58.7479354Z [33/34] Linking AparokshaStarter.exe
+2026-04-13T01:35:58.7702489Z Build complete! (1007.86s)
+2026-04-13T01:35:58.9570111Z ##[debug]Finishing: Build

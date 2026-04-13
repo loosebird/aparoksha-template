@@ -1,0 +1,64 @@
+﻿2026-04-13T01:20:07.7934763Z ##[debug]Evaluating condition for step: 'Post Checkout'
+2026-04-13T01:20:07.7937868Z ##[debug]Evaluating: always()
+2026-04-13T01:20:07.7938202Z ##[debug]Evaluating always:
+2026-04-13T01:20:07.7939072Z ##[debug]=> true
+2026-04-13T01:20:07.7939445Z ##[debug]Result: true
+2026-04-13T01:20:07.7940136Z ##[debug]Starting: Post Checkout
+2026-04-13T01:20:07.7991889Z ##[debug]Loading inputs
+2026-04-13T01:20:07.7993402Z ##[debug]Evaluating: github.repository
+2026-04-13T01:20:07.7993933Z ##[debug]Evaluating Index:
+2026-04-13T01:20:07.7994193Z ##[debug]..Evaluating github:
+2026-04-13T01:20:07.7994458Z ##[debug]..=> Object
+2026-04-13T01:20:07.7994665Z ##[debug]..Evaluating String:
+2026-04-13T01:20:07.7994900Z ##[debug]..=> 'repository'
+2026-04-13T01:20:07.7995193Z ##[debug]=> 'loosebird/aparoksha-template'
+2026-04-13T01:20:07.7995506Z ##[debug]Result: 'loosebird/aparoksha-template'
+2026-04-13T01:20:07.7997583Z ##[debug]Evaluating: github.token
+2026-04-13T01:20:07.7997829Z ##[debug]Evaluating Index:
+2026-04-13T01:20:07.7998079Z ##[debug]..Evaluating github:
+2026-04-13T01:20:07.7998308Z ##[debug]..=> Object
+2026-04-13T01:20:07.7998507Z ##[debug]..Evaluating String:
+2026-04-13T01:20:07.7998717Z ##[debug]..=> 'token'
+2026-04-13T01:20:07.7999393Z ##[debug]=> '***'
+2026-04-13T01:20:07.7999685Z ##[debug]Result: '***'
+2026-04-13T01:20:07.8010676Z ##[debug]Loading env
+2026-04-13T01:20:07.8015032Z Post job cleanup.
+2026-04-13T01:20:07.8668476Z ##[debug]Getting git version
+2026-04-13T01:20:07.8680190Z [command]/usr/bin/git version
+2026-04-13T01:20:07.8715493Z git version 2.53.0
+2026-04-13T01:20:07.8730644Z ##[debug]0
+2026-04-13T01:20:07.8731148Z ##[debug]git version 2.53.0
+2026-04-13T01:20:07.8731349Z ##[debug]
+2026-04-13T01:20:07.8732088Z ##[debug]Set git useragent to: git/2.53.0 (github-actions-checkout)
+2026-04-13T01:20:07.8734398Z ::add-mask::***
+2026-04-13T01:20:07.8748860Z Temporarily overriding HOME='/home/runner/work/_temp/1b39bf1f-2ea9-47ee-9780-3cf9a579c263' before making global git config changes
+2026-04-13T01:20:07.8749643Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-13T01:20:07.8754164Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/aparoksha-template/aparoksha-template
+2026-04-13T01:20:07.8780913Z ##[debug]0
+2026-04-13T01:20:07.8781230Z ##[debug]
+2026-04-13T01:20:07.8788161Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-13T01:20:07.8813278Z ##[debug]1
+2026-04-13T01:20:07.8813894Z ##[debug]
+2026-04-13T01:20:07.8818412Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-13T01:20:07.9014107Z ##[debug]0
+2026-04-13T01:20:07.9014649Z ##[debug]
+2026-04-13T01:20:07.9020317Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-13T01:20:07.9042477Z http.https://github.com/.extraheader
+2026-04-13T01:20:07.9047798Z ##[debug]0
+2026-04-13T01:20:07.9048357Z ##[debug]http.https://github.com/.extraheader
+2026-04-13T01:20:07.9048615Z ##[debug]
+2026-04-13T01:20:07.9052070Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-04-13T01:20:07.9078377Z ##[debug]0
+2026-04-13T01:20:07.9078680Z ##[debug]
+2026-04-13T01:20:07.9083112Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-13T01:20:07.9279412Z ##[debug]0
+2026-04-13T01:20:07.9279941Z ##[debug]
+2026-04-13T01:20:07.9286221Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-13T01:20:07.9310801Z ##[debug]1
+2026-04-13T01:20:07.9311099Z ##[debug]
+2026-04-13T01:20:07.9316832Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-13T01:20:07.9516400Z ##[debug]0
+2026-04-13T01:20:07.9517348Z ##[debug]
+2026-04-13T01:20:07.9518287Z ##[debug]Unsetting HOME override
+2026-04-13T01:20:07.9589028Z ##[debug]Node Action run completed with exit code 0
+2026-04-13T01:20:07.9591685Z ##[debug]Finishing: Post Checkout
