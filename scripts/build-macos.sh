@@ -2,23 +2,19 @@
 set -euo pipefail
 
 export APAROKSHA_FRAMEWORK="${APAROKSHA_FRAMEWORK:-APPKIT}"
-SCHEME="${SCHEME:-AparokshaStarter}"
-CONFIGURATION="${CONFIGURATION:-Release}"
-DERIVED_DATA_PATH="${DERIVED_DATA_PATH:-.build/xcode}"
+
+PRODUCT="${PRODUCT:-AparokshaStarter}"
+CONFIGURATION="${CONFIGURATION:-release}"
 OUTPUT_DIR="${OUTPUT_DIR:-dist/macos/universal}"
 
-xcodebuild \
-  -scheme "$SCHEME" \
-  -configuration "$CONFIGURATION" \
-  -destination 'platform=macOS' \
-  -derivedDataPath "$DERIVED_DATA_PATH" \
-  ARCHS='arm64 x86_64' \
-  ONLY_ACTIVE_ARCH=NO \
-  build
+swift build -c "$CONFIGURATION" --arch arm64
+swift build -c "$CONFIGURATION" --arch x86_64
+
+ARM_BIN=".build/arm64-apple-macosx/${CONFIGURATION}/${PRODUCT}"
+X64_BIN=".build/x86_64-apple-macosx/${CONFIGURATION}/${PRODUCT}"
 
 mkdir -p "$OUTPUT_DIR"
-cp "$DERIVED_DATA_PATH/Build/Products/$CONFIGURATION/AparokshaStarter" "$OUTPUT_DIR/AparokshaStarter"
+lipo -create -output "$OUTPUT_DIR/$PRODUCT" "$ARM_BIN" "$X64_BIN"
 
-file "$OUTPUT_DIR/AparokshaStarter" || true
-
-echo "Built $OUTPUT_DIR/AparokshaStarter"
+file "$OUTPUT_DIR/$PRODUCT" || true
+echo "Built $OUTPUT_DIR/$PRODUCT"
